@@ -1,0 +1,3103 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#0B1210">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="一球の生涯">
+<meta name="format-detection" content="telephone=no">
+<link rel="apple-touch-icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALQAAAC0CAIAAACyr5FlAAAFiUlEQVR4nO3dsW7UTBSGYQfR0SD6SBCa3EQqSq6Xkio3kYaAxI1QDLIse8+uY8+cc76Z96n4pb/wDK/P2JsF7j58+jgBl7yLvgDkRRwwEQdMxAETccBEHDARB0zEARNxwEQcMBEHTMQBE3HARBwwEQdMxAETccBEHDARB0zEARNxwEQcMBEHTMQB0/voC4jx9/evN/3/91++NrqSzO5G+BNvb01hjxFy6TaOFkFYeg2ltzg8m9jqrJJO4ohtYquPSuTjyJbFknoiwnFkzmJJNxHJOFSyWFJMRCwOxSyWtBKRiUM9iyWVRDQ+Pu+pjElnOdknh8o+HpN8hKSeHH2XMaVfYN44km9cLZmXmfFYybxf7SQ8YlJMjueHx+eHx/LrMcuYFguftyJc/ORY7sXnnz8CrySDP9++l188vb7EXsmUZHLM5q0Z03L5GeZHfByrW2TYPlYLZ3L8tzpNhu1jluR4jY+jPIgl2Y4o2/shw4N5cBzWFgw1PFaLne+T8D4i41gtfszDxSqjiO0jLI6Lyx78cLm4/MA+YuK4suDlBnU/PHYuMKqP+AfS6zru4/qBkkFAHDfvg4Tb1NrNJYcMD+84Diyyy+FxYFH+fbjGsX95Q7257J+Uzn3kfebo+HBZtp55mX5xnKy+m+FxciGew8MpjmNLynxXVXFsgW595D1WtjoYHlpL8IjjTOkdD48zS/MZHkqTY1K789Q1j+N8490Mj7ovKQ7DQ2xywFPbOGrV3cFP41pcduvhweQIoHJQNoyjXdeiw6OFpsNDZnKo3G0XqXxevtIqjvDvP46j3VbLTI4VoZNF6FJXlOIQGsgWrSU0iYMzxVmjDVeaHHAmFofcp2Gi7ylF/Tg4U0K02HaxyQFPxAGTXhxCjx3SDxxT9Th44AhUffP1JgfcEAdMxAETccAkH0faF5a0F7ZfzTjcXlXkXgvdLrjub4H85EA7xAETccBEHDARB0zEARNxwEQcMBEHTMQBE3HARBwwEQdMxAETccBUMw63f3Bb7ns0bhdc97dAfnKk/eJP2gvbTz4OtEMcMBEHTMQBU+U43F5YsFV98/Umh9AfXRf6CwEu0osDbogDpvpx8NgRosW2i00OoQeOQvqxQywOeGoSByeLs0YbrjQ55MbyltYSlOJYknjgKIQudaVVHJwsbtpttczk0BrIK6LvLA3jaFe07qCurumElpkcPVEZHm3jqNW13GdfWy0uu/WDHZMDpuZxnK9bZQjfVPex1OF9UGxyiJ4pojziONN4N2Nj68zSfD5GUpocHYwNrSU4xXGs9I7HRnFsgW6fPvtNjpNL0rrnrji5EM+fS+Q9VjoeGyqfprvGsb/61ZZ1MzYu2t+H848zvSfHgeV1WcaBRfn/oDvgWLm5yMyTtpGbSw75CkTeZ46iy7FRrJaW8JaIiePKfdDBz9j227nAqG9OhU2OiwtOePd4urj8wO/URR4rq2UP9YYyu364xH7bMviZw1r8IGUUVh/h38ONfyAtWzD4gbK9GcLLmDLEMY16oFyR5FaJj+P54XH5n8OWsVr4altCxMexNGwZxXL5T68vgVdSxMcx78LT60uGgzbQ/ZevZTcylDFN092HTx+jr2HN7V+2TiXhjZExjmKcRBJmUcQfK5a0W1ZX5mXmjWPKvXFVJF9g3mNlqb8jJnkWRerJMZPYyv1UlqMxOWbqI0Qli0IsjkIxEa0sCsk4CpVEFLMohOMoMieim0UhH0eRLRH1LIpO4pjFVtJHE7Pe4ph5VtJZE7Nu41hqEUqvQSwNEcfWW3MZIYWtQePAHhofnyMEccBEHDARB0zEARNxwEQcMBEHTMQBE3HARBwwEQdMxAETccBEHDARB0zEARNxwEQcMBEHTMQBE3HARBwwEQdM/wCl3cPlkUwoHgAAAABJRU5ErkJggg==">
+<link rel="icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALQAAAC0CAIAAACyr5FlAAAFiUlEQVR4nO3dsW7UTBSGYQfR0SD6SBCa3EQqSq6Xkio3kYaAxI1QDLIse8+uY8+cc76Z96n4pb/wDK/P2JsF7j58+jgBl7yLvgDkRRwwEQdMxAETccBEHDARB0zEARNxwEQcMBEHTMQBE3HARBwwEQdMxAETccBEHDARB0zEARNxwEQcMBEHTMQB0/voC4jx9/evN/3/91++NrqSzO5G+BNvb01hjxFy6TaOFkFYeg2ltzg8m9jqrJJO4ohtYquPSuTjyJbFknoiwnFkzmJJNxHJOFSyWFJMRCwOxSyWtBKRiUM9iyWVRDQ+Pu+pjElnOdknh8o+HpN8hKSeHH2XMaVfYN44km9cLZmXmfFYybxf7SQ8YlJMjueHx+eHx/LrMcuYFguftyJc/ORY7sXnnz8CrySDP9++l188vb7EXsmUZHLM5q0Z03L5GeZHfByrW2TYPlYLZ3L8tzpNhu1jluR4jY+jPIgl2Y4o2/shw4N5cBzWFgw1PFaLne+T8D4i41gtfszDxSqjiO0jLI6Lyx78cLm4/MA+YuK4suDlBnU/PHYuMKqP+AfS6zru4/qBkkFAHDfvg4Tb1NrNJYcMD+84Diyyy+FxYFH+fbjGsX95Q7257J+Uzn3kfebo+HBZtp55mX5xnKy+m+FxciGew8MpjmNLynxXVXFsgW595D1WtjoYHlpL8IjjTOkdD48zS/MZHkqTY1K789Q1j+N8490Mj7ovKQ7DQ2xywFPbOGrV3cFP41pcduvhweQIoHJQNoyjXdeiw6OFpsNDZnKo3G0XqXxevtIqjvDvP46j3VbLTI4VoZNF6FJXlOIQGsgWrSU0iYMzxVmjDVeaHHAmFofcp2Gi7ylF/Tg4U0K02HaxyQFPxAGTXhxCjx3SDxxT9Th44AhUffP1JgfcEAdMxAETccAkH0faF5a0F7ZfzTjcXlXkXgvdLrjub4H85EA7xAETccBEHDARB0zEARNxwEQcMBEHTMQBE3HARBwwEQdMxAETccBUMw63f3Bb7ns0bhdc97dAfnKk/eJP2gvbTz4OtEMcMBEHTMQBU+U43F5YsFV98/Umh9AfXRf6CwEu0osDbogDpvpx8NgRosW2i00OoQeOQvqxQywOeGoSByeLs0YbrjQ55MbyltYSlOJYknjgKIQudaVVHJwsbtpttczk0BrIK6LvLA3jaFe07qCurumElpkcPVEZHm3jqNW13GdfWy0uu/WDHZMDpuZxnK9bZQjfVPex1OF9UGxyiJ4pojziONN4N2Nj68zSfD5GUpocHYwNrSU4xXGs9I7HRnFsgW6fPvtNjpNL0rrnrji5EM+fS+Q9VjoeGyqfprvGsb/61ZZ1MzYu2t+H848zvSfHgeV1WcaBRfn/oDvgWLm5yMyTtpGbSw75CkTeZ46iy7FRrJaW8JaIiePKfdDBz9j227nAqG9OhU2OiwtOePd4urj8wO/URR4rq2UP9YYyu364xH7bMviZw1r8IGUUVh/h38ONfyAtWzD4gbK9GcLLmDLEMY16oFyR5FaJj+P54XH5n8OWsVr4altCxMexNGwZxXL5T68vgVdSxMcx78LT60uGgzbQ/ZevZTcylDFN092HTx+jr2HN7V+2TiXhjZExjmKcRBJmUcQfK5a0W1ZX5mXmjWPKvXFVJF9g3mNlqb8jJnkWRerJMZPYyv1UlqMxOWbqI0Qli0IsjkIxEa0sCsk4CpVEFLMohOMoMieim0UhH0eRLRH1LIpO4pjFVtJHE7Pe4ph5VtJZE7Nu41hqEUqvQSwNEcfWW3MZIYWtQePAHhofnyMEccBEHDARB0zEARNxwEQcMBEHTMQBE3HARBwwEQdMxAETccBEHDARB0zEARNxwEQcMBEHTMQBE3HARBwwEQdM/wCl3cPlkUwoHgAAAABJRU5ErkJggg==">
+<link rel="manifest" href="manifest.webmanifest">
+<title>一球の生涯 — 野球人生シミュレーション</title>
+<style>
+:root{
+  --bg:#0B1210; --panel:#131E1A; --panel2:#1A2A24; --line:rgba(255,255,255,.12);
+  --text:#E7EFEA; --muted:#8FA59B; --acc:#FFD66B; --accInk:#1A1405;
+  --up:#6FD08C; --dn:#F2736B; --dirt:#9A6B45;
+}
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html,body{margin:0;padding:0}
+body{background:var(--bg);color:var(--text);font-size:15px;line-height:1.6;
+ font-family:-apple-system,BlinkMacSystemFont,"Hiragino Sans","Noto Sans JP","Yu Gothic",sans-serif;
+ padding-bottom:calc(120px + env(safe-area-inset-bottom));}
+.wrap{max-width:720px;margin:0 auto;padding:0 14px}
+h1,h2,h3{margin:0;font-weight:700}
+button{font-family:inherit;font-size:15px;color:inherit;background:none;border:none;cursor:pointer}
+input,select,textarea{font-family:inherit;font-size:16px;color:var(--text);background:var(--panel2);
+ border:1px solid var(--line);border-radius:8px;padding:9px 10px;width:100%}
+input:focus,select:focus,button:focus-visible{outline:2px solid var(--acc);outline-offset:1px}
+.num{font-variant-numeric:tabular-nums}
+.btn{border:1px solid var(--line);border-radius:10px;padding:11px 16px;font-weight:600;background:var(--panel)}
+.btn.primary{background:var(--acc);color:var(--accInk);border-color:var(--acc)}
+.btn.ghost{background:none;color:var(--muted)}
+.btn:active{transform:translateY(1px)}
+.row{display:flex;gap:8px;flex-wrap:wrap}
+.muted{color:var(--muted)}
+.small{font-size:12.5px}
+
+/* header */
+header{position:sticky;top:0;z-index:20;background:var(--bg);border-bottom:1px solid var(--line)}
+.hd{max-width:720px;margin:0 auto;padding:10px 14px}
+.hd .l1{display:flex;align-items:baseline;gap:8px}
+.hd .yr{font-size:22px;font-weight:700;color:var(--acc)}
+.hd .nm{font-size:16px;font-weight:700}
+.hd .l2{font-size:12.5px;color:var(--muted);margin-top:1px}
+.teamdot{display:inline-block;width:9px;height:9px;border-radius:2px;margin-right:5px;vertical-align:0}
+nav{display:flex;gap:2px;max-width:720px;margin:0 auto;padding:0 8px;overflow-x:auto}
+nav button{padding:8px 11px;color:var(--muted);border-bottom:2px solid transparent;font-size:13.5px;font-weight:600;white-space:nowrap}
+nav button[aria-current="true"]{color:var(--acc);border-bottom-color:var(--acc)}
+
+/* cards */
+.card{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:13px 14px;margin-top:12px}
+.card h3{font-size:14px;margin-bottom:6px}
+.card .cap{font-size:12px;color:var(--muted)}
+.yearcard{border-left:3px solid var(--acc)}
+.yearcard .hdline{display:flex;align-items:baseline;gap:8px;margin-bottom:6px}
+.yearcard .hdline .y{font-size:17px;font-weight:700}
+.yearcard .hdline .a{font-size:12px;color:var(--muted)}
+.ev{padding:3px 0;font-size:14px}
+.ev.big{color:var(--acc);font-weight:700}
+.ev.bad{color:var(--dn)}
+.ev.good{color:var(--up)}
+.statline{background:var(--panel2);border-radius:9px;padding:9px 11px;margin-top:8px;font-size:14px}
+.statline b{font-size:16px}
+.kv{display:flex;flex-wrap:wrap;gap:4px 14px;margin-top:4px}
+.kv span{font-size:13px;color:var(--muted)}
+.kv span b{color:var(--text);font-weight:700}
+
+/* choice */
+.choice{border:1px solid var(--acc);background:#1B2018;border-radius:12px;padding:14px;margin-top:14px}
+.choice h3{color:var(--acc);font-size:15px}
+.choice p{margin:6px 0 10px;font-size:14px}
+.choice .opt{display:block;width:100%;text-align:left;border:1px solid var(--line);border-radius:10px;
+ padding:11px 13px;margin-top:8px;background:var(--panel)}
+.choice .opt b{display:block;font-weight:700}
+.choice .opt span{font-size:12.5px;color:var(--muted)}
+
+/* tables */
+table{width:100%;border-collapse:collapse;font-size:12.5px}
+th,td{padding:5px 3px;border-bottom:1px solid rgba(255,255,255,.08);text-align:right;white-space:nowrap}
+th{color:var(--muted);font-weight:600;font-size:11.5px}
+td:first-child,th:first-child{text-align:left}
+.scroll{overflow-x:auto;-webkit-overflow-scrolling:touch}
+tr.now td{color:var(--acc)}
+tr.farm td{opacity:.72}
+table.cmpct .ex{display:none}
+table.lives{table-layout:fixed;width:100%}
+.kings{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:8px}
+.king{background:var(--panel2);border-radius:10px;padding:9px 10px;cursor:pointer;border:1px solid transparent;text-align:left;width:100%}
+.king[aria-pressed="true"]{border-color:var(--acc)}
+.king .k1{font-size:11.5px;color:var(--muted)}
+.king .k2{font-size:17px;font-weight:700;color:var(--acc);font-variant-numeric:tabular-nums}
+.king .k3{font-size:12.5px}
+table.lives td{white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-size:12px}
+table.lives td:nth-child(1){width:3.6em}
+table.lives td:nth-child(2){width:6.4em}
+table{table-layout:auto}
+td.num,th{font-variant-numeric:tabular-nums}
+table tr>td:first-child,table tr>th:first-child{width:3.4em}
+table tr>td:nth-child(2),table tr>th:nth-child(2){max-width:7.5em;overflow:hidden;text-overflow:ellipsis}
+tr.tot td{border-top:2px solid var(--line);border-bottom:none;font-weight:700;color:var(--acc);padding-top:8px}
+
+/* abilities */
+.abil{display:grid;grid-template-columns:1fr auto;gap:3px 10px;align-items:center;padding:4px 0;border-bottom:1px solid rgba(255,255,255,.06)}
+.abil .bar{grid-column:1/-1;height:4px;border-radius:2px;background:rgba(255,255,255,.12);overflow:hidden}
+.abil .bar i{display:block;height:100%;background:var(--acc)}
+.abil .v{font-weight:700}
+.abil .d{font-size:11px;margin-left:6px}
+.d.up{color:var(--up)} .d.dn{color:var(--dn)}
+svg.radar{display:block;margin:4px auto}
+
+/* footer */
+footer{position:fixed;left:0;right:0;bottom:0;z-index:30;background:linear-gradient(180deg,rgba(11,18,16,0),var(--bg) 26%);
+ padding:14px 14px calc(14px + env(safe-area-inset-bottom))}
+footer .in{max-width:720px;margin:0 auto;display:flex;gap:8px;align-items:center}
+footer select{flex:0 1 190px}
+footer .go{flex:1;background:var(--acc);color:var(--accInk);font-weight:700;border-radius:12px;padding:14px;font-size:16px}
+footer .go[disabled]{opacity:.45}
+.toast{position:fixed;left:50%;transform:translateX(-50%);bottom:110px;background:var(--panel2);
+ border:1px solid var(--line);border-radius:999px;padding:9px 18px;font-size:13px;z-index:60;opacity:0;transition:opacity .2s;pointer-events:none}
+.toast.on{opacity:1}
+.title-badge{display:inline-block;background:var(--acc);color:var(--accInk);border-radius:6px;
+ padding:1px 7px;font-size:12px;font-weight:700;margin:2px 4px 2px 0}
+details{margin-top:4px}
+details summary{cursor:pointer;font-size:12.5px;padding:3px 0;list-style:none}
+details summary::-webkit-details-marker{display:none}
+details summary:before{content:'＋ '}
+details[open] summary:before{content:'− '}
+hr{border:none;border-top:1px solid var(--line);margin:16px 0}
+body.fs-l{font-size:17px}
+body.fs-l .ev,body.fs-l .statline,body.fs-l .choice .opt b{font-size:15.5px}
+body.fs-l table{font-size:14px}
+body.fs-l .cap,body.fs-l .small,body.fs-l .kv span{font-size:13.5px}
+body.fs-l .hd .nm{font-size:18px}
+body.fs-s{font-size:13.5px}
+body.fs-s .ev,body.fs-s .statline{font-size:13px}
+body.fs-s table{font-size:11.5px}
+body.fs-s .cap,body.fs-s .small,body.fs-s .kv span{font-size:11.5px}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+</head>
+<body>
+<header>
+  <div class="hd">
+    <div class="l1"><span class="yr" id="hYear">—</span><span class="nm" id="hName">—</span></div>
+    <div class="l2" id="hSub">選手を作成してください</div>
+  </div>
+  <nav id="nav" hidden>
+    <button data-t="log" aria-current="true">今年</button>
+    <button data-t="abil">能力</button>
+    <button data-t="stat">成績</button>
+    <button data-t="team">所属</button>
+    <button data-t="rank">記録</button>
+    <button data-t="sys">設定</button>
+  </nav>
+</header>
+
+<div class="wrap" id="main"></div>
+
+<footer id="foot" hidden>
+  <div class="in">
+    <button class="go" id="go">次の1年へ</button>
+  </div>
+</footer>
+<div class="toast" id="toast"></div>
+<script>
+/* ============ 設定 ============ */
+const CONFIG = {
+  startYear: 2026,
+  hsStartAge: 15,
+  gamesNPB: 143, gamesMLB: 162,
+  rookieSalary: {1:1500, 2:1100, 3:900, 4:700, 5:600, ikusei:300},
+  minSalaryNPB: 440, minSalaryIkusei: 240,
+  cutLimitYoung: 0.25, cutLimit: 0.40,
+  faDomesticHS: 8, faDomesticCollege: 7, faOverseas: 9, faDaysPerYear: 145,
+  peakStart: 26, peakEnd: 30,
+  salaryCapNPB: 120000, usdJpy: 150, version: "2026.09.22 r3"
+};
+
+/* ============ 乱数（状態を保存できる形にして、セーブからの再開でも再現性を保つ） ============ */
+let RNG_STATE = Date.now()>>>0;
+function rngNext(){
+  RNG_STATE = (RNG_STATE + 0x6D2B79F5)|0;
+  let t = Math.imul(RNG_STATE ^ RNG_STATE>>>15, 1|RNG_STATE);
+  t = t + Math.imul(t ^ t>>>7, 61|t) ^ t;
+  return ((t ^ t>>>14)>>>0)/4294967296;
+}
+function setSeed(v){ RNG_STATE = v>>>0; }
+function mulberry32(a){ setSeed(a); return rngNext; }   // 互換用
+let RNG = rngNext;
+function rnd(){ return rngNext(); }
+function ri(a,b){return Math.floor(rnd()*(b-a+1))+a;}
+function rf(a,b){return a+rnd()*(b-a);}
+function gauss(){let u=0,v=0;while(!u)u=rnd();while(!v)v=rnd();return Math.sqrt(-2*Math.log(u))*Math.cos(2*Math.PI*v);}
+function pick(a){return a[Math.floor(rnd()*a.length)];}
+function chance(p){return rnd()<p;}
+function clamp(v,a,b){return Math.max(a,Math.min(b,v));}
+function hashSeed(s){let h=2166136261;for(let i=0;i<s.length;i++){h^=s.charCodeAt(i);h=Math.imul(h,16777619);}return h>>>0;}
+
+/* ============ 球団 ============ */
+const TEAMS = [
+  {id:"grands", name:"東京グランズ", short:"東京", lg:"日輪", park:"大央スタジアム", owner:"大央新聞グループ",
+   color:"#F08A2B", money:98, dev:20, parkHR:1.00, parkAVG:1.00, power:82,
+   note:"資金力最大の伝統球団。FAで他球団の主力を集める。生え抜きの序列は厳しい。"},
+  {id:"panthers", name:"浪速パンサーズ", short:"浪速", lg:"日輪", park:"武庫川球場", owner:"浪速電鉄",
+   color:"#F5D020", money:88, dev:45, parkHR:0.92, parkAVG:0.98, power:78,
+   note:"熱狂的なファン。不振の年は風当たりが強い。投手が育ちやすい。"},
+  {id:"wyverns", name:"名古屋ワイバーンズ", short:"名古屋", lg:"日輪", park:"中部ドーム", owner:"中部日報",
+   color:"#3D6FD6", money:72, dev:60, parkHR:0.80, parkAVG:0.96, power:70,
+   note:"守備と投手を重視。広い球場で本塁打が出にくく、打者の年俸が伸びにくい。"},
+  {id:"comets", name:"横浜コメッツ", short:"横浜", lg:"日輪", park:"海岸公園球場", owner:"ゼノア",
+   color:"#2E77B5", money:80, dev:55, parkHR:1.18, parkAVG:1.03, power:72,
+   note:"狭い球場で打者有利。近年は資金力も中位以上。"},
+  {id:"crimsons", name:"広島クリムゾンズ", short:"広島", lg:"日輪", park:"河岸スタジアム", owner:"市民球団",
+   color:"#D6383C", money:52, dev:88, parkHR:0.98, parkAVG:1.01, power:69,
+   note:"育成型。FA補強をほぼせず、若手を我慢して使う。主力の流出が多い。"},
+  {id:"swifts", name:"東京スウィフツ", short:"東京S", lg:"日輪", park:"青葉の杜球場", owner:"カルネス",
+   color:"#3FA96A", money:58, dev:70, parkHR:1.24, parkAVG:1.04, power:66,
+   note:"最も狭い球場。打高投低の成績が出る。資金力は下位。"},
+  {id:"harriers", name:"福岡ハリアーズ", short:"福岡", lg:"蒼海", park:"博多ドーム", owner:"ネクスバンク",
+   color:"#D9B54A", money:100, dev:80, parkHR:0.95, parkAVG:0.99, power:88,
+   note:"資金力最大級。育成組織が厚く、支配下の椅子の競争が最も激しい。"},
+  {id:"warriors", name:"札幌ウォリアーズ", short:"札幌", lg:"蒼海", park:"北都ボールパーク", owner:"北都ミート",
+   color:"#66C6E0", money:64, dev:92, parkHR:1.05, parkAVG:1.01, power:70,
+   note:"若手を早く使う。30歳を超えると放出されやすい。新球場で動員が多い。"},
+  {id:"jaguars", name:"埼玉ジャガーズ", short:"埼玉", lg:"蒼海", park:"武蔵の森球場", owner:"武蔵急行",
+   color:"#2F4C9B", money:70, dev:85, parkHR:1.06, parkAVG:1.02, power:74,
+   note:"強力打線。育成は上手いが主力のFA流出が続く。"},
+  {id:"seagulls", name:"千葉シーガルズ", short:"千葉", lg:"蒼海", park:"潮見マリンスタジアム", owner:"千歳製菓",
+   color:"#C9D2D8", money:66, dev:62, parkHR:0.88, parkAVG:0.97, power:68,
+   note:"海風で投手有利。応援が名物で人気が出やすい。"},
+  {id:"bisons", name:"大阪バイソンズ", short:"大阪", lg:"蒼海", park:"弁天ドーム", owner:"オリオン・リース",
+   color:"#B8934A", money:76, dev:74, parkHR:0.93, parkAVG:0.98, power:73,
+   note:"投手育成に定評。打者の評価は辛め。"},
+  {id:"ospreys", name:"仙台オスプレイズ", short:"仙台", lg:"蒼海", park:"杜の宮スタジアム", owner:"アマネ",
+   color:"#8E2F3C", money:74, dev:66, parkHR:1.00, parkAVG:1.00, power:65,
+   note:"新興球団。層が薄く、実力があれば若くてもレギュラーを取れる。"}
+];
+const teamById = id => TEAMS.find(t=>t.id===id);
+
+/* ============ メジャーの球団 ============ */
+const MLB_TEAMS = [
+  {id:"NYY",lg:"AL",power:90,money:100,parkHR:1.12,parkAVG:1.00},
+  {id:"BOS",lg:"AL",power:80,money:92,parkHR:1.08,parkAVG:1.03},
+  {id:"TOR",lg:"AL",power:78,money:82,parkHR:1.05,parkAVG:0.99},
+  {id:"HOU",lg:"AL",power:86,money:88,parkHR:1.02,parkAVG:1.00},
+  {id:"TEX",lg:"AL",power:82,money:86,parkHR:1.06,parkAVG:1.01},
+  {id:"SEA",lg:"AL",power:76,money:78,parkHR:0.90,parkAVG:0.96},
+  {id:"LAD",lg:"NL",power:92,money:100,parkHR:1.03,parkAVG:0.99},
+  {id:"ATL",lg:"NL",power:86,money:88,parkHR:1.04,parkAVG:1.00},
+  {id:"PHI",lg:"NL",power:82,money:90,parkHR:1.07,parkAVG:1.01},
+  {id:"SDP",lg:"NL",power:80,money:86,parkHR:0.92,parkAVG:0.97},
+  {id:"SFG",lg:"NL",power:74,money:84,parkHR:0.88,parkAVG:0.96},
+  {id:"CHC",lg:"NL",power:76,money:84,parkHR:1.00,parkAVG:0.99},
+  {id:"NYM",lg:"NL",power:80,money:96,parkHR:0.95,parkAVG:0.98},
+  {id:"STL",lg:"NL",power:78,money:80,parkHR:0.97,parkAVG:1.00}
+];
+const mlbTeamById = id => MLB_TEAMS.find(t=>t.id===id);
+const MLB_MANAGERS=["B. Hollis","R. Vance","M. Doyle","C. Ruiz","T. Nakamura","D. Whitfield","S. Abrams","P. Castillo"];
+
+/* ============ 名前生成 ============ */
+const SEI=["佐久間","相沢","早瀬","宮原","南雲","黒木","樋口","近江","真田","土屋","日野","鴻巣","越智","名取","立花","神田","三雲","布施","芦田","羽鳥","堂本","朝比奈","五十嵐","久世","仁科","大鷲","峰岸","結城","浅倉","館山"];
+const MEI=["諒","遼太","健斗","陽","悠斗","匠","蓮","隼","大河","翔","湊斗","一輝","駿","蒼","亮介","海斗","琉生","慎太郎","昂","智也","柊","勇人","湊","晴翔","要","尚樹","大翔","颯","陸","涼太"];
+const POSNAMES=["投","捕","一","二","三","遊","左","中","右"];
+const FIELD_POS=["捕","一","二","三","遊","左","中","右"];
+const EN_FIRST=["J.","M.","C.","D.","R.","T.","A.","K.","L.","B.","S.","P."];
+const EN_LAST=["Alvarez","Brennan","Carter","Delgado","Ellis","Fowler","Grant","Holloway","Iverson","Jansen","Keller","Marchetti","Nakamura","Okafor","Pearson","Quinn","Reyes","Sutton","Tanaka","Vaughn","Whitaker"];
+const REGION_TEAMS={
+  "北海道":["warriors"],"東北":["ospreys"],"北関東":["grands","jaguars"],"南関東":["comets","seagulls","jaguars"],
+  "東京":["grands","swifts","comets"],"北信越":["wyverns","swifts"],"東海":["wyverns","bisons"],
+  "近畿":["panthers","bisons"],"中国":["crimsons","panthers"],"四国":["crimsons","seagulls"],"九州・沖縄":["harriers","crimsons"]
+};
+const SCHOOL_WORDS=["学園","高校","工業","商業","学院","第一","東","西","North","South"];
+const SCHOOL_NAMES=["明星","若葉","青嶺","黒潮","蒼陵","白嶺","桜丘","北稜","天王寺","三峰","海城","栄冠","翔陽","城北","南嶺"];
+function schoolName(region,level){
+  const base=pick(SCHOOL_NAMES);
+  if(level==="強豪私立") return base+pick(["学園","学院","高校"]);
+  if(level==="中堅私立") return base+pick(["高校","学院"]);
+  return region.replace("・沖縄","")+pick(["第一","工業","商業","東","西"])+"高校";
+}
+const INDY_TEAMS=["信越ブルーウイングス","南海サンダース","北陸ノースアローズ","四国オレンジズ","東北ブルーベアーズ"];
+function jname(en){ return en? pick(EN_FIRST)+" "+pick(EN_LAST) : pick(SEI)+" "+pick(MEI); }
+/* ============ 選手 ============ */
+const BATK=[["meet","ミート"],["power","パワー"],["speed","走力"],["arm","肩力"],["fielding","守備力"],["catching","捕球"],["eye","選球眼"],["bunt","バント"],["baserun","走塁"],["clutch","チャンス"]];
+const PITK=[["control","コントロール"],["stamina","スタミナ"],["nobi","ノビ"],["quick","クイック"],["hold","牽制"],["vsLeft","対左打者"],["pinch","対ピンチ"]];
+const BREAKS=["スライダー","カットボール","カーブ","フォーク","スプリット","チェンジアップ","シュート","シンカー","ツーシーム"];
+const APPEALS={
+  "二刀流":[
+    {id:"twoway",label:"投打の両立",desc:"投げる力と打つ力を同時に伸ばす",up:{meet:1.6,power:1.5,velo:1.6,control:1.4,stamina:1.2,breaks:1.3}},
+    {id:"power",label:"打者として勝負",desc:"打撃を主軸に据える",up:{power:2.0,meet:1.3,clutch:1.0,velo:.7}},
+    {id:"velo",label:"投手として勝負",desc:"投球を主軸に据える",up:{velo:2.0,nobi:1.5,control:1.2,meet:.7}}
+  ],
+  "投手":[
+    {id:"velo",label:"球威・球速",desc:"速球で押す。奪三振が増えるが四球も出やすい",up:{velo:2.1,nobi:1.6,stamina:.7,control:.45}},
+    {id:"control",label:"制球力",desc:"四球が少なく、大崩れしにくい",up:{control:2.1,quick:1.1,hold:1.1,pinch:1.0}},
+    {id:"break",label:"変化球",desc:"持ち球が増え、変化量が伸びる",up:{breaks:2.1,control:1.0,pinch:.9,nobi:.6}},
+    {id:"stamina",label:"スタミナ・耐久",desc:"長いイニングを投げ、故障しにくい",up:{stamina:2.1,durability:1.9,velo:.7}}
+  ],
+  "野手":[
+    {id:"meet",label:"打撃（ミート）",desc:"高打率を狙う。三振が少ない",up:{meet:2.1,eye:1.3,bunt:1.0,clutch:.9}},
+    {id:"power",label:"長打力",desc:"本塁打と打点を稼ぐ。打率は伸びにくい",up:{power:2.1,meet:.8,clutch:1.0}},
+    {id:"speed",label:"走力・機動力",desc:"盗塁と守備範囲。打撃の伸びは緩やか",up:{speed:2.0,baserun:1.9,bunt:1.1,fielding:.9}},
+    {id:"defense",label:"守備・肩",desc:"守備で試合に出る。打てなくても起用されやすい",up:{fielding:2.0,catching:1.8,arm:1.7}}
+  ]
+};
+function appealOf(p){
+  const list=APPEALS[p.kind]||APPEALS["野手"];
+  return list.find(x=>x.id===p.appeal)||list[0];
+}
+const POS_APT_SET={
+  "捕":{"捕":7,"一":3},
+  "一":{"一":7,"三":3,"左":2},
+  "二":{"二":7,"遊":4,"三":4},
+  "三":{"三":7,"一":5,"遊":3},
+  "遊":{"遊":7,"二":5,"三":5},
+  "左":{"左":7,"右":5,"中":3,"一":2},
+  "中":{"中":7,"左":6,"右":6},
+  "右":{"右":7,"左":5,"中":3}
+};
+
+function newPlayer(o){
+  const p={
+    name:o.name||"名無し", kana:"", age:CONFIG.hsStartAge, year:CONFIG.startYear,
+    throws:o.throws, bats:o.bats, kind:o.kind, role:o.role||null, pos:o.pos||"投",
+    home:o.home, school:o.school, appeal:o.appeal, schoolName:schoolName(o.home||"東京",o.school),
+    apt:{}, bat:{}, pit:{}, breaks:[], velo:0, ballistic:2,
+    potential:{}, growthType:pick(["超早熟","早熟","早熟","普通","普通","普通","晩成","晩成","超晩成","持続"]),
+    durability:ri(45,80), mental:ri(35,75), popularity:5, condition:0, fatigue:0,
+    team:null, uniform:null, league:"NPB", status:"高校生", draftRank:null, ikusei:false,
+    salary:0, contract:{years:1,left:1}, serviceDays:0, faType:null,
+    stage:"hs", hsYear:1, amaType:null, amaYear:0,
+    history:[], titles:[], awards:[], injuries:[], career:[], log:[],
+    retired:false, closerOK:false, mlbYears:0, everMLB:false, hof:false,
+    appeal:o.appeal||null, prevAbil:null, seasonsPro:0, hsBest:"—", amaNote:null
+  };
+  POSNAMES.forEach(x=>p.apt[x]=0);
+  const base = o.school==="強豪私立"? 8 : (o.school==="中堅私立"? 4 : 0);
+  // 才能を先に決める。天賦の才がある選手は15歳の時点で既に体も技術も出来上がっている
+  const talent = rf(0,1);
+  const cap = 56 + Math.pow(talent,2.1)*42;
+  const prodigy = Math.max(0,(cap-72))*1.05 + (p.growthType==="超早熟"?7:p.growthType==="早熟"?3:p.growthType==="超晩成"?-4:0);
+  p.talentCap = cap;
+  const rollA = (lo,hi)=>clamp(Math.round(rf(lo,hi)+base*.6+prodigy+gauss()*4),8,78);
+  BATK.forEach(([k])=>p.bat[k]=rollA(22,42));
+  PITK.forEach(([k])=>p.pit[k]=rollA(22,42));
+  if(p.kind==="二刀流"){
+    p.apt["投"]=7;
+    const set=POS_APT_SET[p.pos]||POS_APT_SET["右"]; Object.keys(set).forEach(k=>p.apt[k]=set[k]);
+    p.velo=Math.round(ri(126,136)+base+prodigy*0.5);
+    p.role="先発";
+    p.breaks=[{name:pick(["スライダー","カーブ"]),lv:2}];
+    p.ballistic=ri(2,4);
+  } else if(p.kind==="投手"){
+    p.apt["投"]=7; p.pos="投";
+    p.velo=Math.round(ri(128,138)+base+prodigy*0.55);
+    if(p.role==="先発"){ p.pit.stamina=clamp(p.pit.stamina+18,10,80);
+      p.breaks=[{name:pick(["スライダー","カーブ"]),lv:2},{name:pick(["チェンジアップ","フォーク","シュート"]),lv:1}]; }
+    else { p.velo+=4; p.pit.nobi=clamp(p.pit.nobi+12,10,80); p.pit.stamina=clamp(p.pit.stamina-10,5,60);
+      p.breaks=[{name:pick(["スライダー","フォーク","カットボール"]),lv:2}]; }
+    BATK.forEach(([k])=>p.bat[k]=clamp(p.bat[k]-14,5,50));
+  }else{
+    const set=POS_APT_SET[p.pos]; Object.keys(set).forEach(k=>p.apt[k]=set[k]);
+    p.ballistic = p.pos==="一"||p.pos==="三"||p.pos==="左"||p.pos==="右" ? ri(2,4) : ri(1,3);
+    if(p.pos==="捕"){p.bat.catching+=14;p.bat.arm+=10;p.bat.fielding+=8;p.bat.speed-=8;}
+    if(p.pos==="遊"||p.pos==="二"){p.bat.fielding+=10;p.bat.speed+=8;}
+    if(p.pos==="中"){p.bat.speed+=10;p.bat.fielding+=6;}
+    if(p.pos==="一"){p.bat.power+=8;p.bat.speed-=10;}
+    BATK.forEach(([k])=>p.bat[k]=clamp(p.bat[k],5,64+prodigy));
+    p.velo=0;
+  }
+  // 潜在能力（上限は最初に決めた才能で決まる）
+  BATK.forEach(([k])=>p.potential[k]=clamp(Math.round(cap+gauss()*9),p.bat[k]+3,99));
+  PITK.forEach(([k])=>p.potential[k]=clamp(Math.round(cap+gauss()*9),p.pit[k]+3,99));
+  p.potential.velo = clamp(Math.round(138+ (cap-58)*0.46 + gauss()*3), p.velo+2, 165);
+  p.potential.durability = clamp(Math.round(cap+gauss()*12),30,99);
+  p.potential.breaks = clamp(Math.round((cap-50)/7.5+gauss()*.9),2,7);
+  return p;
+}
+
+/* ---- 評価値 ---- */
+function breakScore(p){ if(!p.breaks.length)return 0; return Math.min(100,p.breaks.reduce((a,b)=>a+b.lv,0)*7+p.breaks.length*4); }
+function batRating(p){
+  const b=p.bat;
+  return clamp(Math.round(b.meet*.30+b.power*.25+b.speed*.10+b.fielding*.13+b.arm*.07+b.catching*.06+b.eye*.05+b.clutch*.04+(p.ballistic-2)*2),0,110);
+}
+function pitRating(p){
+  const t=p.pit, v=clamp((p.velo-128)*3.2,0,100);
+  return clamp(Math.round(v*.28+t.control*.26+t.stamina*.13+breakScore(p)*.21+t.nobi*.07+t.pinch*.05),0,110);
+}
+function rating(p){ return p.kind==="投手"?pitRating(p):batRating(p); }
+function grade(v){ return v>=88?"S":v>=80?"A":v>=71?"B":v>=62?"C":v>=52?"D":v>=42?"E":v>=30?"F":"G"; }
+
+/* ---- 成長 ---- */
+const AGE_OFFSET={"超早熟":4,"早熟":2,"普通":0,"晩成":-2,"超晩成":-4,"持続":-2};
+function ageCoef(p){
+  // 成長型でピークの時期そのものがずれる
+  const a=p.age+(AGE_OFFSET[p.growthType]||0);
+  if(a<=18) return 1.35;
+  if(a<=21) return 1.15;
+  if(a<=24) return .85;
+  if(a<CONFIG.peakStart) return .55;
+  if(a<=CONFIG.peakEnd) return .18;
+  if(a<=33) return -1.05;
+  if(a<=36) return -1.30;
+  return -2.0;
+}
+function growthTypeCoef(p){
+  const a=p.age;
+  switch(p.growthType){
+    case "超早熟": return a<=18?2.10:a<=21?1.55:a<=24?0.85:0.40;
+    case "早熟":   return a<=21?1.45:a<=26?0.85:0.75;
+    case "晩成":   return a<=20?0.60:a<=24?1.05:1.50;
+    case "超晩成": return a<=20?0.35:a<=23?0.70:a<=27?1.35:1.95;
+    case "持続":   return a<=30?1.00:1.35;
+    default:       return 1.00;
+  }
+}
+/* 衰えの速さは成長型で変わる */
+function declineCoef(p){
+  switch(p.growthType){
+    case "超早熟": return 1.50;
+    case "早熟":   return 1.18;
+    case "晩成":   return 0.90;
+    case "超晩成": return 0.78;
+    case "持続":   return 0.68;
+    default:       return 1.00;
+  }
+}
+function snapshot(p){
+  const s={bat:{},pit:{},velo:p.velo,breaks:breakScore(p),rating:rating(p)};
+  BATK.forEach(([k])=>s.bat[k]=p.bat[k]); PITK.forEach(([k])=>s.pit[k]=p.pit[k]);
+  return s;
+}
+function growPlayer(p,quality){
+  const tr=(typeof TRAININGS!=="undefined"&&TRAININGS[p.training])||null;
+  if(tr) quality*=tr.grow;
+  p.prevAbil = snapshot(p);
+  const pol = appealOf(p);
+  const ac=ageCoef(p), gt=growthTypeCoef(p);
+  const baseAmt = 4.2*quality*(ac>0? gt : declineCoef(p));
+  const apply=(obj,k,potK)=>{
+    const w = pol.up[k]!==undefined ? pol.up[k] : .85;
+    let d;
+    if(ac>0){
+      const head = Math.max(0,(p.potential[potK||k]||70)-obj[k]);
+      d = baseAmt*ac*w*(0.25+Math.min(1,head/28)) + gauss()*1.1;
+    }else{
+      // 下降：走力・スタミナ・球速から先に
+      const fragile={speed:1.7,baserun:1.3,stamina:1.8,arm:1.25,fielding:1.1,nobi:1.35,quick:1.2,power:1.0,catching:.6,meet:.5,control:.35,eye:.25,bunt:.2,clutch:.3,pinch:.3,vsLeft:.4,hold:.2};
+      // 何で勝負してきたかで、衰え方が変わる
+      const ap=p.appeal;
+      const typeW = (ap==="speed"&&["speed","baserun","fielding"].includes(k)) ? 1.35
+                  : (ap==="velo"&&["nobi","stamina"].includes(k)) ? 1.30
+                  : (ap==="meet"&&["meet","eye","bunt"].includes(k)) ? 0.62
+                  : (ap==="control"&&["control","hold","quick"].includes(k)) ? 0.60
+                  : (ap==="break"&&["control","pinch"].includes(k)) ? 0.70
+                  : (ap==="defense"&&["fielding","catching","arm"].includes(k)) ? 0.72
+                  : 1.0;
+      d = baseAmt*ac*(fragile[k]||.8)*typeW*.55 + gauss()*.8;
+      if(pol.up[k]) d*=.62;
+    }
+    obj[k]=clamp(Math.round(obj[k]+d),5,99);
+  };
+  BATK.forEach(([k])=>apply(p.bat,k));
+  PITK.forEach(([k])=>apply(p.pit,k));
+  if(p.kind==="投手"){
+    const head=Math.max(0,p.potential.velo-p.velo);
+    let dv = ac>0 ? (pol.up.velo?1.9:0.9)*quality*gt*ac*(0.3+Math.min(1,head/6)) + gauss()*.7
+                  : ac*1.5*(p.appeal==="velo"?1.3:p.appeal==="control"?0.65:1) + gauss()*.5;
+    p.velo=clamp(Math.round(p.velo+dv),110,172);
+    // 変化球
+    const bw = pol.up.breaks?1:0.35;
+    if(ac>0 && chance(0.30*bw*quality*2)){
+      const cur=p.breaks.find(b=>b.lv<p.potential.breaks);
+      if(cur) cur.lv++;
+      else if(p.breaks.length<5){
+        const cand=BREAKS.filter(n=>!p.breaks.some(b=>b.name===n));
+        if(cand.length)p.breaks.push({name:pick(cand),lv:1});
+      }
+    }
+    if(ac<-0.8 && chance(0.12)){ const b=pick(p.breaks); if(b&&b.lv>1)b.lv--; }
+  }
+  const dcoef = pol.up.durability?1.6:.45;
+  if(ac>0)p.durability=clamp(Math.round(p.durability+rf(0,2)*dcoef),5,99);
+  else p.durability=clamp(Math.round(p.durability-rf(.4,1.8)),5,99);
+  p.mental=clamp(Math.round(p.mental+rf(-1,2.2)),5,99);
+  p.condition = clamp(Math.round(gauss()*1.35),-3,3);
+}
+function diffAbil(p){
+  if(!p.prevAbil)return null;
+  const d={};
+  BATK.forEach(([k])=>d[k]=p.bat[k]-p.prevAbil.bat[k]);
+  PITK.forEach(([k])=>d[k]=p.pit[k]-p.prevAbil.pit[k]);
+  d.velo=p.velo-p.prevAbil.velo;
+  return d;
+}
+
+/* ============ リハビリ（手術明けの年をまたぐ処理） ============ */
+function rehabStep(p,ev){
+  if(!p.rehab||p.rehab<=0) return 0;
+  p.rehab--;
+  const since = p.rehabFrom? Math.max(1,p.year-p.rehabFrom) : 1;
+  if(p.rehab>=1){
+    ev.push({t: since<=1? "前年の手術明け。開幕は二軍から、リハビリと調整が続く。"
+                        : `${since}年前の手術の影響が残っている。本格的な復帰には至らない。`, c:"bad"});
+    return 0.32;
+  }
+  const r=p.rehabRegain||{};
+  if(r.velo)p.velo=clamp(p.velo+r.velo,110,172);
+  if(r.stamina)p.pit.stamina=clamp(p.pit.stamina+r.stamina,5,99);
+  if(r.speed)p.bat.speed=clamp(p.bat.speed+r.speed,5,99);
+  if(r.power)p.bat.power=clamp(p.bat.power+r.power,5,99);
+  p.rehabRegain=null; p.rehabFrom=null;
+  ev.push({t:`手術から${since}年。失われていた感覚が戻ってきた。`,c:"good"});
+  return 0;
+}
+
+/* ============ 高校 ============ */
+const SCHOOL_LV={"強豪私立":88,"中堅私立":66,"公立":44};
+function simHighSchool(p){
+  const ev=[]; const lv=SCHOOL_LV[p.school];
+  const r=rating(p);
+  const need = lv*0.62 + (p.hsYear===1?11:p.hsYear===2?6:0);
+  let playing;
+  if(r>=need+12) playing="不動のレギュラー";
+  else if(r>=need) playing="レギュラー";
+  else if(r>=need-10) playing="控え・途中出場";
+  else playing="ベンチ外";
+  ev.push({t:`${p.schoolName||p.school}（${p.school}）の${p.hsYear}年生。${playing}。`});
+  if(p.hsYear===1&&playing.includes("レギュラー")){
+    ev.push({t:"1年生ながらレギュラーの座を掴んだ。周囲の見る目が変わった。",c:"big"});
+    p.popularity=clamp(p.popularity+10,0,100);
+  }
+
+  // チーム成績
+  const teamStr = lv + (playing.includes("レギュラー")? (r-need)*0.25 : 0) + gauss()*8;
+  let best="地区予選敗退", koshien=0;
+  if(teamStr>93) {best="甲子園出場"; koshien=1;}
+  else if(teamStr>84) best="県大会決勝進出";
+  else if(teamStr>72) best="県大会ベスト4";
+  else if(teamStr>58) best="県大会ベスト8";
+  if(p.hsYear===3 && teamStr>88 && chance(.5)) {best="甲子園出場"; koshien=1;}
+  let kBest="";
+  if(koshien){
+    const w=clamp(Math.round((teamStr-92)/4+rf(0,2.6)),0,5);
+    kBest=["初戦敗退","2回戦進出","ベスト16","ベスト8","ベスト4","全国制覇"][w];
+    ev.push({t:`夏の甲子園に出場。${kBest}。`,c:w>=3?"big":"good"});
+    p.popularity=clamp(p.popularity+8+w*7,0,100);
+  }else{
+    ev.push({t:`夏の大会は${best}。`});
+    if(best.includes("決勝"))p.popularity=clamp(p.popularity+4,0,100);
+  }
+  p.hsBest = koshien? "甲子園"+kBest : best;
+
+  // 個人成績
+  let stat=null;
+  if(playing!=="ベンチ外"){
+    const g = playing==="不動のレギュラー"?ri(22,30):playing==="レギュラー"?ri(16,24):ri(6,14);
+    let pst=null, bst=null;
+    if(p.kind!=="野手"){
+      const pg = p.kind==="二刀流"? Math.max(3,Math.round(g*0.6)) : g;
+      const era = clamp(3.80-(p.pit.control-38)*.045-(p.velo-130)*.075-breakScore(p)*.020+gauss()*.45,0.00,9);
+      const ip=Math.round(pg*rf(4,7));
+      pst={type:"p",g:pg,ip,era:+era.toFixed(2),so:Math.round(ip*rf(.7,1.35)),w:Math.round(pg*rf(.25,.55)),l:Math.round(pg*rf(.05,.3))};
+      if(p.velo>=147){ ev.push({t:`最速${p.velo}km/hを計測。スカウトの評価が上がった。`,c:"good"}); p.popularity=clamp(p.popularity+6,0,100); }
+    }
+    if(p.kind!=="投手"){
+      const ab=Math.round(g*rf(3,4));
+      const avg=clamp(.265+(p.bat.meet-38)*.0040+gauss()*.040,.120,.560);
+      const hr=Math.max(0,Math.round(ab*Math.max(0,(p.bat.power-32))/620*(0.6+p.ballistic*.3)+gauss()*.6));
+      bst={type:"b",g,ab,h:Math.round(ab*avg),avg:+avg.toFixed(3),hr,sb:Math.round(g*Math.max(0,(p.bat.speed-45))/120)};
+      if(hr>=8) p.popularity=clamp(p.popularity+5,0,100);
+    }
+    stat = (bst&&pst)? Object.assign({},bst,{two:true,pit:pst}) : (pst||bst);
+  }
+  rehabStep(p,ev);
+  p.lastPlaying=playing;
+  p.playHistory=(p.playHistory||[]).concat([playing]).slice(-3);
+  const quality = (playing==="ベンチ外"?.78:1.0)*(lv/70)*1.15;
+  growPlayer(p, quality);
+  injuryCheck(p, playing==="ベンチ外"?0.25:0.5, ev);
+  return {ev,stat,playing};
+}
+
+/* ============ 故障 ============ */
+function injuryCheck(p, load, ev){
+  const tr=(typeof TRAININGS!=="undefined"&&TRAININGS[p.training])||null;
+  const base = 0.045 + load*0.06 + Math.max(0,(p.age-28))*0.009 + (60-p.durability)*0.0016 + p.fatigue*0.0009 + (tr?tr.injury:0);
+  if(!chance(clamp(base,0.02,0.45))) { p.fatigue=Math.max(0,p.fatigue-18); return null; }
+  const heavy = chance(0.22 + Math.max(0,(p.age-30))*0.02);
+  if(!heavy){
+    const part=pick(["右足首の捻挫","脇腹の肉離れ","腰痛","手首の炎症","太もも裏の肉離れ"]);
+    ev.push({t:`${part}で約${ri(3,8)}週間の離脱。`,c:"bad"});
+    p.injuries.push({year:p.year,name:part,heavy:false});
+    p.fatigue=Math.max(0,p.fatigue-25);
+    return {miss:rf(.12,.3),heavy:false};
+  }
+  const part = p.kind==="投手"? pick(["右肘の靭帯損傷","肩の腱板炎","肘の疲労骨折"]) : pick(["膝の前十字靭帯損傷","アキレス腱断裂","肩関節の脱臼","腰椎の疲労骨折"]);
+  ev.push({t:`${part}。手術を受け、長期離脱となった。復帰までには時間がかかる。`,c:"bad"});
+  p.injuries.push({year:p.year,name:part,heavy:true});
+  const lost={};
+  if(p.kind==="投手"){
+    lost.velo=ri(2,6); lost.stamina=ri(4,12);
+    p.velo=clamp(p.velo-lost.velo,110,172); p.pit.stamina=clamp(p.pit.stamina-lost.stamina,5,99);
+  }else{
+    lost.speed=ri(4,12); lost.power=ri(0,6);
+    p.bat.speed=clamp(p.bat.speed-lost.speed,5,99); p.bat.power=clamp(p.bat.power-lost.power,5,99);
+  }
+  // 失った分の半分は、2年かけて戻る
+  p.rehab=2; p.rehabFrom=p.year;
+  p.rehabRegain={}; Object.keys(lost).forEach(k=>p.rehabRegain[k]=Math.round(lost[k]*0.5));
+  p.durability=clamp(p.durability-ri(5,14),5,99);
+  p.fatigue=0;
+  return {miss:rf(.45,.95),heavy:true};
+}
+/* ============ ドラフト ============ */
+const PLAY_FACTOR={"不動のレギュラー":1.06,"レギュラー":1.00,"主力":1.04,"控え・途中出場":0.70,"控え":0.70,"ベンチ外":0.42};
+/* リーグの勢力図は毎年動く */
+function teamPower(p,id){
+  if(!p||!p.leagueState) return (teamById(id)||{power:72}).power;
+  const v=p.leagueState[id];
+  return v===undefined? (teamById(id)||{power:72}).power : v;
+}
+function driftLeague(p){
+  if(!p.leagueState){ p.leagueState={}; TEAMS.forEach(t=>p.leagueState[t.id]=t.power); }
+  TEAMS.forEach(t=>{
+    const base=t.power, cur=p.leagueState[t.id];
+    let d=(base-cur)*0.12 + gauss()*3.2;           // 平均への回帰＋揺らぎ
+    if(chance(0.06)) d += (chance(.5)? rf(4,9) : -rf(4,9));   // 大型補強や主力流出
+    p.leagueState[t.id]=clamp(Math.round((cur+d)*10)/10,48,98);
+  });
+}
+function draftEval(p){
+  const posNeed = p.kind==="投手"? rf(.9,1.15) : (p.pos==="捕"||p.pos==="遊"? rf(1.0,1.2):rf(.85,1.1));
+  // 直近の出場状況＝スカウトが実際に見た姿。試合に出ていない選手は評価されない
+  const hist=(p.playHistory||[p.lastPlaying||"控え"]);
+  let pf=PLAY_FACTOR[hist[hist.length-1]]||0.7;
+  const prev=hist[hist.length-2];
+  if(prev) pf=pf*0.78+(PLAY_FACTOR[prev]||0.7)*0.22;
+  const v = rating(p)*0.80*pf + p.popularity*0.38*Math.min(1,pf+0.15) + (p.age<=18?4:0) + gauss()*4.2;
+  return v*posNeed;
+}
+function runDraft(p, ev){
+  const e=draftEval(p);
+  let rank=null, ikusei=false;
+  const hs = p.stage==="hs";   // 高校生は育成枠での指名が多い
+  if(e>=73) rank=1; else if(e>=65) rank=2; else if(e>=58) rank=3;
+  else if(e>=49){ rank=ri(4,5); if(hs) ikusei=chance(.28); }
+  else if(e>=39){ rank=6; ikusei=chance(hs?.80:.40); }
+  else if(e>=31){ rank=ri(2,7); ikusei=true; }
+  else rank=null;
+  if(!rank){ ev.push({t:"ドラフト会議。指名されなかった。",c:"bad"}); return null; }
+  // 指名球団：そのポジションが手薄な球団が指名しやすい
+  const pool=TEAMS.slice().sort(()=>rnd()-.5);
+  const local=REGION_TEAMS[p.home]||[];
+  const weight=t=>(100-teamPower(p,t.id))*0.5 + t.dev*0.4 + rnd()*40 + (ikusei? t.dev*0.3:0)
+    + (local.includes(t.id)? 18:0);   // 地元枠
+  const team=pool.sort((a,b)=>weight(b)-weight(a))[0];
+  if(rank===1 && !ikusei){
+    const rivals=ri(0,3);
+    if(rivals>0){
+      ev.push({t:`ドラフト1位で${rivals+1}球団が競合。抽選の結果——`,c:"big"});
+      if(!chance(1/(rivals+1))){
+        const other=pool[1];
+        ev.push({t:`${team.name}が交渉権を獲得できず、外れ1位で${other.name}が指名。`});
+        return {team:other,rank:1,ikusei:false};
+      }
+    }
+  }
+  return {team,rank,ikusei};
+}
+/* ---- ドラフト同期（比べられ続ける相手） ---- */
+function makePeer(p,team,rank){
+  const other=pick(TEAMS.filter(t=>t.id!==team.id));
+  return {name:jname(), team:other.id, age:p.age,
+    ab:Math.round(clamp(rf(48,74)+(rank<=2?6:0),30,88)),
+    kind: chance(.5)?"投手":"野手", retired:false};
+}
+function peerYear(p,ev){
+  const pe=p.peer; if(!pe||pe.retired)return;
+  pe.age=(pe.age||19)+1;
+  pe.ab=clamp(Math.round(pe.ab+(pe.age<=26?rf(1,4.5):pe.age<=30?rf(-1,2):rf(-6,-0.5))),15,97);
+  if(pe.age>=31&&pe.ab<50&&chance(.4)){ pe.retired=true; ev.push({t:`ドラフト同期の${pe.name}が引退した。`}); return; }
+  if(chance(.10)){ const to=pick(TEAMS.filter(t=>t.id!==pe.team)); pe.team=to.id;
+    ev.push({t:`同期の${pe.name}が${to.name}へ移籍した。`}); return; }
+  if(chance(.22)){
+    const diff=pe.ab-rating(p);
+    ev.push({t: diff>8? `同期の${pe.name}が${teamById(pe.team).name}の主力に定着している。差を感じる。`
+      : diff<-8? `同期の${pe.name}は伸び悩んでいるらしい。`
+      : `同期の${pe.name}とは相変わらず比べられる。`});
+  }
+}
+function joinTeam(p,team,rank,ikusei){
+  p.team=team.id; p.ikusei=ikusei; p.draftRank=rank;
+  p.status = ikusei?"育成":"支配下";
+  p.uniform = ikusei? String(ri(101,135)) : String(p.kind==="投手"? ri(11,60) : ri(0,68)||ri(1,68));
+  p.salary = ikusei? CONFIG.rookieSalary.ikusei : (CONFIG.rookieSalary[Math.min(rank,5)]||CONFIG.rookieSalary[5]);
+  if(p.amaType) p.salary=Math.round(p.salary*1.25);
+  p.contract={years:1,left:1};
+  p.stage="pro"; p.league="NPB";
+  p.faType = p.amaType? "college":"hs";
+  p.peer = makePeer(p,team,rank);
+}
+
+/* ============ 所属チームのライバル ============ */
+function genRival(p,kind){
+  const t=teamById(p.team)||TEAMS[0];
+  let base = kind==="rookie"? rf(36,62) : kind==="fa"? rf(66,86) : rf(48,76);
+  base += (teamPower(p,t.id)-72)*0.28;
+  return {name:jname(), age: kind==="rookie"? ri(18,22) : ri(23,32),
+          ab:Math.round(clamp(base,25,94)),
+          role: p.kind==="投手" ? (p.role==="先発"?"先発":"中継ぎ") : p.pos};
+}
+function wantRivals(p){ return p.kind==="投手" ? (p.role==="先発"?4:5) : 2; }
+function ensureRivals(p){
+  if(!p.rivals) p.rivals=[];
+  while(p.rivals.length<wantRivals(p)) p.rivals.push(genRival(p));
+  if(p.kind==="二刀流"){
+    if(!p.rivalsP) p.rivalsP=[];
+    while(p.rivalsP.length<4) p.rivalsP.push(Object.assign(genRival(p),{role:"先発"}));
+  }
+}
+function ageRivals(p,ev){
+  const t=teamById(p.team)||TEAMS[0];
+  const say=(txt)=>{ if(ev&&chance(.85)) ev.push({t:txt}); };
+  p.rivals.forEach(r=>{
+    r.age++;
+    r.ab = clamp(Math.round(r.ab + (r.age<=26? rf(1,4.5) : r.age<=30? rf(-1.5,2) : r.age<=33? rf(-5,0) : rf(-9,-2))),20,96);
+  });
+  p.rivals = p.rivals.filter(r=>{
+    if(r.age>=34 && chance(.55)){ say(`${r.name}が現役を引退した。`); return false; }
+    if(r.ab<42 && chance(.5)){ say(`${r.name}が戦力外となった。`); return false; }
+    if(chance(.07)){ const to=pick(TEAMS.filter(x=>x.id!==p.team));
+      say(`${r.name}が${to.name}へ移籍した。${p.pos||p.role}の枠が一つ空く。`); return false; }
+    return true;
+  });
+  if(chance(t.dev/220)){ const nr=genRival(p,"rookie"); p.rivals.push(nr);
+    say(`ドラフトで${nr.name}が入団。同じ${p.kind==="投手"?p.role:p.pos}を守る。`); }
+  if(chance(t.money/1100)){ const nr=genRival(p,"fa"); p.rivals.push(nr);
+    say(`${nr.name}をFAで獲得。強力な競争相手が加わった。`); }
+  if(p.rivalsP){ p.rivalsP.forEach(r=>{ r.age++; r.ab=clamp(Math.round(r.ab+(r.age<=26?rf(1,4):r.age<=30?rf(-1,2):rf(-6,0))),20,96); });
+    p.rivalsP=p.rivalsP.filter(r=>!(r.age>=34&&chance(.5))); while(p.rivalsP.length<4) p.rivalsP.push(Object.assign(genRival(p),{role:"先発"})); }
+  p.rivals.sort((a,b)=>b.ab-a.ab);
+  const cap=wantRivals(p)+1;
+  if(p.rivals.length>cap) p.rivals=p.rivals.slice(0,cap);
+  ensureRivals(p);
+}
+function rivalTop(p){ return p.rivals.length? Math.max(...p.rivals.map(r=>r.ab)) : 60; }
+function rivalSecond(p){ const a=p.rivals.map(r=>r.ab).sort((x,y)=>y-x); return a[1]!==undefined?a[1]:45; }
+
+/* ============ 起用区分 ============ */
+function decideUsage(p,as){
+  const t=teamById(p.team);
+  const isP = as? as==="p" : p.kind==="投手";
+  let ab = isP? pitRating(p) : batRating(p);
+  if(p.ikusei) return "育成";
+  // 若手重視の球団は年齢で補正
+  const mg=p.manager||{style:"バランス",trust:50};
+  const trustBonus=((mg.trust||50)-50)*0.10;   // 信頼を得ていれば多少の不振でも使われる
+  const styleW = mg.style==="若手重視"? 1.9 : mg.style==="実績重視"? 0.3 : 1.0;
+  let youthBonus = p.age<=24 ? (t.dev-60)*0.06*styleW : (p.age>=32 ? -(t.dev-60)*0.05*styleW : 0);
+  if(mg.style==="実績重視") youthBonus += Math.min(8, p.titles.length*2.5 + Math.min(4,p.seasonsPro*0.4));
+  const exp = Math.min(6, p.seasonsPro)*0.9;
+  // 慣れないポジションに就いている間は評価が下がる
+  const fit = p.kind==="投手"? 0 : (7-(p.apt[p.pos]||0))*2.2;
+  const farmPush = p.farmBoost||0;   // 前年に二軍で圧倒した選手は無視されない
+  const v = ab + youthBonus + exp + trustBonus + farmPush + (p.condition*1.2) - Math.max(0,(p.age-30))*2.4 - fit;
+  const pool = (p.kind==="二刀流"&&isP)? (p.rivalsP||[]) : (p.rivals||[]);
+  const abs=pool.map(r=>r.ab).sort((a,b)=>b-a);
+  const r1=abs.length?abs[0]:60, r2=abs[1]!==undefined?abs[1]:45;
+  if(isP){
+    if(p.role==="抑え") return v>=r2-6? "抑え":"中継ぎ";
+    if(p.role==="先発"){
+      if(v>=r1+4) return "ローテ上位";
+      if(v>=r2) return "ローテ下位";
+      if(v>=r2-9) return "谷間の先発";
+      return "二軍";
+    }
+    if(v>=r1+2) return "勝ちパターン";
+    if(v>=r2-3) return "中継ぎ";
+    if(v>=r2-12) return "ビハインド";
+    return "二軍";
+  }
+  if(v>=r1+3) return "不動のレギュラー";
+  if(v>=r1-3) return "レギュラー";
+  if(v>=r2-2) return "準レギュラー";
+  if(v>=r2-12) return "控え";
+  // レギュラー争いには勝てなくても、一芸があればベンチに残れる
+  if(v>=r2-26){
+    const b=p.bat, cands=[];
+    if(b.power>=70||b.meet>=68||b.clutch>=72) cands.push(["代打の切り札",Math.max(b.power,b.meet,b.clutch)]);
+    if(b.speed>=74&&b.baserun>=66) cands.push(["代走・守備要員",(b.speed+b.baserun)/2+4]);
+    if(b.fielding>=72&&b.catching>=68) cands.push(["守備固め",(b.fielding+b.catching)/2+4]);
+    if(cands.length) return cands.sort((x,y)=>y[1]-x[1])[0][0];   // 最も突出した一芸で残る
+  }
+  return "二軍";
+}
+const USAGE_DAYS={"途中昇格":62,"代打の切り札":112,"代走・守備要員":106,"守備固め":106,"不動のレギュラー":145,"レギュラー":145,"準レギュラー":120,"控え":75,"二軍":25,
+ "ローテ上位":145,"ローテ下位":145,"谷間の先発":90,"勝ちパターン":145,"中継ぎ":135,"ビハインド":100,"抑え":145,"育成":0};
+
+/* ============ 成績生成 ============ */
+const ORDER_PA={1:4.62,2:4.50,3:4.40,4:4.32,5:4.22,6:4.10,7:4.00};
+const ORDER_RBI={1:0.80,2:0.88,3:1.16,4:1.24,5:1.12,6:1.00,7:0.94};
+const ORDER_SB={1:1.38,2:1.18,3:1.00,4:0.55,5:0.70,6:0.95,7:1.00};
+function simSeasonStats(p,usage,missRatio,opts){
+  opts=opts||{};
+  const asPitcher = opts.as? opts.as==="p" : p.kind==="投手";
+  const order=opts.order||null;
+  const mgStyle=(p.manager&&p.manager.style)||"バランス";
+  const t=teamById(p.team);
+  const mlb = p.league==="MLB";
+  const G = mlb?CONFIG.gamesMLB:CONFIG.gamesNPB;
+  const lvAdj = mlb? -0.028 : 0;          // 打率への補正
+  const eraAdj = mlb? 0.55 : 0;
+  // 球場の影響はホームゲーム（およそ半分）にしかかからない
+  const parkHR = mlb?1.0:(1+(t.parkHR-1)*0.5), parkAVG = mlb?1.0:(1+(t.parkAVG-1)*0.5);
+  const cond = p.condition*0.010;
+  if(asPitcher){
+    let apps, ip, starts=0;
+    if(usage==="ローテ上位"){starts=ri(24,28);apps=starts;}
+    else if(usage==="ローテ下位"){starts=ri(18,24);apps=starts;}
+    else if(usage==="谷間の先発"){starts=ri(8,15);apps=starts+ri(0,6);}
+    else if(usage==="抑え"){apps=ri(50,62);}
+    else if(usage==="勝ちパターン"){apps=ri(52,68);}
+    else if(usage==="中継ぎ"){apps=ri(40,58);}
+    else if(usage==="ビハインド"){apps=ri(28,45);}
+    else {apps=ri(2,14);starts=p.role==="先発"?apps:0;}
+    apps=Math.max(0,Math.round(apps*(1-missRatio))); starts=Math.round(starts*(1-missRatio));
+    if(starts>0) ip = starts*rf(5.0,6.4)*(0.75+p.pit.stamina/240) + (apps-starts)*1.1;
+    else ip = apps*(usage==="抑え"?1.0:1.05);
+    ip=Math.max(0,Math.round(ip*10)/10);
+    let era = 5.30 - (p.pit.control-50)*0.0195 - (p.velo-140)*0.021 - breakScore(p)*0.0125
+              - (p.pit.nobi-50)*0.009 - (p.pit.pinch-50)*0.006 + eraAdj;
+    era = era*(mlb?1:(2-parkAVG*0.55-parkHR*0.45)) ;
+    era += gauss()*(starts>0?0.62:0.80) - p.condition*0.14;
+    era = clamp(era,0.60,9.99);
+    const k9 = clamp(5.6+(p.velo-140)*0.135+breakScore(p)*0.026+(p.pit.nobi-50)*0.022+gauss()*.6,3,14.5);
+    const bb9 = clamp(5.6-(p.pit.control-40)*0.052+gauss()*.45,0.8,8);
+    const teamQ=(teamPower(p,t.id)-72)*0.012;
+    let w=0,l=0,sv=0,hld=0;
+    if(starts>0){
+      const ace = opts.aceRank===1? 0.035 : opts.aceRank===2? 0.015 : 0;  // エースには good な相手と援護が付く
+      const wr=clamp(0.52-(era-3.4)*0.085+teamQ+ace,0.12,0.86);
+      const dec=Math.round(starts*rf(.62,.82));
+      w=Math.round(dec*wr); l=dec-w;
+    }else if(usage==="抑え"){
+      sv=Math.round(clamp((t.power-55)*0.8+rf(8,22)-(era-2.5)*6,0,50));
+      w=ri(1,5);l=ri(1,5);hld=ri(0,3);
+    }else{
+      hld=Math.round(clamp(apps*rf(.25,.55)-(era-3)*3,0,48));
+      if(usage==="ビハインド")hld=Math.round(hld*.35);
+      w=ri(0,6);l=ri(0,6);sv=chance(.25)?ri(0,4):0;
+    }
+    const bbT=Math.round(ip*bb9/9);
+    const ha=Math.round(ip*clamp(8.6+(era-3.5)*0.95,4.5,13.5)/9);
+    const er=Math.round(era*ip/9);
+    let cg=0,sho=0,qs=0;
+    if(starts>0){
+      cg=Math.min(starts,Math.max(0,Math.round(clamp((p.pit.stamina-72)/9+(3.6-era)*1.1,0,9)*rf(.4,1.2))));
+      sho=Math.max(0,Math.round(cg*rf(0,.45)));
+      qs=Math.round(starts*clamp(0.62-(era-3.30)*0.13+(p.pit.stamina-60)*0.003,0.08,0.90));
+    }
+    return {type:"p",g:apps,gs:starts,ip,w,l,sv,hld,era:+era.toFixed(2),
+      so:Math.round(ip*k9/9),bb:bbT,ha,er,cg,sho,qs,
+      qsRate: starts? +(qs/starts).toFixed(3) : null,
+      whip:+((ip? (bbT+ha)/ip : 0)).toFixed(2)};
+  }
+  // 野手
+  let g;
+  if(usage==="不動のレギュラー")g=ri(Math.round(G*.88),G);
+  else if(usage==="レギュラー")g=ri(Math.round(G*.72),Math.round(G*.92));
+  else if(usage==="準レギュラー")g=ri(Math.round(G*.45),Math.round(G*.72));
+  else if(usage==="控え")g=ri(Math.round(G*.2),Math.round(G*.45));
+  else if(usage==="代打の切り札")g=ri(Math.round(G*.42),Math.round(G*.72));
+  else if(usage==="代走・守備要員")g=ri(Math.round(G*.48),Math.round(G*.80));
+  else if(usage==="守備固め")g=ri(Math.round(G*.48),Math.round(G*.80));
+  else if(usage==="途中昇格")g=ri(Math.round(G*.25),Math.round(G*.45));
+  else g=ri(0,Math.round(G*.15));
+  g=Math.max(0,Math.round(g*(1-missRatio)));
+  let paPer = usage==="不動のレギュラー"?4.4:usage==="レギュラー"?4.2:usage==="準レギュラー"?3.2
+    :usage==="代打の切り札"?1.15:usage==="代走・守備要員"?0.55:usage==="守備固め"?0.95:2.0;
+  if(order&&(usage==="不動のレギュラー"||usage==="レギュラー")) paPer=ORDER_PA[order]||paPer;
+  const pa=Math.round(g*paPer);
+  let avg = 0.234 + (p.bat.meet-50)*0.00188 + (p.bat.eye-50)*0.00035 + cond + lvAdj
+            - Math.max(0,(p.ballistic-2))*0.004 + (p.bat.clutch-50)*0.0003;
+  avg *= parkAVG;
+  if(usage==="代打の切り札") avg -= 0.014;          // 代打は難しい
+  if(usage==="代走・守備要員") avg -= 0.008;
+  avg += gauss()*(pa>380?0.021:0.036);
+  avg=clamp(avg,0.100,0.382);
+  const bbRate=clamp(0.045+(p.bat.eye-40)*0.0021+gauss()*.012,0.01,0.20);
+  const bb=Math.round(pa*bbRate);
+  const ab=Math.max(0,pa-bb-Math.round(pa*0.02));
+  const h=Math.round(ab*avg);
+  let hrRate = Math.max(0,(p.bat.power-42))/1020*(0.55+p.ballistic*0.26)*parkHR*(mlb?0.92:1);
+  const hr=Math.max(0,Math.round(ab*hrRate*rf(.75,1.28)));
+  const so=Math.round(pa*clamp(0.20-(p.bat.meet-50)*0.0016+(p.bat.power-50)*0.0009,0.06,0.36));
+  const d2=Math.round(h*rf(.16,.26)), d3=Math.round(h*rf(0,.045)*(p.bat.speed/70));
+  const tb=h+d2+2*d3+3*hr;
+  const obp=ab+bb>0? (h+bb)/(ab+bb+Math.round(pa*0.02)) : 0;
+  const slg=ab>0? tb/ab : 0;
+  // 監督の方針で機動力の使い方が変わる
+  const mgSB = mgStyle==="若手重視"? 1.22 : mgStyle==="実績重視"? 0.90 : 1.0;
+  const nicheSB = usage==="代走・守備要員"? 2.1 : 1;
+  const sbAtt=Math.round(g*Math.max(0,(p.bat.speed-52))/95*(p.bat.baserun/70)*mgSB*nicheSB*(order?ORDER_SB[order]||1:1));
+  const sb=Math.max(0,Math.round(sbAtt*rf(.6,.88)));
+  // 打点は打順と、前後を打つ打線の力で変わる
+  const lineup = mlb? 1 : clamp(1+(teamPower(p,t.id)-72)*0.005,0.86,1.14);
+  const rbi=Math.round((hr*1.65+h*rf(.18,.28)+(p.bat.clutch-50)*0.07*g/100)*(order?ORDER_RBI[order]||1:1)*lineup);
+  let err=Math.max(0,Math.round(g*Math.max(0,(72-p.bat.catching))/330*rf(.6,1.5)));
+  if(usage==="守備固め") err=Math.max(0,Math.round(err*0.5));
+  const chances=Math.max(1,Math.round(g*(p.pos==="捕"?6.2:p.pos==="一"?8.4:p.pos==="二"||p.pos==="遊"?4.6:p.pos==="三"?3.0:1.9)));
+  const ORDER_RUN={1:1.20,2:1.12,3:1.06,4:0.97,5:0.91,6:0.87,7:0.84};
+  const runs=Math.round((((h+bb)*0.30*(order?ORDER_RUN[order]||1:1))+hr*0.62)*lineup*(0.92+p.bat.baserun/600));
+  const shRate = order===2?0.11 : order===1?0.05 : order>=6?0.08 : 0.02;
+  const sh=Math.max(0,Math.round(g*shRate*(p.bat.bunt/70)*(mgStyle==="若手重視"?1.2:mgStyle==="実績重視"?0.85:1)));
+  const gidp=Math.max(0,Math.round(ab*clamp(0.024-(p.bat.speed-50)*0.00024+(p.ballistic-2)*0.002,0.004,0.045)));
+  // 複数ポジションを守った年
+  const subs=POSNAMES.filter(x=>x!=="投"&&x!==p.pos&&(p.apt[x]||0)>=5);
+  let posLog=[{pos:p.pos,g}];
+  if(subs.length&&g>=60&&chance(.45)){
+    const sub=pick(subs), sg=Math.round(g*rf(.12,.30));
+    posLog=[{pos:p.pos,g:g-sg},{pos:sub,g:sg}];
+  }
+  return {type:"b",g,pa,ab,h,d2,d3,hr,rbi,runs,sh,gidp,sb,bb,so,err,pos:p.pos,posLog,order:order||null,
+    fpct:+((chances-err)/chances).toFixed(3),
+    avg:+avg.toFixed(3),obp:+obp.toFixed(3),slg:+slg.toFixed(3),ops:+(obp+slg).toFixed(3)};
+}
+
+/* ============ タイトル・表彰 ============ */
+/* 同じリーグで何年も争う相手。キャリアを通して同じ名前が出る */
+function leagueRivals(p){
+  if(!p.lgRivals||!p.lgRivals.avg){
+    p.lgRivals={};
+    ["avg","hr","rbi","sb","w","era","so","sv","hld"].forEach(k=>{
+      p.lgRivals[k]={name:jname(),age:ri(22,29),level:rf(-0.7,0.9)};
+    });
+  }
+  Object.keys(p.lgRivals).forEach(k=>{
+    const r=p.lgRivals[k]; r.age++;
+    if(r.age>=35&&chance(.45)) p.lgRivals[k]={name:jname(),age:ri(21,26),level:rf(-0.7,0.9)};
+    else r.level=clamp(r.level+(r.age<=28?rf(-0.1,0.25):rf(-0.3,0.05)),-1.6,1.8);
+  });
+  return p.lgRivals;
+}
+function leagueLeaders(p){
+  const R=p?leagueRivals(p):null;
+  const nm=k=>R?R[k].name:jname();
+  const lv=k=>R?R[k].level:0;
+  return {
+    lv, names:{avg:nm("avg"),hr:nm("hr"),rbi:nm("rbi"),sb:nm("sb"),w:nm("w"),era:nm("era"),so:nm("so"),sv:nm("sv"),hld:nm("hld")},
+    avg: clamp(0.332+lv("avg")*0.012+gauss()*0.011,0.300,0.390),
+    hr: Math.round(clamp(39+lv("hr")*5+gauss()*5,24,62)),
+    rbi: Math.round(clamp(107+lv("rbi")*11+gauss()*11,74,155)),
+    sb: Math.round(clamp(38+lv("sb")*7+gauss()*7,20,66)),
+    w: Math.round(clamp(16+lv("w")*2+gauss()*2,11,26)),
+    era: clamp(1.92-lv("era")*0.30+gauss()*0.34,1.00,3.05),
+    so: Math.round(clamp(197+lv("so")*25+gauss()*24,135,285)),
+    sv: Math.round(clamp(38+lv("sv")*5+gauss()*5,24,60)),
+    hld: Math.round(clamp(42+lv("hld")*5+gauss()*5,26,60))
+  };
+}
+function judgeAwards(p,st,usage,ev){
+  if(p.league==="MLB"||p.ikusei) return [];
+  const L=leagueLeaders(p); const got=[];
+  const add=(n)=>{got.push(n);p.titles.push({year:p.year,name:n});ev.push({t:`${n}を獲得。`,c:"big"});};
+  // 惜しくも届かなかったタイトルは、誰に獲られたのかが分かるようにする
+  const miss=(mine,top,label,key,fmt)=>{
+    if(mine>=top) return;
+    if(mine < top*0.88) return;
+    ev.push({t:`${label}は${L.names[key]}（${fmt(top)}）に僅差で届かなかった。`});
+  };
+  if(st.type==="b" && st.pa>=443){
+    if(st.avg>=L.avg) add("首位打者"); else miss(st.avg,L.avg,"首位打者","avg",v=>fmtAvg(v));
+    if(st.hr>=L.hr) add("本塁打王"); else miss(st.hr,L.hr,"本塁打王","hr",v=>v+"本");
+    if(st.rbi>=L.rbi) add("打点王"); else miss(st.rbi,L.rbi,"打点王","rbi",v=>v+"打点");
+    if(st.sb>=L.sb) add("盗塁王"); else miss(st.sb,L.sb,"盗塁王","sb",v=>v+"盗塁");
+  }
+  if(st.type==="p"){
+    if(st.ip>=143*0.9 && st.era<=L.era) add("最優秀防御率");
+    if(st.w>=L.w) add("最多勝"); else miss(st.w,L.w,"最多勝","w",v=>v+"勝");
+    if(st.so>=L.so) add("最多奪三振"); else miss(st.so,L.so,"最多奪三振","so",v=>v+"奪三振");
+    if(st.sv>=L.sv) add("最多セーブ");
+    if(st.hld>=L.hld) add("最優秀中継ぎ");
+  }
+  // 表彰
+  const star = st.type==="b" ? (st.ops>=.820&&st.g>=100) : (st.era<=3.20&&(st.gs>=20||st.g>=45));
+  if(star&&chance(.72)){ p.awards.push({year:p.year,name:"ベストナイン"}); ev.push({t:"ベストナインに選出。",c:"good"}); }
+  if(st.type==="b" && st.g>=100 && p.bat.fielding>=78 && (st.err||0)<=9 && chance(.5)){ p.awards.push({year:p.year,name:"ゴールデングラブ賞"}); ev.push({t:"ゴールデングラブ賞を受賞。",c:"good"}); }
+  if(star&&chance(.55)){ p.awards.push({year:p.year,name:"オールスター出場"}); ev.push({t:"オールスターに選出された。"}); }
+  const mvpOK = st.type==="b" ? (st.ops>=.930&&st.hr>=25&&got.length>=1) : (st.era<=2.20&&st.w>=15) || (st.sv>=38);
+  if(mvpOK&&chance(.55)){ p.awards.push({year:p.year,name:"リーグMVP"}); ev.push({t:"リーグMVPに選出された。",c:"big"}); p.popularity=clamp(p.popularity+12,0,100); }
+  if(p.seasonsPro===1){
+    const roy = st.type==="b"? (st.g>=90&&st.avg>=.265) : ((st.gs>=15&&st.era<=3.4)||st.hld>=20||st.sv>=15);
+    if(roy&&chance(.7)){ p.awards.push({year:p.year,name:"新人王"}); ev.push({t:"新人王を受賞。",c:"big"}); p.popularity=clamp(p.popularity+10,0,100); }
+  }
+  if(st.type==="p"&&st.gs>=22&&st.w>=15&&st.era<=2.50&&st.so>=150&&chance(.8)){
+    p.awards.push({year:p.year,name:"沢村賞"}); ev.push({t:"沢村賞に選ばれた。",c:"big"});
+  }
+  return got;
+}
+
+/* ============ メジャーのタイトル・表彰 ============ */
+function mlbLeaders(){
+  return {
+    names:{avg:"A. Reyes",hr:"M. Cole",rbi:"J. Whitaker",sb:"D. Okafor",w:"T. Brennan",era:"L. Marchetti",so:"K. Sato",sv:"R. Delgado"},
+    avg: clamp(0.345+gauss()*0.012,0.318,0.395),
+    hr: Math.round(clamp(47+gauss()*6,34,68)),
+    rbi: Math.round(clamp(128+gauss()*12,98,170)),
+    sb: Math.round(clamp(45+gauss()*9,26,78)),
+    w: Math.round(clamp(19+gauss()*2.5,14,27)),
+    era: clamp(2.25+gauss()*0.35,1.30,3.20),
+    so: Math.round(clamp(250+gauss()*28,185,330)),
+    sv: Math.round(clamp(44+gauss()*6,30,62))
+  };
+}
+function judgeAwardsMLB(p,st,usage,ev){
+  if(!st||st.farm) return [];
+  const L=mlbLeaders(); const got=[];
+  const add=(n)=>{got.push(n);p.titles.push({year:p.year,name:n+"（MLB）"});ev.push({t:`${n}を獲得（メジャー）。`,c:"big"});};
+  const miss=(mine,top,label,key,fmt)=>{
+    if(mine>=top||mine<top*0.88) return;
+    ev.push({t:`${label}は${L.names[key]}（${fmt(top)}）に及ばなかった。`});
+  };
+  const b = st.two? st : (st.type==="b"? st : null);
+  const q = st.two? st.pit : (st.type==="p"? st : null);
+  if(b&&b.pa>=502){
+    if(b.avg>=L.avg) add("首位打者"); else miss(b.avg,L.avg,"首位打者","avg",v=>fmtAvg(v));
+    if(b.hr>=L.hr) add("本塁打王"); else miss(b.hr,L.hr,"本塁打王","hr",v=>v+"本");
+    if(b.rbi>=L.rbi) add("打点王"); else miss(b.rbi,L.rbi,"打点王","rbi",v=>v+"打点");
+    if(b.sb>=L.sb) add("盗塁王");
+  }
+  if(q){
+    if(q.gs>=20&&q.era<=L.era) add("最優秀防御率");
+    if(q.w>=L.w) add("最多勝"); else miss(q.w,L.w,"最多勝","w",v=>v+"勝");
+    if(q.so>=L.so) add("最多奪三振");
+    if(q.sv>=L.sv) add("最多セーブ");
+  }
+  if(b&&b.ops>=.850&&b.g>=120&&chance(.5)){ p.awards.push({year:p.year,name:"シルバースラッガー賞"}); ev.push({t:"シルバースラッガー賞を受賞。",c:"good"}); }
+  if(b&&b.g>=120&&p.bat.fielding>=78&&(b.err||0)<=8&&chance(.4)){ p.awards.push({year:p.year,name:"ゴールドグラブ賞（MLB）"}); ev.push({t:"ゴールドグラブ賞を受賞（メジャー）。",c:"good"}); }
+  if(q&&q.gs>=20&&q.era<=2.60&&(q.w>=16||q.so>=230)&&chance(.6)){ p.awards.push({year:p.year,name:"サイ・ヤング賞"}); ev.push({t:"サイ・ヤング賞を受賞した。",c:"big"}); p.popularity=clamp(p.popularity+14,0,100); }
+  const mvpOK = (b&&b.ops>=.960&&b.hr>=32&&got.length>=1) || (q&&q.era<=2.30&&q.w>=18);
+  if(mvpOK&&chance(.5)){ p.awards.push({year:p.year,name:"MVP（MLB）"}); ev.push({t:"リーグMVPに選出された（メジャー）。",c:"big"}); p.popularity=clamp(p.popularity+15,0,100); }
+  if(p.mlbYears===1){
+    const roy=(b&&b.g>=110&&b.ops>=.780)||(q&&((q.gs>=18&&q.era<=3.60)||q.sv>=20));
+    if(roy&&chance(.55)){ p.awards.push({year:p.year,name:"新人王（MLB）"}); ev.push({t:"新人王を受賞した（メジャー）。",c:"big"}); p.popularity=clamp(p.popularity+10,0,100); }
+  }
+  return got;
+}
+
+/* ============ 年俸 ============ */
+// 起用そのものの価値。毎日試合に出ること自体が評価される
+const NICHE_USAGE=["代打の切り札","代走・守備要員","守備固め"];
+const USAGE_VALUE={"不動のレギュラー":25,"レギュラー":18,"準レギュラー":9,"控え":3,"途中昇格":7,
+  "代打の切り札":7,"代走・守備要員":6,"守備固め":6,
+  "ローテ上位":12,"ローテ下位":8,"谷間の先発":4,"抑え":12,"勝ちパターン":10,"中継ぎ":5,"ビハインド":2};
+function perfScore(p,st,usage){
+  const ub=USAGE_VALUE[usage]||0;
+  if(st.type==="b"){
+    if(st.pa<80) return clamp(10+st.g*0.25+ub*0.4,0,35);
+    const v = ub + (st.avg-.260)*260 + (st.ops-.720)*120 + st.hr*0.85 + st.rbi*0.14 + st.sb*0.22 + st.g*0.08;
+    return clamp(v,0,200);
+  }
+  if(st.ip<15) return clamp(8+st.g*0.6+ub*0.4,0,35);
+  const v = ub + (4.20-st.era)*16 + st.w*2.8 + st.sv*1.4 + st.hld*1.0 + st.ip*0.10 + st.so*0.05;
+  return clamp(v,0,200);
+}
+function updateSalary(p,st,usage,titles,ev){
+  if(p.league==="MLB") return;
+  const sc = (typeof p.perfScore==="number")? p.perfScore : ((st&&!st.farm)? perfScore(p,st,usage) : 6);
+  const old=p.salary;
+  if(p.contract.left>1){
+    p.contract.left--;
+    p.contractLocked=true;   // 契約期間中。更改も戦力外もない
+    ev.push({t:`${p.contract.years}年契約の${p.contract.years-p.contract.left}年目。年俸${yen(p.salary)}は据え置き。残り${p.contract.left}年。`});
+    return;
+  }
+  p.contractLocked=false;
+  const t=teamById(p.team)||TEAMS[0];
+  const svYears=p.serviceDays/CONFIG.faDaysPerYear;
+  // その年の働きに見合う「適正年俸」を出し、現年俸との間で着地させる
+  let fair = Math.pow(Math.max(sc,4),1.35)*24;
+  // 球界を代表する成績には、相場を超えた値段がつく
+  fair *= 1 + Math.max(0,(sc-85))*0.013;
+  fair *= 0.68 + Math.min(1, svYears/4)*0.52;                 // 経験・一軍での実績（4年で頭打ち）
+  fair *= 0.90 + Math.min(1,(p.lastDays||0)/CONFIG.faDaysPerYear)*0.15;  // 一軍帯同
+  fair *= 1 + Math.min(titles.length,4)*0.22;                 // タイトル
+  const bigAwards=p.awards.filter(a=>a.year===p.year&&["リーグMVP","沢村賞","新人王"].includes(a.name)).length;
+  fair *= 1 + bigAwards*0.12;
+  fair *= 1 + p.popularity/500;                               // 人気・観客動員
+  if(p.lastChamp) fair*=1.10; else if(p.lastRank===1) fair*=1.05;  // チームへの貢献
+  fair *= 0.86 + t.money/520;                                 // 球団の資金力（大きい球団ほど出せる）
+  if(p.ikusei) fair*=0.45;
+  let next = old*0.35 + fair*0.65;
+  // 高額になるほど上げ幅は抑えるが、飛び抜けた年は例外
+  let upCap = old<3000? 2.6 : old<8000? 2.1 : 1.85;
+  if(sc>=105) upCap += 0.55;
+  if(titles.length>=1) upCap += 0.25;
+  next = Math.min(next, old*upCap + 800);
+  // 一軍で主力として出続けていれば、5000万までは自然に到達する
+  const REGULAR_USAGE=["不動のレギュラー","レギュラー","ローテ上位","ローテ下位","抑え","勝ちパターン"];
+  if(REGULAR_USAGE.includes(usage)&&!p.ikusei)
+    next = Math.max(next, Math.min(5000, 1800 + svYears*1100));
+  const cutLim = p.age<=25? CONFIG.cutLimitYoung : CONFIG.cutLimit;
+  next = Math.max(next, old*(1-cutLim));                      // 減額制限
+  next = Math.min(next, CONFIG.salaryCapNPB);
+  next = Math.max(next, p.ikusei?CONFIG.minSalaryIkusei:CONFIG.minSalaryNPB);
+  p.nextSalary=Math.round(next/10)*10;
+}
+function yen(man){
+  if(man>=10000){ const oku=Math.floor(man/10000), rest=man%10000;
+    return rest? `${oku}億${rest}万円` : `${oku}億円`; }
+  return `${man}万円`;
+}
+function usd(v){
+  const yenMan = v*CONFIG.usdJpy/10000;          // 円（万円）換算
+  const jp = yenMan>=10000 ? `約${(yenMan/10000).toFixed(1)}億円` : `約${Math.round(yenMan)}万円`;
+  const dollars = v>=1000000 ? `$${(v/1000000).toFixed(1)}M` : `$${Math.round(v/1000)}K`;
+  return `${dollars}（${jp}）`;
+}
+/* ============ 順位 ============ */
+function simStandings(p,myContribution){
+  const out={};
+  const mine=myContribution||0;   // その年の自分の働き。優勝争いに実際に効く
+  ["日輪","蒼海"].forEach(lg=>{
+    const arr=TEAMS.filter(t=>t.lg===lg).map(t=>({id:t.id,name:t.name,
+      v:teamPower(p,t.id)+gauss()*7+(t.id===p.team? mine:0)}));
+    // 勝ち数は強さから直接決める（順位と勝ち数が食い違わないように）
+    const avgV=arr.reduce((a,b)=>a+b.v,0)/arr.length;
+    arr.forEach(x=>{ x.wRaw = 71.5 + (x.v-avgV)*0.62; });
+    const target=arr.length*CONFIG.gamesNPB/2;                 // リーグ全体の勝ち数の合計
+    const sum=arr.reduce((a,b)=>a+b.wRaw,0);
+    arr.forEach(x=>{ x.wRaw = x.wRaw*target/sum; });
+    arr.sort((a,b)=>b.wRaw-a.wRaw);
+    arr.forEach((x,i)=>{ x.rank=i+1; x.w=Math.round(x.wRaw); x.l=CONFIG.gamesNPB-x.w; });
+    // 端数で順位と勝ち数が逆転しないよう整える
+    for(let i=1;i<arr.length;i++) if(arr[i].w>arr[i-1].w){ arr[i].w=arr[i-1].w; arr[i].l=CONFIG.gamesNPB-arr[i].w; }
+    out[lg]=arr;
+  });
+  const c1=out["日輪"][0], c2=out["蒼海"][0];
+  const champ = chance(.5)? c1 : c2;
+  return {out,champ};
+}
+
+/* ============ プロのシーズン ============ */
+const MANAGER_STYLES=["若手重視","実績重視","バランス"];
+function newManager(t){
+  const style = t.dev>=82? pick(["若手重視","若手重視","バランス"]) : t.money>=85? pick(["実績重視","実績重視","バランス"]) : pick(MANAGER_STYLES);
+  return {name:jname(), style, since:0};
+}
+function manageStaff(p,ev){
+  const t=teamById(p.team);
+  if(!p.manager){ p.manager=newManager(t); p.manager.since=p.year; p.manager.trust=50;
+    ev.push({t:`${p.manager.name}監督の下でプレーする。方針は${p.manager.style}。`}); return; }
+  p.manager.years=(p.manager.years||0)+1;
+  const fire = (p.lastRank>=5&&chance(.35)) || p.manager.years>=ri(4,7);
+  if(fire){
+    const old=p.manager.name;
+    p.manager=newManager(t); p.manager.since=p.year; p.manager.trust=50;
+    ev.push({t:`${old}監督が退任し、${p.manager.name}監督が就任。方針は${p.manager.style}。信頼は一から築き直しになる。`,c:""});
+  }
+}
+function recordEvents(p,st,usage,ev){
+  if(!st||st.farm) return;
+  if(st.type==="p"){
+    const dom = clamp((3.60-st.era)*0.10 + (p.velo-140)*0.006 + breakScore(p)*0.0016,0,0.34);
+    if(st.gs>=10){
+      if(chance(dom*0.10)){ ev.push({t:"完全試合を達成した。球史に残る一日となった。",c:"big"});
+        p.awards.push({year:p.year,name:"完全試合"}); p.popularity=clamp(p.popularity+16,0,100); }
+      else if(chance(dom*0.30)){ ev.push({t:"ノーヒットノーランを達成。",c:"big"});
+        p.awards.push({year:p.year,name:"ノーヒットノーラン"}); p.popularity=clamp(p.popularity+11,0,100); }
+    }
+    if(st.so>=200){ ev.push({t:"シーズン200奪三振に到達。",c:"good"}); }
+    if(st.gs>=20&&st.era<=2.00){ ev.push({t:"防御率1点台でシーズンを終えた。",c:"good"}); }
+  }else{
+    if(st.g>=100){
+      if(chance(clamp((st.avg-0.250)*0.35+(p.bat.speed-60)*0.0016,0,0.10))){
+        ev.push({t:"サイクルヒットを達成した。",c:"big"}); p.awards.push({year:p.year,name:"サイクルヒット"});
+        p.popularity=clamp(p.popularity+8,0,100);
+      }
+      if(st.hr>=30&&chance(0.06)){ ev.push({t:"1試合4本塁打を記録した。",c:"big"});
+        p.awards.push({year:p.year,name:"1試合4本塁打"}); p.popularity=clamp(p.popularity+9,0,100); }
+    }
+    if(st.h>=180){ ev.push({t:"シーズン180安打を超えた。",c:"good"}); }
+  }
+  // 連続試合出場
+  const full = st.type==="b" && st.g>=CONFIG.gamesNPB-5;
+  if(full){ p.streak=(p.streak||0)+1; p.streakGames=(p.streakGames||0)+st.g; }
+  else { if((p.streakGames||0)>=300) ev.push({t:`連続試合出場が${p.streakGames}でストップした。`}); p.streak=0; p.streakGames=0; }
+  if(p.streak===5) ev.push({t:`5年連続で全試合に出場。連続${p.streakGames}試合、鉄人と呼ばれ始めた。`,c:"good"});
+  if(p.streak>=10&&p.streak%5===0) ev.push({t:`連続試合出場${p.streakGames}。記録は続いている。`,c:"big"});
+  [700,1000,1500,2000].forEach(m=>{ if((p.streakGames||0)>=m && (p.streakGames-st.g)<m){
+    p.awards.push({year:p.year,name:`連続${m}試合出場`}); ev.push({t:`連続${m}試合出場を達成した。`,c:"big"}); }});
+  p.bestGames=Math.max(p.bestGames||0,p.streakGames||0);
+}
+
+/* ===== 代表・WBC ===== */
+function nationalTeam(p,st,usage,ev){
+  if(p.ikusei||!st||st.farm) return;
+  const wbc = (p.year%4===2);   // 4年に一度の世界大会
+  const r=rating(p), sc=p.perfScore||0;
+  if(wbc){
+    if(r>=78&&sc>=70&&chance(0.72)){
+      p.awards.push({year:p.year,name:"日本代表（世界大会）"});
+      p.popularity=clamp(p.popularity+12,0,100);
+      p.fatigue=clamp(p.fatigue+22,0,100); p.intlFatigue=true;
+      const res=pick(["優勝","準優勝","ベスト4","2次ラウンド敗退"]);
+      const line = p.kind==="投手"
+        ? `${ri(1,3)}登板 防御率${(clamp(3.6-(p.pit.control-50)*0.03-(p.velo-145)*0.05+gauss()*1.1,0,12)).toFixed(2)}`
+        : `${ri(4,7)}試合 打率${fmtAvg(clamp(0.245+(p.bat.meet-50)*0.0035+gauss()*0.09,0,0.7))} ${ri(0,2)}本`;
+      ev.push({t:`日本代表に選出。世界大会は${res}。個人成績は${line}。`,c:res==="優勝"?"big":"good"});
+      if(res==="優勝"){ p.popularity=clamp(p.popularity+8,0,100); p.mental=clamp(p.mental+4,5,99); }
+    }else if(r>=72&&sc>=55&&chance(0.30)){
+      ev.push({t:"代表候補に名前は挙がったが、最終メンバーには入らなかった。"});
+    }
+  }else if(r>=76&&sc>=68&&chance(0.35)){
+    p.awards.push({year:p.year,name:"日本代表（国際試合）"});
+    p.popularity=clamp(p.popularity+5,0,100);
+    p.fatigue=clamp(p.fatigue+12,0,100); p.intlFatigue=true;
+    const line = p.kind==="投手"? `${ri(1,2)}登板` : `${ri(2,5)}試合 打率${fmtAvg(clamp(0.25+(p.bat.meet-50)*0.003+gauss()*0.1,0,0.7))}`;
+    ev.push({t:`日本代表に選出され、秋の国際試合に出場した（${line}）。`,c:"good"});
+  }
+}
+
+function battingOrder(p,usage){
+  if(p.kind==="投手"||usage==="二軍"||usage==="育成") return null;
+  const b=p.bat;
+  const style=(p.manager&&p.manager.style)||"バランス";
+  // 実績重視の監督はタイトル歴のある選手をクリーンナップに置きたがる
+  const bonus = style==="実績重視"? Math.min(10,p.titles.length*4+Math.min(4,p.seasonsPro*0.3)) : 0;
+  const pw=b.power+bonus, mt=b.meet+bonus;
+  if(pw>=78&&mt>=62) return 4;
+  if(mt>=74&&pw>=58) return 3;
+  if(b.speed>=78&&mt>=62) return 1;
+  if(style==="若手重視"&&p.age<=24&&b.speed>=68&&mt>=60) return 1;
+  if(pw>=68) return 5;
+  if(mt>=66) return 2;
+  if(usage==="不動のレギュラー"||usage==="レギュラー") return pick([6,7]);
+  return null;
+}
+function simProYear(p){
+  const ev=[]; const t=teamById(p.team);
+  driftLeague(p);
+  ensureRivals(p);
+  if(p.seasonsPro>0) ageRivals(p,ev);
+  manageStaff(p,ev);
+  peerYear(p,ev);
+  // 育成からの昇格
+  if(p.ikusei){
+    const up = rating(p)>=58+rf(-4,6)-(p.farmBoost||0);
+    if(up){ p.ikusei=false; p.status="支配下"; p.uniform=String(ri(1,68)); p.salary=Math.max(p.salary,CONFIG.minSalaryNPB);
+      ev.push({t:"支配下登録を勝ち取った。",c:"big"}); }
+    else if(p.seasonsPro>=1) ev.push({t:"育成契約のまま。三軍・二軍での日々が続く。"});
+  }
+  let usage = p.kind==="二刀流"? decideUsage(p,"b") : decideUsage(p);
+  // 抑え抜擢／降格
+  if(p.kind==="投手"&&p.role!=="先発"){
+    if(p.role!=="抑え" && (usage==="勝ちパターン") && (p.lastERA<=2.35 || chance(.16)) && p.velo>=145){
+      p.role="抑え"; usage="抑え"; ev.push({t:"守護神に抜擢された。9回のマウンドを任される。",c:"big"});
+    }else if(p.role==="抑え" && p.lastERA>=4.00){
+      p.role="中継ぎ"; usage="中継ぎ"; ev.push({t:"抑えを外され、中継ぎに配置転換となった。",c:"bad"});
+    }
+  }
+  let extraMiss=rehabStep(p,ev);
+  if(p.intlFatigue){ extraMiss+=0.03; p.intlLast=true; p.intlFatigue=false; }
+  const inj=injuryCheck(p, (usage==="二軍"?0.25:0.85)+(p.intlLast?0.25:0), ev);
+  p.intlLast=false;
+  const miss=Math.min(0.96,(inj?inj.miss:0)+extraMiss);
+  let noFirst = (usage==="二軍"||usage==="育成");   // 一軍の記録は残らない。二軍成績だけが残る
+  const bo = noFirst? null : battingOrder(p,usage);
+  if(NICHE_USAGE.includes(usage)&&p.lastUsage!==usage){
+    ev.push({t: usage==="代打の切り札"? "レギュラーは獲れなかったが、勝負どころの代打として一軍に残った。"
+      : usage==="代走・守備要員"? "終盤の代走と守備要員として、ベンチに居場所を見つけた。"
+      : "守備固めの切り札として、終盤の守りを任されるようになった。", c:""});
+  }
+  p.lastUsage=usage;
+  const aceRank = p.kind==="投手"&&p.role==="先発"? (rating(p)>=rivalTop(p)?1:(rating(p)>=rivalSecond(p)?2:3)) : null;
+  let st, farmLine=null;
+  if(noFirst){
+    farmLine=simFarmStats(p,miss);
+    // 二軍で圧倒した選手は評価される
+    const fb=farmLine.two? farmLine : farmLine;
+    const domB = fb.type==="b" && fb.g>=60 && (fb.avg>=0.315||fb.hr>=15);
+    const domP = fb.type==="p" && ((fb.gs>0&&fb.ip>=70&&fb.era<=2.50)||(fb.gs===0&&fb.g>=30&&fb.era<=2.00));
+    const dom = domB||domP;
+    p.farmBoost = dom? 7 : (fb.type==="b"&&fb.avg>=0.290)||(fb.type==="p"&&fb.era<=3.20)? 3 : 0;
+    if(dom&&!p.ikusei&&chance(0.62)){
+      // シーズン途中で一軍に呼ばれる
+      usage="途中昇格"; noFirst=false;
+      st=simSeasonStats(p,"控え",Math.min(0.92,miss+0.30),{order:battingOrder(p,"控え")});
+      st.calledUp=true; st.farmLine=farmLine;
+      ev.push({t:"二軍で結果を出し続け、シーズン途中に一軍へ昇格した。",c:"good"});
+    }else{
+      st=farmLine;
+      if(dom) ev.push({t: p.ikusei
+        ? "二軍では圧倒的な成績。支配下登録されない限り、一軍の舞台はない。"
+        : "二軍では圧倒的な成績を残したが、一軍から声は掛からなかった。", c:"bad"});
+    }
+  }
+  else p.farmBoost=0;
+  if(!st){
+  if(p.kind==="二刀流"){
+    const ub=decideUsage(p,"b"), up=decideUsage(p,"p");
+    const sb=simSeasonStats(p,ub,miss,{order:bo,as:"b"});
+    const sp=simSeasonStats(p,up,Math.min(0.9,miss+0.25),{as:"p"});  // 投打の両立は登板数が減る
+    st=Object.assign({},sb,{two:true,pit:sp,usageB:ub,usageP:up});
+    usage=`${ub}／${up}`;
+  }
+  else st=simSeasonStats(p,usage,miss,{order:bo,aceRank});
+  }
+  if(noFirst&&st&&st.farm&&p.farmBoost<7) ev.push({t:"一軍出場なし。ファームで1年を過ごした。"});
+  p.lastERA = (st&&st.type==="p"&&!st.farm)? st.era : null;
+  p.fatigue=clamp(p.fatigue+(st? (st.type==="p"? (st.ip||0)*0.30 : (st.g||0)*0.30) : 0)-15,0,100);
+  p.seasonsPro++;
+  const days=Math.round((st&&st.two? Math.max(USAGE_DAYS[st.usageB]||0,USAGE_DAYS[st.usageP]||0) : (USAGE_DAYS[usage]||0))*(1-miss));
+  p.serviceDays+=days; p.lastDays=days;
+  ev.unshift({t:`${t.name}／${usage}${bo?`・${bo}番`:""}${p.ikusei?"（育成）":""}`});
+  if(usage==="ローテ上位"&&aceRank===1&&chance(.8)){
+    p.openerStreak=(p.openerStreak||0)+1;
+    ev.push({t:p.openerStreak>=3?`${p.openerStreak}年連続で開幕投手を任された。名実ともにエースになった。`:"開幕投手を任された。",c:"good"});
+  } else p.openerStreak=0;
+  if(bo===4&&p.lastOrder!==4) ev.push({t:"4番に固定された。",c:"good"});
+  p.lastOrder=bo;
+  const sc = (!st)? 6
+    : st.farm? clamp(6+(p.farmBoost||0)*3.2,6,30)          // 二軍での結果も多少は評価される
+    : st.two? clamp(perfScore(p,st,st.usageB)+perfScore(p,st.pit,st.usageP)*0.55,0,200)
+    : perfScore(p,st,usage);
+  p.perfScore=sc;
+  let titles= (st&&!st.farm)? judgeAwards(p,st,st.two?st.usageB:usage,ev) : [];
+  if(st&&st.two) titles=titles.concat(judgeAwards(p,st.pit,st.usageP,ev));
+  if(st&&st.farm){
+    if(st.type==="b"&&st.hr>=18&&chance(.6)){ p.awards.push({year:p.year,name:"ファーム本塁打王"}); ev.push({t:"二軍で本塁打王を獲得。一軍からの声を待つ。",c:"good"}); }
+    if(st.type==="b"&&st.avg>=0.330&&st.g>=70&&chance(.6)){ p.awards.push({year:p.year,name:"ファーム首位打者"}); ev.push({t:"二軍で首位打者。打てることは示した。",c:"good"}); }
+    if(st.type==="p"&&st.era<=2.20&&st.ip>=80&&chance(.6)){ p.awards.push({year:p.year,name:"ファーム最優秀防御率"}); ev.push({t:"二軍で最優秀防御率。あとは一軍で通用するかどうか。",c:"good"}); }
+  }
+  recordEvents(p,st,usage,ev);
+  nationalTeam(p,st,usage,ev);
+  const S2=simStandings(p, clamp((sc-45)*0.14,-6,14));
+  const myRank=(S2.out[t.lg].find(x=>x.id===t.id)||{}).rank;
+  p.lastRank=myRank; p.lastChamp=(S2.champ.id===t.id);
+  p.lastStandings=S2.out[t.lg].map(x=>({id:x.id,name:x.name,rank:x.rank,w:x.w,l:x.l}));
+  ev.push({t:`${t.name}はリーグ${myRank}位。${S2.champ.id===t.id?"日本一に輝いた。":""}`,c:S2.champ.id===t.id?"good":""});
+  if(S2.champ.id===t.id) p.popularity=clamp(p.popularity+5,0,100);
+  // 人気
+  const pop = (!st||st.farm)? -4 : st.type==="b"? (st.hr*0.35+(st.avg-.25)*60+st.g*0.04) : (st.w*0.7+st.sv*0.5+st.hld*0.25+(3.6-st.era)*2.5);
+  p.popularity=clamp(Math.round(p.popularity+clamp(pop,-6,14)*0.6-1.5),0,100);
+  if(p.kind!=="投手"&&(p.apt[p.pos]||0)<7&&chance(0.5)){
+    p.apt[p.pos]=(p.apt[p.pos]||0)+1;
+    if(p.apt[p.pos]===6) ev.push({t:`${p.pos}の守備が板についてきた。`,c:"good"});
+  }
+  if(p.manager){
+    const sc2=p.perfScore||0;
+    const before=p.manager.trust||50;
+    p.manager.trust=clamp(Math.round(before+clamp((sc2-45)*0.22,-12,12)),0,100);
+    if(before<70&&p.manager.trust>=70) ev.push({t:`${p.manager.name}監督の信頼を勝ち取った。`,c:"good"});
+    if(before>=40&&p.manager.trust<40) ev.push({t:`${p.manager.name}監督の構想から外れかけている。`,c:"bad"});
+  }
+  if(!p.ikusei&&(p.perfScore||0)>=85&&Number(p.uniform)>9&&chance(.45)){
+    const n=String(ri(1,9));
+    ev.push({t:`来季から背番号${n}を背負うことになった。`,c:"good"});
+    p.uniform=n;
+  }
+  p.ratingLog=(p.ratingLog||[]).concat([{year:p.year,v:rating(p)}]).slice(-30);
+  const q = usage==="二軍"?0.75:(usage==="育成"?0.6:1.0);
+  growPlayer(p,q);
+  updateSalary(p,st,usage,titles,ev);
+  return {ev,st,usage,titles,rank:myRank};
+}
+
+/* ============ 打撃成績の組み立て（一軍・二軍・独立で共通の計算式を使う） ============ */
+function battingLine(p,g,ab,h,hr,bbRate){
+  const bb=Math.round(ab*bbRate);
+  const pa=ab+bb+Math.round(ab*0.02);
+  const d2=Math.round(h*rf(.13,.22)), d3=Math.round(h*rf(0,.04)*(p.bat.speed/70));
+  const singles=Math.max(0,h-d2-d3-hr);
+  const tb=singles+2*d2+3*d3+4*hr;
+  const obp=(h+bb)/Math.max(1,pa);
+  const slg=tb/Math.max(1,ab);
+  return {g,pa,ab,h,d2,d3,hr,
+    rbi:Math.round(hr*1.65+h*0.24),
+    sb:Math.round(g*Math.max(0,(p.bat.speed-50))/95),
+    bb,so:Math.round(ab*0.19),err:0,
+    sh:Math.max(0,Math.round(g*0.035*(p.bat.bunt/70))),
+    gidp:Math.max(0,Math.round(ab*clamp(0.024-(p.bat.speed-50)*0.00024,0.004,0.045))),
+    runs:Math.round((h+bb)*0.30+hr*0.62),
+    avg:+(h/Math.max(1,ab)).toFixed(3),obp:+obp.toFixed(3),slg:+slg.toFixed(3),ops:+(obp+slg).toFixed(3)};
+}
+
+/* ============ 二軍（ファーム）の成績 ============ */
+function simFarmStats(p,miss){
+  if(p.kind==="二刀流"){
+    const b=simFarmStats(Object.assign({},p,{kind:"野手"}),miss);
+    const q=simFarmStats(Object.assign({},p,{kind:"投手"}),Math.min(0.9,miss+0.25));
+    return Object.assign({},b,{two:true,pit:q});
+  }
+  if(p.kind==="投手"){
+    const starter = p.role==="先発";
+    const g=Math.max(0,Math.round((starter?ri(12,20):ri(24,38))*(1-miss)));
+    const ip=Math.round((starter? g*rf(4.2,5.8) : g*rf(1.0,1.3))*10)/10;
+    const era=clamp(4.55-(p.pit.control-45)*0.032-(p.velo-136)*0.050-breakScore(p)*0.014+gauss()*0.55,0.20,9.99);
+    return {type:"p",farm:true,g,gs:starter?g:0,ip,w:Math.round(g*rf(.15,.45)),l:Math.round(g*rf(.1,.35)),
+      sv:0,hld:0,era:+era.toFixed(2),so:Math.round(ip*rf(.75,1.15)),bb:Math.round(ip*rf(.3,.55))};
+  }
+  const g=Math.max(0,Math.round(ri(62,106)*(1-miss)));
+  const ab=Math.round(g*rf(3.2,3.8));
+  const avg=clamp(0.245+(p.bat.meet-45)*0.0035+gauss()*0.034,0.110,0.450);
+  const h=Math.round(ab*avg);
+  const hr=Math.max(0,Math.round(ab*Math.max(0,(p.bat.power-38))/780*(0.6+p.ballistic*0.28)));
+  return Object.assign({type:"b",farm:true},battingLine(p,g,ab,h,hr,0.10));
+}
+
+/* ============ 独立リーグのシーズン ============ */
+function simIndyYear(p){
+  const ev=[{t:`${p.indyTeam||"独立リーグ"}でのシーズン。NPBのスカウトの目を意識しながらプレーする。`}];
+  const reh=rehabStep(p,ev);
+  const inj=injuryCheck(p,0.7,ev);
+  const miss=Math.min(0.96,(inj?inj.miss:0)+reh);
+  let st;
+  if(p.kind==="投手"){
+    const g=Math.max(0,Math.round(ri(16,26)*(1-miss)));
+    const ip=Math.round(g*rf(4.0,6.2)*10)/10;
+    const era=clamp(4.40-(p.pit.control-42)*0.033-(p.velo-134)*0.052-breakScore(p)*0.014+gauss()*0.50,0.20,9.99);
+    st={type:"p",g,gs:p.role==="先発"?g:0,ip,w:Math.round(g*rf(.2,.5)),l:Math.round(g*rf(.1,.35)),sv:0,hld:0,
+        era:+era.toFixed(2),so:Math.round(ip*rf(.8,1.2)),bb:Math.round(ip*rf(.25,.5))};
+    p.lastERA=st.era;
+  }else{
+    const g=Math.max(0,Math.round(ri(58,80)*(1-miss)));
+    const ab=Math.round(g*rf(3.2,3.9));
+    const avg=clamp(0.238+(p.bat.meet-42)*0.0030+gauss()*0.034,0.110,0.450);
+    const hr=Math.max(0,Math.round(ab*Math.max(0,(p.bat.power-38))/760*(0.6+p.ballistic*0.28)));
+    const h=Math.round(ab*avg);
+    st=Object.assign({type:"b"},battingLine(p,g,ab,h,hr,0.10));
+  }
+  p.seasonsPro++;
+  p.lastDays=0; p.lastRank=null; p.lastChamp=false;
+  p.perfScore=perfScore(p,st,"独立");
+  // 独立リーグでの成績はスカウトの評価に直結する
+  const domB = st.type==="b" && st.g>=50 && (st.avg>=0.320||st.hr>=15);
+  const goodB= st.type==="b" && st.g>=40 && (st.avg>=0.290||st.hr>=10);
+  const domP = st.type==="p" && ((st.gs>0&&st.ip>=70&&st.era<=2.40)||(st.gs===0&&st.g>=25&&st.era<=2.00));
+  const goodP= st.type==="p" && st.era<=3.20 && st.ip>=50;
+  p.indyBoost = (domB||domP)? 0.25 : (goodB||goodP)? 0.12 : 0;
+  if(p.indyBoost>=0.25) ev.push({t:"独立リーグで圧倒的な数字を残した。NPBのスカウトが視察に訪れている。",c:"good"});
+  else if(p.indyBoost>0) ev.push({t:"独立リーグでまずまずの成績。スカウトの評価も少しは上がった。"});
+  ev.push({t:p.kind==="投手"?`${st.g}登板 ${st.w}勝${st.l}敗 防御率${st.era.toFixed(2)}`:`${st.g}試合 打率${fmtAvg(st.avg)} ${st.hr}本塁打`});
+  growPlayer(p,0.85);
+  return {ev,st,usage:"独立リーグ",titles:[],rank:null};
+}
+
+/* ============ オフの取り組み ============ */
+const TRAININGS={
+  joint:{label:"合同自主トレに参加する",sub:"一流選手と同じメニュー。伸びるが体への負担も大きい",grow:1.28,injury:0.025,fatigue:0},
+  solo:{label:"単独で調整する",sub:"自分のペースで整える。故障が減る",grow:1.0,injury:-0.03,fatigue:-12},
+  form:{label:"フォームを改造する",sub:"大きく変わる可能性がある。失敗すれば崩れる",grow:1.62,injury:0.01,fatigue:0,gamble:true},
+  rest:{label:"休養を優先する",sub:"疲労を抜き、故障を避ける。伸びは鈍る",grow:0.72,injury:-0.06,fatigue:-35}
+};
+function trainingDecision(p,allowAppealChange){
+  const keys=Object.keys(TRAININGS);
+  if(p.training&&keys.includes(p.training)) keys.splice(keys.indexOf(p.training),1), keys.unshift(p.training);
+  const opts=keys.map(k=>({label:(k===p.training?"前年と同じ　":"")+TRAININGS[k].label,sub:TRAININGS[k].sub,
+    run:()=>{
+      p.training=k;
+      if(TRAININGS[k].gamble){
+        if(chance(0.35)){
+          const keys=p.kind==="投手"?["control","nobi","quick"]:["meet","power","fielding"];
+          keys.forEach(x=>{ const o=p.kind==="投手"?p.pit:p.bat; o[x]=clamp(o[x]-ri(2,5),5,99); });
+          p.pendEv.push({t:"フォーム改造は噛み合わなかった。感覚を失い、数字を落とした。",c:"bad"});
+        }else p.pendEv.push({t:"フォーム改造に着手した。手応えはある。",c:"good"});
+      }
+    }}));
+  if(allowAppealChange){
+    const list=(APPEALS[p.kind]||[]).filter(a=>a.id!==p.appeal);
+    opts.push({label:"取り組む方向を変える",sub:"伸ばす能力そのものを切り替える",
+      run:()=>{
+        S.decisions.unshift({title:"方向転換",desc:"これから何を伸ばすか。",
+          options:list.map(a=>({label:a.label,sub:a.desc,run:()=>{
+            p.appeal=a.id; p.training="solo";
+            p.pendEv.push({t:`${a.label}を軸に鍛え直すことにした。`,c:""});
+          }}))});
+      }});
+  }
+  return {title:"オフの過ごし方",desc:"この冬をどう使うか。",options:opts};
+}
+
+/* ============ オフの意思決定 ============ */
+function faYears(p){ return p.faType==="hs"?CONFIG.faDomesticHS:CONFIG.faDomesticCollege; }
+function faDomesticOK(p){ return p.serviceDays>=faYears(p)*CONFIG.faDaysPerYear; }
+function faOverseasOK(p){ return p.serviceDays>=CONFIG.faOverseas*CONFIG.faDaysPerYear; }
+function marketValue(p){
+  const r=rating(p), sc=p.perfScore||40;
+  let v = (r-55)*180 + sc*95 + p.popularity*45;
+  if(p.age>=33)v*=0.68; else if(p.age>=31)v*=0.85; else if(p.age<=27)v*=1.12;
+  return clamp(Math.round(v/100)*100, 600, 70000);
+}
+function makeOffers(p,n){
+  const cur=p.team;
+  const cands=TEAMS.filter(t=>t.id!==cur).sort((a,b)=>(b.money+rnd()*60)-(a.money+rnd()*60)).slice(0,n);
+  const mv=marketValue(p);
+  return cands.map(t=>{
+    const fit=(t.money/100);
+    const sal=Math.round(mv*(0.75+fit*0.55)*rf(.9,1.2)/10)*10;
+    const yrs=clamp(Math.round(rf(1,5)-(p.age>=33?1.5:0)),1,5);
+    const need = rnd()<0.5? "レギュラー確約" : "競争させる方針";
+    return {team:t, salary:sal, years:yrs, need};
+  });
+}
+function moveTeam(p,team,salary,years,ev,word){
+  const old=p.team? teamById(p.team) : {name: p.mlbTeam || (p.league==="独立"?"独立リーグ":"—")};
+  p.team=team.id; p.salary=salary; p.contract={years,left:years};
+  p.uniform=String(p.kind==="投手"?ri(11,60):ri(1,68));
+  p.rivals=null; p.manager=null; ensureRivals(p);
+  p.career.push({year:p.year,text:`${old.name}→${team.name}（${word}）`});
+  p.justMovedYear=p.year;
+  ev.push({t:`${team.name}へ移籍。背番号${p.uniform}、年俸${yen(salary)}${years>1?`／${years}年契約`:""}。`,c:"big"});
+}
+
+/* ---- コンバート・役割転向 ---- */
+const CONVERT_PATH={"捕":["一","三"],"遊":["二","三"],"二":["三","一"],"三":["一"],"中":["左","右"],"左":["一"],"右":["一"],"一":[]};
+function convertDecision(p,usage){
+  if(p.kind==="投手"||p.ikusei) return null;
+  const cands=CONVERT_PATH[p.pos]||[];
+  if(!cands.length) return null;
+  const blocked = (usage==="二軍"||usage==="控え");
+  const worn = p.age>=30 && (p.bat.speed<58 || p.bat.fielding<58);
+  if(!(blocked||worn)) return null;
+  if(!chance(blocked&&worn?0.55:0.30)) return null;
+  const to=pick(cands);
+  const reason = worn? `${p.age}歳。守備範囲と動きの衰えを指摘された。` : "同じポジションに厚い壁がある。";
+  return {title:"コンバートの打診",
+    desc:`${reason}球団から${to}へのコンバートを提案された。新しい守備位置に慣れるまでは守備で苦労する。`,
+    options:[
+      {label:`${to}に挑戦する`,sub:"出場機会は戻りやすいが、適性が上がるまで評価は下がる",run:()=>{
+        p.apt[to]=Math.max(p.apt[to]||0,3); p.pos=to; p.rivals=null; p.justMovedYear=p.year;
+        p.career.push({year:p.year,text:`${to}にコンバート`});
+        p.pendEv.push({t:`${to}へのコンバートを受け入れた。ここからやり直す。`,c:""});
+      }},
+      {label:`${p.pos}で勝負を続ける`,sub:"譲らない代わりに、出場機会は保証されない",run:()=>{
+        p.pendEv.push({t:"コンバートを断り、今のポジションで勝負を続けることにした。"});
+      }}
+    ]};
+}
+function twoWayDecision(p,usage,res){
+  if(p.kind!=="二刀流"||p.ikusei) return null;
+  const b=batRating(p), q=pitRating(p);
+  const gap=Math.abs(b-q);
+  const hurt=(p.rehab||0)>0;           // 手術明けは二足の草鞋が難しい
+  const blocked=(usage||"").includes("二軍");
+  if(p.seasonsPro<2) return null;
+  if(!(hurt||blocked||gap>=12||chance(0.22))) return null;
+  const why = hurt? "手術明けの体で二刀流を続けるのは難しい、と球団から伝えられた。"
+    : blocked? "どちらも中途半端で、一軍に定着できていない。絞るべきだと言われた。"
+    : gap>=12? `${b>=q?"打撃":"投球"}の評価が明確に上回っている。どちらかに絞るべきだという声がある。`
+    : "二刀流をこのまま続けるか、どちらかに絞るか、球団と話し合う機会が持たれた。";
+  const toBat=()=>{
+    p.kind="野手"; p.role=null; p.rivals=null; p.rivalsP=null; p.justMovedYear=p.year;
+    p.appeal = p.bat.power>=p.bat.meet? "power":"meet";
+    p.apt["投"]=Math.min(p.apt["投"]||0,4);
+    p.career.push({year:p.year,text:"打者に専念"});
+    p.pendEv.push({t:"投手を辞め、打者に専念することを決めた。",c:""});
+  };
+  const toPit=()=>{
+    p.kind="投手"; p.role="先発"; p.pos="投"; p.rivals=p.rivalsP||null; p.rivalsP=null; p.justMovedYear=p.year;
+    p.appeal = p.pit.control>=70? "control":"velo";
+    p.career.push({year:p.year,text:"投手に専念"});
+    p.pendEv.push({t:"打席に立つことをやめ、投手に専念することを決めた。",c:""});
+  };
+  const opts=[
+    {label:"打者に専念する",sub:`打者総合${b}。投手としての能力は落ちていく`,run:toBat},
+    {label:"投手に専念する",sub:`投手総合${q}。打席には立たなくなる`,run:toPit}
+  ];
+  if(!hurt) opts.push({label:"二刀流を続ける",sub:"どちらも伸ばす。登板数と打席数は専任より少ない",run:()=>{
+    p.pendEv.push({t:"二刀流を続けることを選んだ。"});}});
+  return {title:"二刀流の岐路",desc:why,options:opts};
+}
+function roleDecision(p,usage){
+  if(p.kind!=="投手"||p.ikusei) return null;
+  if(p.role==="先発"){
+    const fail = usage==="二軍"||usage==="谷間の先発"||p.pit.stamina<52;
+    if(!fail||!chance(0.35)) return null;
+    return {title:"配置転換の打診",
+      desc:"球団から中継ぎへの転向を提案された。短いイニングなら球威を活かせるという判断だった。",
+      options:[
+        {label:"中継ぎに転向する",sub:"登板機会は増える。先発の座は遠のく",run:()=>{
+          p.role="中継ぎ"; p.rivals=null; p.pit.nobi=clamp(p.pit.nobi+4,5,99); p.velo=clamp(p.velo+2,110,172);
+          p.career.push({year:p.year,text:"中継ぎに転向"});
+          p.pendEv.push({t:"中継ぎへ転向。短いイニングに賭ける。"});
+        }},
+        {label:"先発にこだわる",sub:"ローテーション争いを続ける",run:()=>{p.pendEv.push({t:"先発にこだわり、転向を断った。"});}}
+      ]};
+  }
+  if(p.role==="中継ぎ"){
+    if(!(p.pit.stamina>=68&&p.pit.control>=60&&p.breaks.length>=3)||!chance(0.28)) return null;
+    return {title:"先発転向の打診",
+      desc:"スタミナと制球を評価され、先発ローテーション入りを打診された。",
+      options:[
+        {label:"先発に転向する",sub:"1試合の比重が大きくなる。勝ち星とタイトルが狙える",run:()=>{
+          p.role="先発"; p.rivals=null; p.pit.stamina=clamp(p.pit.stamina+5,5,99);
+          p.career.push({year:p.year,text:"先発に転向"});
+          p.pendEv.push({t:"先発へ転向。ローテーションの一角を任される。"});
+        }},
+        {label:"中継ぎのままでいく",run:()=>{p.pendEv.push({t:"中継ぎとして生きる道を選んだ。"});}}
+      ]};
+  }
+  return null;
+}
+function goIndy(p){
+  p.league="独立"; p.team=null; p.salary=200; p.status="独立リーグ"; p.indyYears=p.indyYears||0;
+  p.indyTeam=p.indyTeam||pick(INDY_TEAMS);
+  p.ikusei=false; p.rivals=null; p.justMovedYear=p.year;
+  p.career.push({year:p.year,text:"独立リーグへ"});
+  p.pendEv.push({t:"独立リーグへ。もう一度、ここから。"});
+}
+function buildDecisions(p,res){
+  const D=[];
+  const st=res.st, usage=res.usage;
+  // --- 戦力外 ---
+  // 二軍で圧倒した年は「棒に振った年」とは数えない
+  // 一芸での残留にも限度がある
+  const niche=NICHE_USAGE.includes(usage) && (p.age<=34 || (p.age<=38 && (p.perfScore||0)>=40));
+  const wasted=(usage==="二軍"||usage==="育成")&&(p.farmBoost||0)<7;
+  const badYears=(p.badStreak=wasted?(p.badStreak||0)+1:0);
+  // 契約期間中の選手と、実力が明らかに高い選手は切られない
+  const protectedByAbility = rating(p)>=68 && !p.ikusei && p.age<=39;
+  // 一芸で一軍に残れている選手は切られない（極端な高齢を除く）
+  // 人気選手と、記録達成が目前の選手は興行面から残される
+  const draw = (p.popularity>=72 && p.age<=39 && (p.perfScore||0)>=35)
+            || (!!p.milestoneNear && p.age<=41 && (p.perfScore||0)>=25);
+  const cutRisk = !p.contractLocked && !protectedByAbility && !(niche&&p.age<=38) && !draw && (
+                  (p.ikusei&&p.seasonsPro>=3&&rating(p)<60) ||
+                  (badYears>=2) || (p.age>=30&&(p.perfScore||0)<22&&usage==="二軍") ||
+                  (p.age>=32&&(p.perfScore||0)<32) || (p.age>=34&&(p.perfScore||0)<48) ||
+                  (p.age>=36&&(p.perfScore||0)<60) || (p.age>=39&&(p.perfScore||0)<72));
+  if(cutRisk && p.league==="NPB"){
+    p.cutCount=(p.cutCount||0)+1;
+    const canTest = p.cutCount<=2;   // 二度戦力外になると、NPBのテストを受ける機会は残っていない
+    const opts=[];
+    if(canTest) opts.push({label:"他球団の入団テストを受ける",sub:"能力と実績次第。落ちれば独立リーグか引退",run:()=>{
+          const ok = chance(clamp(((rating(p)-48)/55 + p.popularity/220 + (p.farmBoost||0)*0.035
+            + (p.milestoneNear?0.35:0))*(p.age>=36?0.55:p.age>=33?0.8:1),0.05,0.92));
+          if(ok&&p.milestoneNear) p.pendEv.push({t:`${p.milestoneNear.name}という記録を花道にしたい、という球団の意向もあった。`});
+          if(ok){ const t=pick(TEAMS.filter(x=>x.id!==p.team));
+            moveTeam(p,t,Math.max(CONFIG.minSalaryNPB,Math.round(p.salary*0.55/10)*10),1,p.pendEv,"テスト入団");
+            p.ikusei=chance(.45); p.status=p.ikusei?"育成":"支配下";
+            if(p.ikusei) p.salary=Math.min(p.salary, ri(30,60)*10);   // 育成契約は年俸が大きく下がる
+            p.pendEv.push({t:`テストに合格。${p.ikusei?"育成契約":"支配下契約"}で現役続行。`,c:"good"});
+          }else{
+            p.pendEv.push({t:"テストは不合格。NPBに受け入れ先は見つからなかった。",c:"bad"});
+            D.unshift({title:"行き場がない",
+              desc:"どの球団からも声は掛からなかった。NPBでプレーする道はこの年はもうない。",
+              options:[
+                {label:"独立リーグで現役を続ける",sub:"年俸は大きく下がる。NPB復帰の目は残る",run:()=>goIndy(p)},
+                {label:"引退する",sub:"ユニフォームを脱ぐ",run:()=>doRetire(p,"受け入れ先がない")}
+              ]});
+          }
+        }});
+    opts.push({label:"独立リーグで現役を続ける",sub:"年俸は大きく下がる。復帰の目は残る",run:()=>goIndy(p)});
+    opts.push({label:"引退する",sub:"ユニフォームを脱ぐ",run:()=>{ doRetire(p,"戦力外"); }});
+    D.push(trainingDecision(p,true));
+    D.push({title:"戦力外通告",
+      desc:`${teamById(p.team).name}から来季の契約を結ばない旨を告げられた。${p.age}歳。`+
+        (p.milestoneNear?`${p.milestoneNear.name}まであと${p.milestoneNear.rest}を残している。`:"")+
+        (canTest?"ここからの道を選ぶ。":"二度目の戦力外。NPBからの誘いはもうない。"),
+      options:opts});
+    return D;
+  }
+  if(p.league==="独立"){
+    p.indyYears=(p.indyYears||0)+1;
+    const released = (rating(p)<45 && (p.indyBoost||0)<0.12) || p.indyYears>=5;
+    if(released){
+      D.push({title:"独立リーグからの戦力外",
+        desc:"独立リーグの球団からも来季の契約はないと告げられた。プレーを続ける場所はもうない。",
+        options:[{label:"引退する",run:()=>doRetire(p,"プレーする場所がなくなった")}]});
+      return D;
+    }
+    D.push(trainingDecision(p,true));
+    const backOdds=Math.round(clamp(clamp((rating(p)-58)/40,0.02,0.6)+(p.indyBoost||0),0.02,0.78)*(p.age>=38?0.3:1)*100);
+    D.push({title:"独立リーグの1年",
+      desc:`NPB復帰を目指すか、区切りをつけるか。独立${p.indyYears}年目。今の評価なら復帰の可能性はおよそ${backOdds}%。`,
+      options:[
+        {label:"NPB復帰を目指して続ける",run:()=>{
+          const back = clamp(clamp((rating(p)-58)/40,0.02,0.6)+(p.indyBoost||0),0.02,0.78)*(p.age>=38?0.3:1);
+          if(chance(back)){
+            const t=pick(TEAMS); moveTeam(p,t,CONFIG.minSalaryNPB,1,p.pendEv,"育成契約で復帰");
+            p.league="NPB"; p.ikusei=true; p.status="育成";
+            p.pendEv.push({t:"NPB球団から育成契約のオファー。再びプロの世界へ。",c:"big"});
+          }else p.pendEv.push({t:"声は掛からなかった。"});
+        }},
+        {label:"引退する",run:()=>doRetire(p,"独立リーグで区切り")}
+      ]});
+    return D;
+  }
+  // --- コンバート・配置転換 ---
+  if(p.league==="NPB"&&!p.contractLocked){
+    const tw=twoWayDecision(p,usage,res); if(tw)D.push(tw);
+    const cv=convertDecision(p,usage); if(cv)D.push(cv);
+    const rl=roleDecision(p,usage); if(rl)D.push(rl);
+  }
+  // --- オフの取り組み ---
+  if(!p.retired) D.push(trainingDecision(p, p.seasonsPro%3===0));
+  // --- 契約更改 ---
+  if(p.league==="NPB" && p.contract.left<=1 && !p.contractLocked && !p.retired){
+    const next=p.nextSalary||p.salary;
+    const multiOK = (p.perfScore||0)>=62 && p.seasonsPro>=3 && p.age<=33;
+    const opts=[
+      {label:`提示額でサインする（${yen(next)}）`,sub:next>p.salary?`${yen(next-p.salary)}の増額`:next<p.salary?`${yen(p.salary-next)}の減額`:"現状維持",
+       run:()=>{p.salary=next;p.contract={years:1,left:1};}},
+      {label:"保留して交渉する",sub:"上がることも、こじれることもある",run:()=>{
+        const r=rnd();
+        if(r<0.55){ p.salary=Math.round(next*rf(1.05,1.18)/10)*10; p.pendEv.push({t:`交渉の末、${yen(p.salary)}でサイン。`,c:"good"}); }
+        else if(r<0.85){ p.salary=next; p.pendEv.push({t:`交渉は平行線。${yen(p.salary)}でサイン。`}); }
+        else { p.salary=Math.round(next*0.96/10)*10; p.popularity=clamp(p.popularity-3,0,100);
+               p.pendEv.push({t:`こじれた末に${yen(p.salary)}でサイン。球団との関係に傷が残った。`,c:"bad"}); }
+        p.contract={years:1,left:1};
+      }}
+    ];
+    // 提示が働きに見合わないときは調停に持ち込める
+    if((p.perfScore||0)>=60 && next < Math.round(p.salary*1.3) && p.seasonsPro>=3){
+      opts.push({label:"年俸調停を申請する",sub:"第三者の裁定に委ねる。勝てば大幅増、負ければ提示のまま",
+        run:()=>{
+          const win=chance(clamp(0.35+((p.perfScore||0)-60)*0.006,0.25,0.72));
+          if(win){ p.salary=Math.round(next*rf(1.25,1.55)/10)*10;
+            p.pendEv.push({t:`年俸調停で選手側の主張が認められ、${yen(p.salary)}に決着した。`,c:"good"});
+          }else{ p.salary=next;
+            p.pendEv.push({t:`年俸調停は球団側の主張が認められ、${yen(p.salary)}で決着。`,c:"bad"});
+          }
+          p.popularity=clamp(p.popularity-3,0,100);
+          if(p.manager)p.manager.trust=clamp((p.manager.trust||50)-5,0,100);
+          p.contract={years:1,left:1};
+        }});
+    }
+    if(multiOK){
+      const yrs=ri(3,4), sal=Math.round(next*rf(1.05,1.2)/10)*10;
+      opts.push({label:`${yrs}年契約を結ぶ（年俸${yen(sal)}）`,sub:"安定するが、上振れの年も同額に固定される",
+        run:()=>{p.salary=sal;p.contract={years:yrs,left:yrs};p.contractLocked=false;p.pendEv.push({t:`${yrs}年契約に合意。翌年からは契約期間中として扱われる。`,c:"good"});}});
+    }
+    D.push({npb:true,title:"契約更改",desc:`${teamById(p.team).name}からの提示は${yen(next)}。`,options:opts});
+  }
+  // --- ポスティング ---
+  if(p.league==="NPB"&&!p.everMLB&&p.age<=30&&p.seasonsPro>=4&&!faOverseasOK(p)&&rating(p)>=80&&(p.perfScore||0)>=72){
+    D.push({npb:true,title:"ポスティング",desc:"メジャー挑戦の意思を球団に伝えるか。球団が認めなければ話は流れる。",
+      options:[
+        {label:"申請する",sub:"球団の許可が要る",run:()=>{
+          const t=teamById(p.team);
+          const allow=chance(clamp(0.20+(p.seasonsPro-4)*0.09+(90-t.money)/300+(p.popularity>70?0.08:0),0.05,0.8));
+          if(allow){ p.pendEv.push({t:"球団がポスティングを容認。メジャー各球団と交渉に入る。",c:"big"}); pushMLBOffer(p,D); }
+          else p.pendEv.push({t:"球団は認めなかった。まだこのチームに必要だという判断だった。",c:"bad"});
+        }},
+        {label:"申請しない",sub:"日本で続ける",run:()=>{}}
+      ]});
+  }
+  // --- 海外FA ---
+  if(p.league==="NPB"&&faOverseasOK(p)&&!p.faUsedOverseas&&rating(p)>=76){
+    D.push({npb:true,title:"海外FA権を取得",desc:"9年分の出場選手登録日数に到達した。メジャー挑戦の権利がある。",
+      options:[
+        {label:"海外FAを行使する",run:()=>{p.faUsedOverseas=true;pushMLBOffer(p,D);}},
+        {label:"行使せず日本に残る",run:()=>{}}
+      ]});
+  }
+  // --- 国内FA ---
+  else if(p.league==="NPB"&&faDomesticOK(p)&&!p.faUsedDomestic&&p.contract.left<=1){
+    D.push({npb:true,title:"国内FA権を取得",desc:`出場選手登録日数が${faYears(p)}年分に達した。FA宣言するか。`,
+      options:[
+        {label:"FA宣言する",sub:"複数球団の条件を見てから決められる",run:()=>{
+          p.faUsedDomestic=true;
+          const offers=makeOffers(p,ri(2,4));
+          const stay={team:teamById(p.team)||TEAMS[0],salary:Math.round(marketValue(p)*rf(.85,1.05)/10)*10,years:ri(2,4),need:"残留"};
+          D.unshift({title:"FAの交渉",desc:"提示された条件から選ぶ。",
+            options:offers.map(o=>({label:`${o.team.name}　${yen(o.salary)}／${o.years}年`,sub:`${o.need}・${o.team.note.split("。")[0]}`,
+              run:()=>moveTeam(p,o.team,o.salary,o.years,p.pendEv,"FA移籍")}))
+              .concat([{label:`${stay.team.name}に残留　${yen(stay.salary)}／${stay.years}年`,sub:"チームに残る",
+                run:()=>{p.salary=stay.salary;p.contract={years:stay.years,left:stay.years};p.pendEv.push({t:`残留を決めた。${yen(stay.salary)}／${stay.years}年契約。`,c:"good"});}}])});
+        }},
+        {label:"宣言せず残留する",sub:"権利は来年以降も使える",run:()=>{p.pendEv.push({t:"FA宣言はしなかった。"});}}
+      ]});
+  }
+  return D;
+}
+function mlbValue(p){
+  const r=rating(p);
+  return Math.pow(Math.max(0,r-64),2)*24000 + marketValue(p)*160 + rf(400000,2600000);
+}
+function pushMLBOffer(p,D){
+  const mv=marketValue(p);
+  const teams=MLB_TEAMS.slice().sort(()=>rnd()-.5).slice(0,3).map(t=>t.id);
+  const offers=teams.map((city)=>{
+    const sal=Math.max(720000, Math.round(mlbValue(p)*rf(.82,1.25)/100000)*100000);
+    return {name:city,salary:sal,years:ri(1,5)};
+  });
+  D.unshift({title:"メジャーからのオファー",desc:"条件を選ぶ。日本に残る選択も残っている。",
+    options:offers.map(o=>({label:`${o.name}　${o.years}年　${usd(o.salary)}`,sub:"メジャー契約。初年度は適応に苦しむことが多い",
+      run:()=>{
+        p.career.push({year:p.year,text:`${p.team?teamById(p.team).name:"—"}→${o.name}（メジャー移籍）`});
+        p.team=null;p.league="MLB";p.everMLB=true;p.mlbSalary=o.salary;p.contract={years:o.years,left:o.years};
+        p.mlbTeam=o.name;p.mlbYears=0;p.status="メジャー";p.mlbRivals=null;p.manager=null;
+        p.pendEv.push({t:`${o.name}と${o.years}年契約。年俸${usd(o.salary)}。`,c:"big"});
+        p.popularity=clamp(p.popularity+10,0,100);
+      }}))
+      .concat([{label:"日本に残る",run:()=>{p.pendEv.push({t:"熟慮の末、日本でのプレーを続けることにした。"});}}])});
+}
+
+/* ============ MLB ============ */
+function ensureMlbRivals(p){
+  const t=mlbTeamById(p.mlbTeam)||MLB_TEAMS[0];
+  if(!p.mlbRivals) p.mlbRivals=[];
+  const want = p.kind==="投手"?4:3;
+  while(p.mlbRivals.length<want)
+    p.mlbRivals.push({name:jname(true),age:ri(23,32),
+      ab:Math.round(clamp(rf(62,90)+(t.power-82)*0.35,45,99))});
+}
+function ageMlbRivals(p,ev){
+  const t=mlbTeamById(p.mlbTeam)||MLB_TEAMS[0];
+  p.mlbRivals.forEach(r=>{ r.age++;
+    r.ab=clamp(Math.round(r.ab+(r.age<=27?rf(0.5,3.5):r.age<=31?rf(-1.5,1.5):rf(-6,-0.5))),40,99); });
+  p.mlbRivals=p.mlbRivals.filter(r=>!(r.age>=36&&chance(.5))&&!(r.ab<55&&chance(.5)));
+  if(chance(t.money/900)){ const nr={name:jname(true),age:ri(24,31),ab:Math.round(clamp(rf(74,94)+(t.power-82)*0.3,50,99))};
+    p.mlbRivals.push(nr); if(ev)ev.push({t:`${p.mlbTeam}が${nr.name}を大型契約で獲得した。`}); }
+  ensureMlbRivals(p);
+}
+function mlbStandings(p,contribution){
+  const rows=MLB_TEAMS.map(t=>({id:t.id,lg:t.lg,
+    v:t.power+gauss()*8+(t.id===p.mlbTeam?(contribution||0):0)}));
+  const avgV=rows.reduce((a,b)=>a+b.v,0)/rows.length;
+  rows.forEach(r=>{ r.wRaw=clamp(81+(r.v-avgV)*0.95,55,112); });
+  rows.sort((a,b)=>b.wRaw-a.wRaw);
+  rows.forEach((r,i)=>{ r.rank=i+1; r.w=Math.round(r.wRaw); r.l=CONFIG.gamesMLB-r.w; });
+  for(let i=1;i<rows.length;i++) if(rows[i].w>rows[i-1].w){ rows[i].w=rows[i-1].w; rows[i].l=CONFIG.gamesMLB-rows[i].w; }
+  return rows;
+}
+function simMLBYear(p){
+  const ev=[];
+  p.mlbYears++;
+  ensureMlbRivals(p);
+  if(p.mlbYears>1) ageMlbRivals(p,ev);
+  if(!p.manager||!p.manager.mlb){ p.manager={name:pick(MLB_MANAGERS),style:pick(MANAGER_STYLES),since:p.year,trust:50,mlb:true};
+    ev.push({t:`${p.manager.name}監督の下でプレーする。方針は${p.manager.style}。`}); }
+  else if((p.manager.years=(p.manager.years||0)+1)>=ri(3,6)){
+    const old=p.manager.name; p.manager={name:pick(MLB_MANAGERS),style:pick(MANAGER_STYLES),since:p.year,trust:50,mlb:true};
+    ev.push({t:`${old}監督が退任し、${p.manager.name}監督が就任。`});
+  }
+  const adapt = p.mlbYears===1? -9 : p.mlbYears===2? -3 : 0;
+  const tmp=JSON.parse(JSON.stringify(p));
+  BATK.forEach(([k])=>tmp.bat[k]=clamp(tmp.bat[k]+adapt,5,99));
+  PITK.forEach(([k])=>tmp.pit[k]=clamp(tmp.pit[k]+adapt,5,99));
+  tmp.league="MLB"; tmp.team=p.team||"grands";
+  const r=rating(tmp);
+  // チーム内の序列で起用が決まる
+  const abs=(p.mlbRivals||[]).map(r=>r.ab).sort((a,b)=>b.a-a.b);
+  const sorted=(p.mlbRivals||[]).map(r=>r.ab).sort((a,b)=>b-a);
+  const R1=sorted[0]!==undefined?sorted[0]:80, R2=sorted[1]!==undefined?sorted[1]:72;
+  const trustB=((p.manager&&p.manager.trust||50)-50)*0.08;
+  const usageForP = v0 => { const v=v0+trustB;
+    return v>=R1+2?"ローテ上位":v>=R2?"ローテ下位":v>=R2-8?"谷間の先発":"二軍"; };
+  const usageForB = v0 => { const v=v0+trustB;
+    return v>=R1+3?"不動のレギュラー":v>=R1-3?"レギュラー":v>=R2-2?"準レギュラー":v>=R2-11?"控え":"二軍"; };
+  let usage, usageB=null, usageP=null;
+  if(p.kind==="投手") usage = usageForP(pitRating(tmp));
+  else if(p.kind==="二刀流"){ usageB=usageForB(batRating(tmp)); usageP=usageForP(pitRating(tmp));
+    usage = (usageB==="二軍"&&usageP==="二軍")? "二軍" : `${usageB}／${usageP}`; }
+  else usage = usageForB(batRating(tmp));
+  const inj=injuryCheck(p,usage==="二軍"?0.3:0.85,ev);
+  let st;
+  if(usage==="二軍") st=simFarmStats(tmp,inj?inj.miss:0);
+  else if(p.kind==="二刀流"){
+    const miss=inj?inj.miss:0;
+    const sb=usageB==="二軍"? null : simSeasonStats(tmp,usageB,miss,{as:"b"});
+    const sp=usageP==="二軍"? null : simSeasonStats(tmp,usageP,Math.min(0.9,miss+0.25),{as:"p"});
+    st = sb&&sp? Object.assign({},sb,{two:true,pit:sp,usageB,usageP}) : (sb||sp);
+  }
+  else st=simSeasonStats(tmp,usage,inj?inj.miss:0);
+  if(usage==="二軍") ev.push({t:"メジャー昇格なし。1年を3Aで過ごした。",c:"bad"});
+  p.lastERA=(st&&st.type==="p"&&!st.farm)?st.era:null;
+  p.seasonsPro++; p.mlbUsage=usage;
+  ev.unshift({t:`${p.mlbTeam}／${usage==="二軍"?"3A中心":usage}`});
+  const good = (!st||st.farm)? false : st.two? (st.ops>=.790||st.pit.era<=3.40)
+    : st.type==="b"? (st.ops>=.800&&st.g>=110) : (st.era<=3.30&&(st.gs>=18||st.g>=45));
+  if(good){ p.awards.push({year:p.year,name:"MLBオールスター"}); ev.push({t:"オールスターに選出された。",c:"good"}); }
+  const mlbTitles = judgeAwardsMLB(p,st,usage,ev);
+  recordEvents(p,st,usage,ev);
+  nationalTeam(p,st,usage,ev);
+  milestoneCheck(p,st,ev);
+  // 順位とポストシーズン
+  const table=mlbStandings(p,clamp(((p.perfScore||0)-45)*0.12,-5,12));
+  p.mlbTable=table;
+  const me=table.find(x=>x.id===p.mlbTeam)||{rank:14,w:70};
+  const lgRows=table.filter(x=>x.lg===(mlbTeamById(p.mlbTeam)||{lg:"AL"}).lg);
+  const lgRank=lgRows.findIndex(x=>x.id===p.mlbTeam)+1;
+  p.lastRank=lgRank; p.lastChamp=false;
+  ev.push({t:`${p.mlbTeam}は${me.w}勝。リーグ${lgRank}位。`});
+  if(lgRank<=3&&st&&!st.farm){
+    const r=rnd();
+    if(r<0.16){ p.awards.push({year:p.year,name:"ワールドシリーズ制覇"}); p.lastChamp=true;
+      ev.push({t:`${p.mlbTeam}がワールドシリーズを制した。`,c:"big"}); p.popularity=clamp(p.popularity+10,0,100); }
+    else if(r<0.32) ev.push({t:`${p.mlbTeam}はワールドシリーズに進出したが敗れた。`,c:"good"});
+    else if(r<0.60) ev.push({t:`${p.mlbTeam}はリーグ優勝決定シリーズで敗れた。`});
+    else ev.push({t:`${p.mlbTeam}はディビジョンシリーズで敗れた。`});
+  }else ev.push({t:`${p.mlbTeam}はポストシーズンを逃した。`});
+  if(p.manager){ const before=p.manager.trust||50;
+    p.manager.trust=clamp(Math.round(before+clamp(((p.perfScore||0)-45)*0.22,-12,12)),0,100); }
+  growPlayer(p,usage==="二軍"?0.8:1.0);
+  if(!p.ikusei&&(p.perfScore||0)>=85&&Number(p.uniform)>9&&chance(.45)){
+    const n=String(ri(1,9));
+    ev.push({t:`来季から背番号${n}を背負うことになった。`,c:"good"});
+    p.uniform=n;
+  }
+  p.ratingLog=(p.ratingLog||[]).concat([{year:p.year,v:rating(p)}]).slice(-30);
+  p.perfScore= (!st||st.farm)? 6
+    : st.two? clamp(perfScore(p,st,st.usageB)+perfScore(p,st.pit,st.usageP)*0.55,0,140)
+    : perfScore(p,st,usage);
+  return {ev,st,usage,titles:mlbTitles,rank:null};
+}
+function mlbOffseason(p,res){
+  const D=[];
+  if(p.contract.left>1){ p.contract.left--; return D; }
+  // メジャーは実績ではなく直近の成績で判断される。能力による保護はない
+  const keep = (p.perfScore||0)>=45 && p.age<=38;
+  if(keep){
+    const sal=Math.max(700000, Math.round(Math.max(p.mlbSalary*rf(.85,1.35), mlbValue(p)*rf(.85,1.2))/100000)*100000);
+    D.push({title:"メジャー契約の更新",desc:`${p.mlbTeam}から年俸${usd(sal)}の提示。`,
+      options:[
+        {label:`${p.mlbTeam}と再契約`,sub:`年俸${usd(sal)}`,run:()=>{p.mlbSalary=sal;const y=ri(1,3);p.contract={years:y,left:y};p.justMovedYear=p.year;}},
+        {label:"他球団と契約する",sub:"新天地を探す",run:()=>{
+          const t=pick(MLB_TEAMS.filter(x=>x.id!==p.mlbTeam));
+          const sal2=Math.max(700000,Math.round(mlbValue(p)*rf(.8,1.2)/100000)*100000);
+          p.career.push({year:p.year,text:`${p.mlbTeam}→${t.id}（移籍）`});
+          p.mlbTeam=t.id;p.mlbSalary=sal2;const y=ri(1,4);p.contract={years:y,left:y};
+          p.mlbRivals=null;p.manager=null;p.justMovedYear=p.year;
+          p.pendEv.push({t:`${t.id}と${y}年契約。年俸${usd(sal2)}。`,c:"big"});
+        }},
+        {label:"日本に復帰する",sub:"NPB球団と契約する",run:()=>{
+          const t=pick(TEAMS.slice().sort((a,b)=>b.money-a.money).slice(0,6));
+          moveTeam(p,t,clamp(Math.round(marketValue(p)*1.15/10)*10,3000,60000),ri(2,4),p.pendEv,"メジャーから復帰");
+          p.league="NPB";p.status="支配下";p.mlbTeam=null;p.mlbRivals=null;p.manager=null;
+        }}
+      ]});
+  }else{
+    D.push({title:"戦力外（メジャー）",desc:`${p.mlbTeam}から契約を延長しない旨を伝えられた。`,
+      options:[
+        {label:"日本球界に復帰する",run:()=>{
+          const t=pick(TEAMS);
+          moveTeam(p,t,clamp(Math.round(marketValue(p)*0.9/10)*10,1500,40000),ri(1,3),p.pendEv,"メジャーから復帰");
+          p.league="NPB";p.status="支配下";p.mlbTeam=null;p.mlbRivals=null;p.manager=null;
+        }},
+        {label:"マイナー契約で残る",sub:"再昇格を目指す",run:()=>{p.mlbSalary=800000;p.contract={years:1,left:1};p.justMovedYear=p.year;}},
+        {label:"引退する",run:()=>doRetire(p,"メジャーで区切り")}
+      ]});
+  }
+  return D;
+}
+
+/* ============ トレード・現役ドラフト ============ */
+function randomMoves(p,res){
+  if(p.league!=="NPB"||p.retired)return;
+  const usage=res.usage;
+  const t=teamById(p.team);
+  // 現役ドラフト
+  if(!p.ikusei&&p.seasonsPro>=2&&!faDomesticOK(p)&&(usage==="二軍"||usage==="控え"||usage==="ビハインド")&&chance(.16)){
+    // 出場機会を与えられる＝戦力が整っていない球団が獲りにくる
+    const cand=TEAMS.filter(x=>x.id!==p.team).sort((a,b)=>(teamPower(p,a.id)+rnd()*12)-(teamPower(p,b.id)+rnd()*12));
+    const to=cand[0];
+    moveTeam(p,to,Math.max(CONFIG.minSalaryNPB,Math.round(p.salary*1.05/10)*10),1,p.pendEv,"現役ドラフト");
+    p.pendEv.push({t:"現役ドラフトで指名を受けた。出場機会を求めての移籍となる。",c:""});
+    return;
+  }
+  // トレード
+  const tradeP = (usage==="二軍"?0.10:usage==="控え"?0.07:0.025)
+               + (p.age>=31&&p.salary>8000?0.06:0) + (t.dev>82&&p.age>=30?0.05:0);
+  if(chance(tradeP)&&p.contract.left<=1){
+    // 勝負をかけている球団、あるいは若返りを進める球団が動く
+    const cand=TEAMS.filter(x=>x.id!==p.team);
+    const wt=x=>(p.age<=27? teamPower(p,x.id)*0.6+x.dev*0.5 : teamPower(p,x.id)*0.9)+rnd()*25;
+    const to=cand.sort((a,b)=>wt(b)-wt(a))[0];
+    moveTeam(p,to,p.salary,1,p.pendEv,"トレード");
+    p.pendEv.push({t:"トレードが成立した。拒否権はなかった。",c:""});
+  }
+}
+
+/* ============ 引退 ============ */
+function retireCheck(p,res){
+  if(p.retired)return [];
+  const D=[];
+  // 移籍や再契約を決めた直後の年は、本人の意思に反する引退判定を挟まない
+  if(p.justMovedYear===p.year||p.contract.left>1) return D;
+  const decline = rating(p) < (p.peakRating||60)*0.78;
+  if((p.age>=32&&decline&&(p.perfScore||0)<38)||(p.age>=36&&(p.perfScore||0)<52)||p.age>=38||p.age>=40){
+    D.push({title:"進退",desc: p.age>=40
+      ? `${p.age}歳。これだけ長くやれたこと自体が例外だ。来季をどうするか。`
+      : `${p.age}歳。体は言うことを聞かなくなってきた。来季をどうするか。`,
+      options:[
+        {label:"現役を続ける",run:()=>{}},
+        {label:"引退を決断する",sub:"通算成績が確定する",run:()=>doRetire(p,"自らの決断")}
+      ]});
+  }
+  return D;
+}
+function doRetire(p,reason){
+  p.retired=true; p.retireReason=reason; p.stage="end";
+  p.pendEv=p.pendEv||[];
+  p.pendEv.push({t:`${p.year}年、現役を引退した。`,c:"big"});
+  // 引退セレモニー
+  const big=(p.titles.length>=1)||p.popularity>=55||p.seasonsPro>=12;
+  const t=p.team? teamById(p.team):null;
+  if(reason==="プロの道が絶たれた") return;
+  if(big&&t){
+    p.pendEv.push({t:`${t.name}の本拠地で引退試合が行われた。${p.popularity>=70?"満員の":"多くの"}観客が集まった。`,c:"good"});
+    if(p.kind!=="投手") p.pendEv.push({t:pick(["最終打席は右前へのヒット。ベンチもスタンドも沸いた。","最終打席は空振り三振。それでも拍手は鳴り止まなかった。","最終打席で放った打球は、静かに外野手のグラブに収まった。"])});
+    else p.pendEv.push({t:pick(["最後の打者を空振り三振に仕留め、マウンドを降りた。","最後の一球は力の限りの直球だった。","最終回を投げ切り、ナインに迎えられた。"])});
+    p.pendEv.push({t:`セレモニーでは${p.seasonsPro}年間を共にしたチームメイトに胴上げされた。`,c:"good"});
+    if(p.popularity>=60) p.pendEv.push({t:"場内一周では、涙をこらえきれないファンの姿もあった。"});
+  }else if(t){
+    p.pendEv.push({t:"引退試合はなかった。二軍の球場で、静かにユニフォームを脱いだ。"});
+  }else{
+    p.pendEv.push({t:"球団も、引退試合もない。それでも、野球をやめる日は来た。"});
+  }
+}
+
+/* ============ 記録（メモリアル） ============ */
+const MILESTONES=[
+  {key:"h",  name:"通算2000安打", v:2000, per:130},
+  {key:"hr", name:"通算500本塁打", v:500, per:28},
+  {key:"hr2",name:"通算300本塁打", v:300, per:28, of:"hr"},
+  {key:"w",  name:"通算200勝",    v:200, per:11},
+  {key:"sv", name:"通算250セーブ", v:250, per:28},
+  {key:"so", name:"通算2000奪三振", v:2000, per:130}
+];
+function totalsWith(p,st){
+  const t=careerTotals(p,false);
+  if(st&&!st.farm){
+    if(st.type==="b"||st.two){ t.b.h+=st.h||0; t.b.hr+=st.hr||0; t.b.g+=st.g||0; }
+    const q=st.two? st.pit : (st.type==="p"? st : null);
+    if(q){ t.q.w+=q.w||0; t.q.sv+=q.sv||0; t.q.so+=q.so||0; }
+  }
+  return t;
+}
+function milestoneCheck(p,st,ev){
+  const before=careerTotals(p,false), after=totalsWith(p,st);
+  const val=(t,k)=> k==="h"?t.b.h : (k==="hr"||k==="hr2")?t.b.hr : k==="w"?t.q.w : k==="sv"?t.q.sv : t.q.so;
+  p.milestoneNear=null;
+  MILESTONES.forEach(m=>{
+    const b=val(before,m.key), a=val(after,m.key);
+    if(b<m.v && a>=m.v){
+      p.awards.push({year:p.year,name:m.name});
+      ev.push({t:`${m.name}を達成した。`,c:"big"});
+      p.popularity=clamp(p.popularity+12,0,100);
+    }
+    // 次の1〜2年で届く位置にいるか
+    const rest=m.v-a;
+    if(rest>0 && rest<=m.per*1.6 && !p.milestoneNear) p.milestoneNear={name:m.name,rest};
+  });
+  if(p.milestoneNear&&p.age>=32)
+    ev.push({t:`${p.milestoneNear.name}まであと${p.milestoneNear.rest}。球団も記録達成を意識している。`});
+}
+
+/* ============ 通算成績 ============ */
+function careerTotals(p,includeAmateur){
+  const b={g:0,pa:0,ab:0,h:0,hr:0,rbi:0,sb:0,bb:0,so:0,d2:0,d3:0};
+  const q={g:0,gs:0,ip:0,w:0,l:0,sv:0,hld:0,so:0,bb:0,er:0};
+  p.history.forEach(x=>{
+    if(x.amateur&&!includeAmateur)return;
+    if(x.league==="独立")return;          // 通算は一軍の成績のみ
+    const s=x.st; if(!s||s.farm)return;
+    if(s.type==="b"){["g","pa","ab","h","hr","rbi","sb","bb","so","d2","d3"].forEach(k=>b[k]+=s[k]||0);}
+    else{["g","gs","w","l","sv","hld","so","bb"].forEach(k=>q[k]+=s[k]||0);q.ip+=s.ip||0;q.er+=(s.era*s.ip/9)||0;}
+    if(s.two&&s.pit){["g","gs","w","l","sv","hld","so","bb"].forEach(k=>q[k]+=s.pit[k]||0);q.ip+=s.pit.ip||0;q.er+=(s.pit.era*s.pit.ip/9)||0;}
+  });
+  b.avg=b.ab? b.h/b.ab:0;
+  q.era=q.ip? q.er*9/q.ip:0;
+  q.ip=Math.round(q.ip*10)/10;
+  return {b,q};
+}
+function leagueTotals(p,lg){
+  const b={g:0,h:0,hr:0,rbi:0,sb:0}, q={g:0,w:0,l:0,sv:0,hld:0,so:0,ip:0};
+  let years=0;
+  p.history.forEach(x=>{
+    if(x.amateur)return;
+    if(x.league==="独立")return;
+    const inLg = lg==="MLB" ? x.league==="MLB" : (x.league!=="MLB");
+    if(!inLg)return;
+    const s=x.st;
+    if(!s||!s.farm) years++;
+    if(!s||s.farm)return;
+    if(s.type==="b"){["g","h","hr","rbi","sb"].forEach(k=>b[k]+=s[k]||0);}
+    else{["g","w","l","sv","hld","so"].forEach(k=>q[k]+=s[k]||0); q.ip+=s.ip||0;}
+    if(s.two&&s.pit){["g","w","l","sv","hld","so"].forEach(k=>q[k]+=s.pit[k]||0); q.ip+=s.pit.ip||0;}
+  });
+  q.ip=Math.round(q.ip*10)/10;
+  return {b,q,years};
+}
+function epilogue(p){
+  const {b,q}=careerTotals(p,false);
+  const isP=p.kind==="投手";
+  const npb=leagueTotals(p,"NPB"), mlb=leagueTotals(p,"MLB");
+  const lines=[];
+  // 名球会（日米通算で判定）
+  const meikyukai = p.kind==="二刀流"? (b.h>=2000||q.w>=200||q.sv>=250) : isP? (q.w>=200||q.sv>=250) : b.h>=2000;
+  const titleN=p.titles.length;
+  const mvpN=p.awards.filter(a=>a.name==="リーグMVP").length;
+  const bnN=p.awards.filter(a=>a.name==="ベストナイン").length;
+  const sawamuraN=p.awards.filter(a=>a.name==="沢村賞").length;
+  const asNPB=p.awards.filter(a=>a.name==="オールスター出場").length;
+  const asMLB=p.awards.filter(a=>a.name==="MLBオールスター").length;
+  // 日本の野球殿堂：NPBでの実績で判定
+  let npbScore = titleN*9 + mvpN*12 + bnN*4 + sawamuraN*8 + asNPB*1.5 + (meikyukai?28:0)
+    + (isP? npb.q.w*0.24 + npb.q.sv*0.18 + npb.q.so*0.004 : npb.b.h*0.011 + npb.b.hr*0.05);
+  const npbHof = npb.years>=10 && npbScore>=145;
+  // アメリカ野球殿堂：メジャーでの実績で判定（10年以上の在籍が条件）
+  const mlbTitleN=p.titles.filter(t=>t.name.includes("（MLB）")).length;
+  const cyN=p.awards.filter(a=>a.name==="サイ・ヤング賞").length;
+  const mvpMLB=p.awards.filter(a=>a.name==="MVP（MLB）").length;
+  const ws=p.awards.filter(a=>a.name==="ワールドシリーズ制覇").length;
+  let mlbScore = asMLB*7 + mlb.years*1.5 + mlbTitleN*9 + cyN*13 + mvpMLB*15 + ws*4
+    + (isP? mlb.q.w*0.5 + mlb.q.so*0.015 + mlb.q.sv*0.25 : mlb.b.h*0.02 + mlb.b.hr*0.12);
+  const mlbHof = mlb.years>=10 && mlbScore>=130;
+  const eien = npbHof && p.career.filter(c=>c.text.includes("→")).length<=1 && npb.years>=14;
+  const reasonText={
+    "戦力外":"戦力外通告を受け","自らの決断":"自らの意思で","受け入れ先がない":"受け入れ先が見つからず",
+    "独立リーグで区切り":"独立リーグで区切りをつけ","メジャーで区切り":"メジャーで区切りをつけ",
+    "プレーする場所がなくなった":"プレーする場所がなくなり","プロの道が絶たれた":"プロへの道が絶たれ"
+  }[p.retireReason]||p.retireReason;
+  if(p.seasonsPro===0) lines.push(`${p.year}年、${reasonText}、野球から離れた。`);
+  else lines.push(`${p.seasonsPro}年の現役生活。${reasonText}、${p.year}年に引退した。`);
+  if(mlb.years>0) lines.push(`日本${npb.years}年、メジャー${mlb.years}年。`);
+  if(meikyukai)lines.push("日米通算の成績が名球会入りの条件を満たした。");
+  if(npbHof)lines.push("後年、日本の野球殿堂入りを果たした。");
+  if(mlbHof)lines.push("アメリカ野球殿堂（クーパーズタウン）にも名を刻んだ。");
+  if(npbHof&&mlbHof)lines.push("日米双方の殿堂に入った、稀有な選手として記憶されている。");
+  if(eien)lines.push(`背番号${p.uniform}は永久欠番となった。`);
+  if(!npbHof&&!mlbHof&&!meikyukai&&titleN===0&&p.seasonsPro>=8)
+    lines.push("記録に残る選手ではなかった。それでも、その年月は確かにあった。");
+  const big = npbHof||mlbHof||titleN>=3;
+  let career2;
+  if(big) career2=pick(["一軍打撃コーチ","二軍監督","解説者","評論家"]);
+  else if(p.popularity>=60) career2=pick(["テレビ解説者","タレント","少年野球の指導者"]);
+  else if(p.seasonsPro>=10) career2=pick(["スカウト","球団職員","打撃投手","トレーニングコーチ"]);
+  else career2=pick(["社会人チームの指導者","飲食店の経営者","一般企業の会社員","独立リーグのコーチ"]);
+  lines.push(`引退後は${career2}となった。`);
+  // その後
+  if(big&&chance(0.55)){
+    const t=p.team? teamById(p.team):pick(TEAMS);
+    const yr=p.year+ri(4,9);
+    lines.push(`${yr}年、${(t||TEAMS[0]).name}の監督に就任。`);
+    const res=pick(["就任3年目にリーグ優勝を果たした。","チームの再建に取り組んだが、優勝には届かなかった。","若手を育て、常勝チームの土台を作った。","成績が振るわず、3年で退任した。"]);
+    lines.push(res);
+  }else if(p.seasonsPro>=12&&chance(0.4)){
+    lines.push(`${p.year+ri(3,8)}年、指導者として一軍のコーチに昇格した。`);
+  }else if(!big&&p.seasonsPro<8&&chance(0.35)){
+    lines.push("野球とは違う場所で、静かに暮らしている。");
+  }
+  return {lines,b,q,npb,mlb,meikyukai,npbHof,mlbHof,hof:npbHof||mlbHof,eien,npbScore,mlbScore};
+}
+/* ============ アマチュア（大学・社会人・独立） ============ */
+const AMA_LV={"大学":80,"社会人":86,"独立リーグ":70};
+const AMA_LEN={"大学":4,"社会人":3,"独立リーグ":1};
+function simAmateur(p){
+  const ev=[]; const lv=AMA_LV[p.amaType];
+  const r=rating(p);
+  // 新加入の1年目だけ壁がある。同じカテゴリで続投する2クール目は既存戦力として扱う
+  const need=lv*0.70+((p.amaYear===1&&!p.amaContinued)?8:0);
+  let playing = r>=need+10?"主力":r>=need?"レギュラー":r>=need-9?"控え":"ベンチ外";
+  ev.push({t:`${p.amaType}${p.amaType==="大学"?p.amaYear+"年":""}。${playing}。`});
+  const teamStr=lv+gauss()*7;
+  if(p.amaType==="大学"&&teamStr>84) ev.push({t:"リーグ優勝。全日本大学選手権に出場した。"});
+  if(p.amaType==="社会人"&&teamStr>86) ev.push({t:"都市対抗野球に出場。補強選手としての評価も上がった。"});
+  let stat=null;
+  if(playing!=="ベンチ外"){
+    const g=playing==="主力"?ri(28,42):playing==="レギュラー"?ri(20,32):ri(8,18);
+    let pst=null,bst=null;
+    if(p.kind!=="野手"){
+      const pg = p.kind==="二刀流"? Math.max(4,Math.round(g*0.55)) : g;
+      const era=clamp(4.10-(p.pit.control-42)*.038-(p.velo-134)*.060-breakScore(p)*.016+gauss()*.42,0.10,8);
+      const ip=Math.round(pg*rf(4.5,7));
+      pst={type:"p",g:pg,ip,era:+era.toFixed(2),so:Math.round(ip*rf(.7,1.25)),w:Math.round(pg*rf(.2,.5)),l:Math.round(pg*rf(.05,.3))};
+      if(p.velo>=150){ev.push({t:`最速${p.velo}km/h。スカウトが列をなした。`,c:"good"});p.popularity=clamp(p.popularity+7,0,100);}
+    }
+    if(p.kind!=="投手"){
+      const ab2=Math.round(g*rf(3,3.8));
+      const avg=clamp(.240+(p.bat.meet-42)*.0035+gauss()*.036,.110,.480);
+      const hr=Math.max(0,Math.round(ab2*Math.max(0,(p.bat.power-36))/700*(0.6+p.ballistic*.28)+gauss()*.5));
+      bst={type:"b",g,ab:ab2,h:Math.round(ab2*avg),avg:+avg.toFixed(3),hr,sb:Math.round(g*Math.max(0,(p.bat.speed-48))/110)};
+    }
+    stat = (bst&&pst)? Object.assign({},bst,{two:true,pit:pst}) : (pst||bst);
+    p.popularity=clamp(p.popularity+(playing==="主力"?4:1),0,100);
+  }
+  rehabStep(p,ev);
+  p.lastPlaying=playing;
+  p.playHistory=(p.playHistory||[]).concat([playing]).slice(-3);
+  growPlayer(p, playing==="ベンチ外"?0.8:1.05);
+  injuryCheck(p,0.5,ev);
+  return {ev,stat,playing};
+}
+
+/* ============ 進行 ============ */
+const S={p:null,tab:"log",decisions:[],post:null,seedText:""};
+
+function draftChoice(p,ev){
+  const d=runDraft(p,ev);
+  const routes=[];
+  const toAma=(type,sub)=>({label:type==="大学"?"大学に進む":type==="社会人"?"社会人野球に進む":"独立リーグでプレーする",sub,
+    run:()=>{p.amaContinued=(p.amaType===type);p.stage="ama";p.amaType=type;p.amaYear=1;p.faType="college";}});
+  const canRetry = p.age<=25;   // アマチュアでの再挑戦は25歳まで
+  if(!canRetry){
+    // これ以上アマチュアで粘る道はない
+  } else if(p.stage==="hs"){
+    routes.push(toAma("大学","4年後に再挑戦。体も技術も伸びる"));
+    routes.push(toAma("社会人","3年後に再挑戦。即戦力評価を狙う"));
+    routes.push(toAma("独立リーグ","毎年ドラフトに挑戦できる"));
+  }else if(canRetry&&p.amaType==="大学"){
+    routes.push(toAma("社会人","3年後に再挑戦"));
+    routes.push(toAma("独立リーグ","毎年ドラフトに挑戦できる"));
+  }else if(canRetry&&p.amaType==="社会人"){
+    routes.push(toAma("社会人","もう3年、主力として都市対抗で勝負する"));
+    routes.push(toAma("独立リーグ","毎年ドラフトに挑戦できる"));
+  }else if(canRetry){
+    routes.push(toAma("独立リーグ","来年もドラフトに挑む"));
+  }
+  routes.push({label:"野球をやめる",sub:canRetry?"ここで物語は終わる":"年齢的にこれ以上の再挑戦はできない",
+    run:()=>{p.stage="end";p.retired=true;p.retireReason="プロの道が絶たれた";}});
+  if(d){
+    const word = d.ikusei? `育成${d.rank}位`:`${d.rank}位`;
+    ev.push({t:`ドラフト会議、${d.team.name}が${word}で指名。`,c:"big"});
+    const opts=[{label:`${d.team.name}に入団する`,sub:`${word}指名・${d.ikusei?"育成契約":"支配下契約"}`,
+      run:()=>{joinTeam(p,d.team,d.rank,d.ikusei);
+        p.pendEv.push({t:`${d.team.name}に入団。背番号${p.uniform}、年俸${yen(p.salary)}。`,c:"big"});
+        p.career.push({year:p.year,text:`${d.team.name}に${word}で入団`});}}];
+    S.decisions=[{title:"進路の決定",desc:"指名を受け入れるか、別の道を選ぶか。",options:opts.concat(routes.slice(0,routes.length-1)).concat(routes.slice(-1))}];
+  }else{
+    S.decisions=[{title:"進路の決定",desc:"指名はなかった。ここからどうするか。",options:routes}];
+  }
+}
+
+function pushHistory(p,label,usage,st,ev,extra){
+  p.history.push(Object.assign({year:p.year,age:p.age,label,usage,st,ev},extra||{}));
+}
+
+function snapshot(){
+  if(!S.p)return;
+  try{ S.undo={p:JSON.parse(JSON.stringify(S.p)),rng:RNG_STATE,year:S.p.year}; }catch(e){ S.undo=null; }
+}
+function undoYear(){
+  if(!S.undo){ toast("戻せる記録がありません"); return; }
+  S.p=S.undo.p; setSeed(S.undo.rng); S.decisions=[]; S.post=null; S.confirm=null; S.undo=null;
+  save(); S.tab="log"; render(); toast("1年分を取り消しました");
+}
+function advance(){
+  const p=S.p; if(!p||S.decisions.length||p.retired)return;
+  snapshot();
+  p.pendEv=[];
+  if(p.stage==="hs"){
+    const r=simHighSchool(p); p.pendEv=r.ev;
+    pushHistory(p,`${p.schoolName||p.school} ${p.hsYear}年`,r.playing,r.stat,r.ev,{amateur:true});
+    const last=p.hsYear===3;
+    p.hsYear++; p.age++; p.year++;
+    if(last) draftChoice(p,r.ev);
+    else S.decisions=[trainingDecision(p,p.hsYear===3)];
+  }
+  else if(p.stage==="ama"){
+    const r=simAmateur(p); p.pendEv=r.ev;
+    pushHistory(p,`${p.amaType}${p.amaType==="大学"?p.amaYear+"年":""}`,r.playing,r.stat,r.ev,{amateur:true});
+    const last=p.amaYear>=AMA_LEN[p.amaType];
+    p.amaYear++; p.age++; p.year++;
+    if(last){ p.amaYear=1; draftChoice(p,r.ev); }
+    else S.decisions=[trainingDecision(p,true)];
+  }
+  else if(p.stage==="pro"){
+    const res = p.league==="MLB"? simMLBYear(p) : p.league==="独立"? simIndyYear(p) : simProYear(p);
+    p.pendEv=res.ev;
+    p.peakRating=Math.max(p.peakRating||0,rating(p));
+    const teamLabel = p.league==="MLB"? (p.mlbTeam||"MLB") : p.league==="独立"? (p.indyTeam||"独立リーグ") : ((teamById(p.team)||{}).name||"—");
+    pushHistory(p, teamLabel, res.usage, res.st, res.ev,
+      {league:p.league,salary:p.league==="MLB"?p.mlbSalary:p.salary,rank:res.rank});
+    p.age++; p.year++;
+    S.decisions = p.league==="MLB"? mlbOffseason(p,res) : buildDecisions(p,res);
+    S.post=()=>{
+      if(p.retired)return;
+      randomMoves(p,res);
+      const D=retireCheck(p,res);
+      if(D.length)S.decisions=D;
+    };
+    pruneDecisions();
+    if(!S.decisions.length){ const f=S.post;S.post=null;f&&f(); pruneDecisions(); }
+  }
+  if(p.retired&&!p.recorded){ p.recorded=true; recordLife(p); }
+  save(); render();
+}
+function pruneDecisions(){
+  const p=S.p; if(!p)return;
+  // 配列は作り直さず中身だけ削る（選択肢の run が同じ配列を参照しているため）
+  const keep=S.decisions.filter(d=>!p.retired && (!d.npb || (p.league==="NPB"&&p.team)));
+  if(keep.length!==S.decisions.length){ S.decisions.length=0; keep.forEach(d=>S.decisions.push(d)); }
+}
+function chooseOption(i){
+  const d=S.decisions[0]; if(!d)return;
+  const o=d.options[i];
+  const wasRetired=S.p?S.p.retired:false;
+  S.decisions.shift();
+  o.run();
+  pruneDecisions();
+  if(S.p&&S.p.retired&&!wasRetired&&!S.p.recorded){ S.p.recorded=true; recordLife(S.p); }
+  if(!S.decisions.length && S.post){ const f=S.post; S.post=null; f(); pruneDecisions(); }
+  save(); render();
+}
+
+/* ============ 表示 ============ */
+function fmtAvg(v){ const s=Math.round(v*1000); return (s>=1000?"1.000":"."+String(s).padStart(3,"0")); }
+/* OPSや長打率は1を超えるので、頭打ちにしない */
+function fmtRate(v){
+  if(v==null||isNaN(v)) return "—";
+  if(v>=1) return v.toFixed(3);
+  return "."+String(Math.round(v*1000)).padStart(3,"0");
+}
+function statLine(st){
+  if(!st)return "";
+  if(st.two&&st.pit){
+    const b=st, q=st.pit;
+    let l1=`<b>打者</b> ${b.g}試合 打率${fmtAvg(b.avg)} ${b.hr}本`+(b.rbi!==undefined?` ${b.rbi}打点`:"");
+    let l2=`<b>投手</b> ${q.g}登板 `+(q.w!==undefined?`${q.w}勝${q.l}敗 `:"")+`防御率${q.era.toFixed(2)} ${q.ip}回`+(q.so!==undefined?` ${q.so}奪三振`:"");
+    const kv=[];
+    if(b.runs!==undefined) kv.push(`<span>得点 <b>${b.runs}</b></span>`);
+    if(b.sb!==undefined) kv.push(`<span>盗塁 <b>${b.sb}</b></span>`);
+    if(b.ops!==undefined) kv.push(`<span>OPS <b>${fmtRate(b.ops)}</b></span>`);
+    if(q.whip!==undefined) kv.push(`<span>WHIP <b>${q.whip}</b></span>`);
+    return `${l1}<br>${l2}`+(kv.length?`<div class="kv">${kv.join("")}</div>`:"");
+  }
+  if(st.farmLine){
+    const f=st.farmLine;
+    return statLine(Object.assign({},st,{farmLine:null}))+
+      `<div class="kv"><span>二軍 <b>${f.type==="b"?`${f.g}試合 ${fmtAvg(f.avg)} ${f.hr}本`:`${f.g}登板 防${f.era.toFixed(2)}`}</b></span></div>`;
+  }
+  if(st.farm) return `<span class="muted">二軍</span> `+(st.type==="b"
+    ? `<b>${st.g}試合</b> 打率${fmtAvg(st.avg)} ${st.hr}本 ${st.rbi}打点`
+    : `<b>${st.g}登板</b> ${st.w}勝${st.l}敗 防御率${st.era.toFixed(2)} ${st.ip}回`);
+  if(st.type==="b")
+    return `<b>${st.g}試合</b> 打率${fmtAvg(st.avg)} ${st.hr!==undefined?st.hr+"本 ":""}${st.rbi!==undefined?st.rbi+"打点 ":""}${st.sb}盗塁${st.ops!==undefined?" OPS"+fmtRate(st.ops):""}${st.runs!==undefined?`<div class="kv"><span>得点 <b>${st.runs}</b></span><span>四球 <b>${st.bb}</b></span><span>三振 <b>${st.so}</b></span><span>犠打 <b>${st.sh}</b></span><span>併殺 <b>${st.gidp}</b></span></div>`:""}${st.err!==undefined&&st.fpct?`<div class="kv"><span>守備 <b>${st.posLog?st.posLog.map(x=>`${x.pos}${x.g}`).join("・"):st.pos||""}</b></span><span>失策 <b>${st.err}</b></span><span>守備率 <b>${fmtAvg(st.fpct)}</b></span>${st.order?`<span>打順 <b>${st.order}番</b></span>`:""}</div>`:""}`;
+  return `<b>${st.g}登板</b> ${st.w}勝${st.l}敗${st.sv?` ${st.sv}S`:""}${st.hld?` ${st.hld}H`:""} 防御率${st.era.toFixed(2)} ${st.ip}回 ${st.so}奪三振`+
+    (st.ha!==undefined?`<div class="kv"><span>被安打 <b>${st.ha}</b></span><span>自責点 <b>${st.er}</b></span><span>WHIP <b>${st.whip}</b></span>${st.gs?`<span>完投 <b>${st.cg}</b></span><span>完封 <b>${st.sho}</b></span><span>QS率 <b>${st.qsRate!=null?fmtAvg(st.qsRate):"—"}</b></span>`:""}</div>`:"");
+}
+/* 引退後の一覧用：1年を1行に収める短い成績表記 */
+function oneLineStat(x){
+  const st=x.st;
+  if(!st) return x.usage||"—";
+  if(st.two&&st.pit){
+    const q=st.pit;
+    return `打 ${st.g}試合 ${fmtAvg(st.avg)} ${st.hr}本／投 ${q.g}登板 防${q.era.toFixed(2)}`;
+  }
+  if(st.type==="b")
+    return `${st.farm?"二軍 ":""}${st.g}試合 ${fmtAvg(st.avg)} ${st.hr}本`+(st.rbi!==undefined?` ${st.rbi}打点`:"");
+  return `${st.farm?"二軍 ":""}${st.g}登板`+(st.w!==undefined?` ${st.w}勝${st.l}敗`:"")+(st.sv?` ${st.sv}S`:"")+` 防${st.era.toFixed(2)}`;
+}
+function yearCard(h,now){
+  const all=(h.ev||[]);
+  const line=e=>`<div class="ev ${e.c||""}">${e.t}</div>`;
+  let ev;
+  if(all.length<=4){ ev=all.map(line).join(""); }
+  else{
+    const keep=[], rest=[];
+    all.forEach((e,i)=>{ if(i===0||e.c==="big"||e.c==="bad"||(e.c==="good"&&keep.length<3)) keep.push(e); else rest.push(e); });
+    while(keep.length<3&&rest.length) keep.push(rest.shift());
+    ev=keep.map(line).join("")+(rest.length?`<details><summary class="cap">他${rest.length}件の出来事</summary>${rest.map(line).join("")}</details>`:"");
+  }
+  return `<div class="card yearcard">
+    <div class="hdline"><span class="y">${h.year}年</span><span class="a">${h.age}歳・${h.label}</span></div>
+    ${ev}${h.st?`<div class="statline">${statLine(h.st)}${h.salary?`<div class="kv"><span>この年の年俸 <b>${h.league==="MLB"?usd(h.salary):yen(h.salary)}</b></span></div>`:""}</div>`:""}
+  </div>`;
+}
+function abilBar(label,v,d){
+  const dd = d? `<span class="d ${d>0?"up":"dn"}">${d>0?"+":""}${d}</span>`:"";
+  return `<div class="abil"><span>${label}</span><span class="v num">${v} <span class="muted small">${grade(v)}</span>${dd}</span>
+    <span class="bar"><i style="width:${v}%"></i></span></div>`;
+}
+function sparkline(values,labels,color,fmt){
+  if(values.length<2) return "";
+  const w=320,h=92,pad=6;
+  const mx=Math.max(...values), mn=Math.min(...values);
+  const span=(mx-mn)||1;
+  const x=i=>pad+i*(w-pad*2)/(values.length-1);
+  const y=v=>h-14-((v-mn)/span)*(h-26);
+  const pts=values.map((v,i)=>`${x(i).toFixed(1)},${y(v).toFixed(1)}`).join(" ");
+  let g=`<svg viewBox="0 0 ${w} ${h}" width="100%" height="${h}" style="display:block">`;
+  g+=`<polyline points="${pts}" fill="none" stroke="${color}" stroke-width="2"/>`;
+  values.forEach((v,i)=>{ g+=`<circle cx="${x(i).toFixed(1)}" cy="${y(v).toFixed(1)}" r="2" fill="${color}"/>`; });
+  g+=`<text x="${pad}" y="10" fill="#8FA59B" font-size="10">${fmt(mx)}</text>`;
+  g+=`<text x="${pad}" y="${h-2}" fill="#8FA59B" font-size="10">${fmt(mn)}　${labels[0]}〜${labels[labels.length-1]}</text>`;
+  return g+"</svg>";
+}
+/* その年ひとつを取り出す：最も良かったシーズン */
+function seasonScore(p,h){
+  const st=h.st; if(!st||st.farm) return -1;
+  try{
+    if(st.two&&st.pit) return perfScore(p,st,st.usageB||h.usage)+perfScore(p,st.pit,st.usageP||h.usage)*0.55;
+    return perfScore(p,st,h.usage);
+  }catch(e){ return -1; }
+}
+function bestSeasonCard(p){
+  const rows=p.history.filter(h=>!h.amateur&&h.st&&!h.st.farm&&h.league!=="独立");
+  if(rows.length<2) return "";
+  const best=rows.reduce((a,b)=>seasonScore(p,b)>seasonScore(p,a)?b:a);
+  const badges=[].concat(
+    p.titles.filter(t=>t.year===best.year).map(t=>t.name),
+    p.awards.filter(a=>a.year===best.year).map(a=>a.name)
+  );
+  const sal = best.salary? (best.league==="MLB"? usd(best.salary) : yen(best.salary)) : "—";
+  return `<div class="card" style="border-color:var(--acc)">
+    <h3>ベストシーズン</h3>
+    <div class="hdline" style="display:flex;align-items:baseline;gap:8px;margin:2px 0 6px">
+      <span class="y" style="font-size:19px;font-weight:700">${best.year}年</span>
+      <span class="a cap">${best.age}歳・${(best.league==="MLB"?"米 ":"")+esc(best.label)}${best.usage?`・${esc(best.usage)}`:""}</span></div>
+    <div class="statline">${statLine(best.st)}
+      <div class="kv"><span>この年の年俸 <b>${sal}</b></span>${best.rank?`<span>チーム <b>${best.rank}位</b></span>`:""}</div></div>
+    ${badges.length?`<div style="margin-top:8px">${badges.map(b=>`<span class="title-badge">${esc(b)}</span>`).join("")}</div>`:`<p class="cap" style="margin-top:8px">この年はタイトルには届かなかった。</p>`}
+  </div>`;
+}
+function bestCard(p){
+  const rows=p.history.filter(h=>h.st&&!h.st.farm&&!h.amateur&&h.league!=="独立");
+  if(rows.length<2) return "";
+  const bats=rows.map(h=>h.st.two?h.st:(h.st.type==="b"?h.st:null)).filter(Boolean);
+  const pits=rows.map(h=>h.st.two?h.st.pit:(h.st.type==="p"?h.st:null)).filter(Boolean);
+  const best=(arr,key,dir,min)=>{
+    const c=arr.filter(x=>!min||x[min.k]>=min.v);
+    if(!c.length)return null;
+    return c.reduce((a,b)=>((dir>0? b[key]>a[key] : b[key]<a[key])?b:a));
+  };
+  const line=[];
+  if(bats.length){
+    const hr=best(bats,"hr",1), avg=best(bats,"avg",1,{k:"pa",v:400}), h=best(bats,"h",1), rbi=best(bats,"rbi",1), sb=best(bats,"sb",1);
+    if(hr)line.push(`<span>最多本塁打 <b>${hr.hr}本</b></span>`);
+    if(avg)line.push(`<span>最高打率 <b>${fmtAvg(avg.avg)}</b></span>`);
+    const ops=best(bats,"ops",1,{k:"pa",v:400}); if(ops&&ops.ops!==undefined)line.push(`<span>最高OPS <b>${fmtRate(ops.ops)}</b></span>`);
+    if(h)line.push(`<span>最多安打 <b>${h.h}</b></span>`);
+    if(rbi)line.push(`<span>最多打点 <b>${rbi.rbi}</b></span>`);
+    if(sb)line.push(`<span>最多盗塁 <b>${sb.sb}</b></span>`);
+  }
+  if(pits.length){
+    const w=best(pits,"w",1), era=best(pits,"era",-1,{k:"ip",v:100}), so=best(pits,"so",1), sv=best(pits,"sv",1);
+    if(w)line.push(`<span>最多勝利 <b>${w.w}勝</b></span>`);
+    if(era)line.push(`<span>最高防御率 <b>${era.era.toFixed(2)}</b></span>`);
+    if(so)line.push(`<span>最多奪三振 <b>${so.so}</b></span>`);
+    if(sv&&sv.sv)line.push(`<span>最多セーブ <b>${sv.sv}</b></span>`);
+  }
+  if(p.bestGames)line.push(`<span>連続試合出場 <b>${p.bestGames}</b></span>`);
+  if(!line.length) return "";
+  return `<div class="card"><h3>自己ベスト</h3><div class="kv">${line.join("")}</div></div>`;
+}
+function trendCards(p){
+  const rows=p.history.filter(h=>!h.amateur);
+  if(rows.length<2) return "";
+  const years=rows.map(h=>h.year);
+  const sal=rows.map(h=>h.league==="MLB"? (h.salary||0)*CONFIG.usdJpy/10000 : (h.salary||0));
+  const rate=p.ratingLog&&p.ratingLog.length>1? p.ratingLog.map(x=>x.v):null;
+  let h=`<div class="card"><h3>年俸の推移</h3>${sparkline(sal,years,"var(--acc)",v=>v>=10000?`${(v/10000).toFixed(1)}億`:`${Math.round(v)}万`)}</div>`;
+  if(rate) h+=`<div class="card"><h3>総合の推移</h3>${sparkline(rate,p.ratingLog.map(x=>x.year),"#6FD08C",v=>Math.round(v))}</div>`;
+  return h;
+}
+function radarSVG(p,mode){
+  const isP = mode? mode==="p" : p.kind==="投手";
+  const labels=isP?["球速","制球","スタミナ","変化球","ノビ","対ピンチ"]:["ミート","パワー","走力","肩力","守備","捕球"];
+  const vals=isP?[clamp((p.velo-128)*3.2,0,100),p.pit.control,p.pit.stamina,breakScore(p),p.pit.nobi,p.pit.pinch]
+                :[p.bat.meet,p.bat.power,p.bat.speed,p.bat.arm,p.bat.fielding,p.bat.catching];
+  const size=230,c=size/2,R=size/2-26,n=labels.length;
+  const pt=(i,v)=>{const a=-Math.PI/2+i*2*Math.PI/n,r=R*Math.max(.04,v/100);return [c+r*Math.cos(a),c+r*Math.sin(a)];};
+  let g=`<svg class="radar" viewBox="0 0 ${size} ${size}" width="${size}" height="${size}">`;
+  [.25,.5,.75,1].forEach(k=>{g+=`<polygon points="${labels.map((_,i)=>pt(i,100*k).join(",")).join(" ")}" fill="none" stroke="rgba(255,255,255,.12)"/>`;});
+  labels.forEach((_,i)=>{const[x,y]=pt(i,100);g+=`<line x1="${c}" y1="${c}" x2="${x}" y2="${y}" stroke="rgba(255,255,255,.09)"/>`;});
+  g+=`<polygon points="${vals.map((v,i)=>pt(i,v).join(",")).join(" ")}" fill="var(--acc)" fill-opacity=".22" stroke="var(--acc)" stroke-width="2"/>`;
+  labels.forEach((lb,i)=>{const[x,y]=pt(i,124);g+=`<text x="${x}" y="${y}" fill="#8FA59B" font-size="11" text-anchor="middle" dominant-baseline="middle">${lb}</text>`;});
+  return g+"</svg>";
+}
+
+function render(){
+  const p=S.p;
+  const main=document.getElementById("main");
+  if(!p){
+    if(S.page==="rank"){
+      document.getElementById("nav").hidden=true;
+      document.getElementById("foot").hidden=true;
+      document.getElementById("hYear").textContent="記録";
+      document.getElementById("hName").textContent="歴代ランキング";
+      document.getElementById("hSub").textContent=`歩んだ人生 ${(S.lives||[]).length}人`;
+      main.innerHTML=`<div class="card"><div class="row"><button class="btn" onclick="closeRanking()">← 選手作成に戻る</button></div></div>`+rankingPage();
+      return;
+    }
+    renderCreate(); return;
+  }
+  document.getElementById("nav").hidden=false;
+  const t=p.team?teamById(p.team):null;
+  document.documentElement.style.setProperty("--acc", t? t.color : "#FFD66B");
+  document.documentElement.style.setProperty("--accInk", t? "#0B1210" : "#1A1405");
+  document.getElementById("hYear").textContent=p.year+"年";
+  document.getElementById("hName").textContent=p.name;
+  const place = p.stage==="hs"? (p.schoolName||p.school) : p.stage==="ama"? p.amaType :
+    p.league==="MLB"? p.mlbTeam : p.league==="独立"? (p.indyTeam||"独立リーグ") : (t?t.name:"—");
+  const sal = p.league==="MLB"? usd(p.mlbSalary||0) : (p.stage==="pro"||p.league==="独立"? yen(p.salary):"");
+  document.getElementById("hSub").innerHTML =
+    `${t?`<span class="teamdot" style="background:${t.color}"></span>`:""}<span class="muted">S${S.slot||1}</span>・${p.age}歳・${place}`+
+    `${p.uniform&&p.stage==="pro"?` #${p.uniform}`:""}${sal?`・${sal}`:""}`+
+    `${p.kind==="投手"?`・${p.role}`:`・${p.pos}`}`;
+  document.getElementById("foot").hidden = p.retired;
+  const go=document.getElementById("go");
+  go.disabled=S.decisions.length>0;
+  go.textContent = p.stage==="hs"? `高校${p.hsYear}年へ` : p.stage==="ama"? "次の1年へ" : "次のシーズンへ";
+
+  const tab=S.tab;
+  if(tab==="rank"){ main.innerHTML=rankingPage(); return; }
+  if(p.retired && tab==="log"){ main.innerHTML=renderEnd(p); return; }
+  if(tab==="log"){
+    let h="";
+    if(S.decisions.length){
+      const d=S.decisions[0];
+      h+=`<div class="choice"><h3>${d.title}${S.decisions.length>1?`　<span class="cap">この冬あと${S.decisions.length-1}件</span>`:""}</h3><p>${d.desc}</p>`+
+        d.options.map((o,i)=>`<button class="opt" onclick="chooseOption(${i})"><b>${o.label}</b>${o.sub?`<span>${o.sub}</span>`:""}</button>`).join("")+`</div>`;
+    }
+    const hs=p.history.slice().reverse().slice(0,6);
+    h+=hs.map((x,i)=>yearCard(x,i===0)).join("");
+    if(!hs.length)h+=`<div class="card"><h3>${p.year}年、高校入学</h3><p class="cap">${p.school}の野球部に入った。ここから始まる。下のボタンで1年進む。</p></div>`;
+    main.innerHTML=h;
+  }
+  else if(tab==="abil"){
+    const d=diffAbil(p);
+    const two=p.kind==="二刀流";
+    let h=`<div class="card">`;
+    if(two){
+      h+=`<div class="row" style="gap:0"><div style="flex:1">${radarSVG(p,"b")}<p class="cap" style="text-align:center">打者 ${batRating(p)}（${grade(batRating(p))}）</p></div>
+        <div style="flex:1">${radarSVG(p,"p")}<p class="cap" style="text-align:center">投手 ${pitRating(p)}（${grade(pitRating(p))}）</p></div></div>`;
+    } else h+=radarSVG(p);
+    h+=`<div class="statline"><b>総合 ${rating(p)}（${grade(rating(p))}）</b>
+      <div class="kv"><span>アピール <b>${appealOf(p).label}</b></span><span>オフの過ごし方 <b>${(TRAININGS[p.training]||{label:"未設定"}).label.replace("する","").replace("に参加","")}</b></span><span>成長型 <b>${p.age>=24?p.growthType:"？"}</b></span><span>耐久 <b>${grade(p.durability)}</b></span>
+      <span>精神 <b>${grade(p.mental)}</b></span><span>人気 <b>${p.popularity}</b></span>
+      ${p.kind!=="野手"?`<span>球速 <b>${p.velo}km/h</b>${d&&d.velo?` <span class="d ${d.velo>0?"up":"dn"}">${d.velo>0?"+":""}${d.velo}</span>`:""}</span>`:""}
+      ${p.kind!=="投手"?`<span>弾道 <b>${p.ballistic}</b></span>`:""}</div></div></div>`;
+
+    if(p.kind!=="投手"){
+      h+=`<div class="card"><h3>打撃・走塁・守備</h3>`;
+      BATK.forEach(([k,l])=>h+=abilBar(l,p.bat[k],d?d[k]:0));
+      h+=`</div>`;
+    }
+    if(p.kind!=="野手"){
+      h+=`<div class="card"><h3>投球</h3>`;
+      PITK.forEach(([k,l])=>h+=abilBar(l,p.pit[k],d?d[k]:0));
+      h+=`</div><div class="card"><h3>変化球</h3>`;
+      h+= p.breaks.length? p.breaks.map(b=>`<div class="abil"><span>${b.name}</span><span class="v num">変化量 ${b.lv}</span><span class="bar"><i style="width:${Math.round(b.lv/7*100)}%"></i></span></div>`).join("")
+        : `<p class="cap">まだ持ち球がない。</p>`;
+      h+=`</div>`;
+    }
+    h+=`<div class="card"><h3>守備適性</h3><div class="kv">`+
+      POSNAMES.filter(x=>p.apt[x]>0).map(x=>`<span>${x} <b>${["-","G","F","E","D","C","B","A"][p.apt[x]]}</b></span>`).join("")+`</div></div>`;
+    main.innerHTML=h;
+  }
+  else if(tab==="stat"){
+    const isP=p.kind==="投手";
+    const compact=!S.statFull;
+    const MIDV = compact? (isP?2:3) : (isP?8:7);   // 表示中の中間列の数（簡易表示では一部を隠す）
+    const salShort=(x)=>{
+      if(!x.salary) return "—";
+      if(x.league==="MLB") return `$${(x.salary/1000000).toFixed(1)}M`;
+      return x.salary>=10000? `${(x.salary/10000).toFixed(2)}億` : `${x.salary}万`;
+    };
+    const span=(txt,cls)=>`<td colspan="${MIDV}" class="${cls||"muted"}">${txt}</td>`;
+    const rows=p.history.map(x=>{
+      const s=x.st, sal=salShort(x), name=(x.league==="MLB"?"米 ":"")+(x.st&&x.st.farm? "二軍 ":"")+x.label.slice(0,6);
+      const head2=`<td>${x.year}</td><td>${esc(name)}</td>`;
+      if(!s) return `<tr>${head2}${span(x.amateur?esc(x.usage||"—"):"一軍出場なし")}<td class="num">${sal}</td></tr>`;
+      if(s.farm) return `<tr class="farm">${head2}${span(s.type==="b"?`${s.g}試合 ${fmtAvg(s.avg)} ${s.hr}本`:`${s.g}登板 防${s.era.toFixed(2)}`+"")}<td class="num">${sal}</td></tr>`;
+      if(s.two&&s.pit&&isP) return `<tr>${head2}${span(`打 ${s.g}試合 ${fmtAvg(s.avg)} ${s.hr}本／投 ${s.pit.g}登板 防${s.pit.era.toFixed(2)}`,"")}<td class="num">${sal}</td></tr>`;
+      if(s.two&&s.pit) return `<tr>${head2}<td class="num">${s.g}</td><td class="num">${fmtAvg(s.avg)}</td><td class="num ex">${s.h!==undefined?s.h:"—"}</td><td class="num">${s.hr}</td><td class="num ex">${s.rbi!==undefined?s.rbi:"—"}</td><td class="num ex">${s.sb!==undefined?s.sb:"—"}</td><td class="num ex">${s.ops!==undefined?fmtRate(s.ops):"—"}</td><td class="num">${sal}</td></tr>`+
+        `<tr class="farm"><td></td><td class="muted">投手として</td>${span(`${s.pit.g}登板 ${s.pit.w!==undefined?`${s.pit.w}勝${s.pit.l}敗 `:""}防${s.pit.era.toFixed(2)} ${s.pit.ip}回`)}<td></td></tr>`;
+      // 表の向き（打者列／投手列）と合わない年は、1つの欄にまとめて桁を崩さない
+      if(s.type==="b"&&isP) return `<tr>${head2}${span(`${s.g}試合 ${fmtAvg(s.avg)} ${s.hr}本`,"")}<td class="num">${sal}</td></tr>`;
+      if(s.type==="p"&&!isP) return `<tr>${head2}${span(`${s.g}登板 ${s.w!==undefined?`${s.w}勝${s.l}敗 `:""}防${s.era.toFixed(2)} ${s.ip}回`,"")}<td class="num">${sal}</td></tr>`;
+      if(s.type==="b") return `<tr>${head2}<td class="num">${s.g}</td><td class="num">${fmtAvg(s.avg)}</td><td class="num ex">${s.h!==undefined?s.h:"—"}</td><td class="num">${s.hr}</td><td class="num ex">${s.rbi!==undefined?s.rbi:"—"}</td><td class="num ex">${s.sb}</td><td class="num ex">${s.ops!==undefined?fmtRate(s.ops):"—"}</td><td class="num">${sal}</td></tr>`;
+      return `<tr>${head2}<td class="num">${s.g}</td><td class="num ex">${s.w}</td><td class="num ex">${s.l}</td><td class="num ex">${s.sv||0}</td><td class="num ex">${s.hld||0}</td><td class="num ex">${s.ip}</td><td class="num">${s.era.toFixed(2)}</td><td class="num ex">${s.so}</td><td class="num">${sal}</td></tr>`;
+    }).join("");
+    const T=careerTotals(p,false);
+    let totalMan=0;
+    p.history.forEach(x=>{ if(!x.salary)return;
+      totalMan += x.league==="MLB" ? x.salary*CONFIG.usdJpy/10000 : x.salary; });
+    const totalSal = totalMan>=10000? `${(totalMan/10000).toFixed(1)}億` : `${Math.round(totalMan)}万`;
+    const extraTotal = (!isP&&T.q.g>0)
+      ? `<tr class="tot"><td></td><td>投手計</td>${span(`${T.q.g}登板 ${T.q.w}勝${T.q.l}敗 ${T.q.sv}S ${T.q.ip}回 防${T.q.era.toFixed(2)}`,"")}<td></td></tr>`
+      : (isP&&T.b.g>0)
+      ? `<tr class="tot"><td></td><td>打者計</td>${span(`${T.b.g}試合 ${T.b.h}安打 ${T.b.hr}本 ${fmtAvg(T.b.avg)}`,"")}<td></td></tr>` : "";
+    const totalRow = isP
+      ? `<tr class="tot"><td>通算</td><td>${p.seasonsPro}年</td><td class="num">${T.q.g}</td><td class="num ex">${T.q.w}</td><td class="num ex">${T.q.l}</td><td class="num ex">${T.q.sv}</td><td class="num ex">${T.q.hld}</td><td class="num ex">${T.q.ip}</td><td class="num">${T.q.era.toFixed(2)}</td><td class="num ex">${T.q.so}</td><td class="num">${totalSal}</td></tr>`
+      : `<tr class="tot"><td>通算</td><td>${p.seasonsPro}年</td><td class="num">${T.b.g}</td><td class="num">${fmtAvg(T.b.avg)}</td><td class="num ex">${T.b.h}</td><td class="num">${T.b.hr}</td><td class="num ex">${T.b.rbi}</td><td class="num ex">${T.b.sb}</td><td class="num ex">—</td><td class="num">${totalSal}</td></tr>`;
+    const head=isP?`<tr><th>年</th><th>所属</th><th>登板</th><th class="ex">勝</th><th class="ex">敗</th><th class="ex">S</th><th class="ex">H</th><th class="ex">回</th><th>防御率</th><th class="ex">奪三</th><th>年俸</th></tr>`
+      :`<tr><th>年</th><th>所属</th><th>試合</th><th>打率</th><th class="ex">安打</th><th>本</th><th class="ex">打点</th><th class="ex">盗塁</th><th class="ex">OPS</th><th>年俸</th></tr>`;
+    let h=bestSeasonCard(p)+bestCard(p)+trendCards(p)+`<div class="card"><div class="row"><button class="btn" style="flex:1" onclick="S.statFull=!S.statFull;render()">${compact?"詳細表示に切り替える":"簡易表示に切り替える"}</button></div></div>`
+      +`<div class="card ${compact?"":"scroll"}"><table class="${compact?"cmpct":""}">${head}${rows}${totalRow}${extraTotal}</table>
+      <p class="cap" style="margin-top:8px">通算欄は一軍（NPB・メジャー）の合算。二軍・独立リーグ・アマチュアの成績は含まない。年俸の通算はメジャー分を1ドル${CONFIG.usdJpy}円で換算して加算している。</p></div>`;
+    h+=`<div class="card"><h3>タイトル</h3>${p.titles.length? p.titles.map(t=>`<span class="title-badge">${t.year} ${t.name}</span>`).join(""):'<p class="cap">まだない。</p>'}</div>`;
+    h+=`<div class="card"><h3>表彰</h3>${p.awards.length? p.awards.map(t=>`<span class="title-badge">${t.year} ${t.name}</span>`).join(""):'<p class="cap">まだない。</p>'}</div>`;
+    h+=`<div class="card"><h3>経歴</h3>${p.career.length? p.career.map(c=>`<div class="ev">${c.year}　${c.text}</div>`).join(""):'<p class="cap">—</p>'}</div>`;
+    h+=`<div class="card"><h3>故障歴</h3>${p.injuries.length? p.injuries.map(c=>`<div class="ev ${c.heavy?"bad":""}">${c.year}　${c.name}</div>`).join(""):'<p class="cap">大きな故障はない。</p>'}</div>`;
+    main.innerHTML=h;
+  }
+  else if(tab==="team"){
+    let h="";
+    if(p.league==="MLB"){
+      const mt=mlbTeamById(p.mlbTeam)||{};
+      h=`<div class="card"><h3>${p.mlbTeam}（メジャー）</h3>
+        <div class="statline"><b>年俸 ${usd(p.mlbSalary||0)}</b>
+        <div class="kv"><span>メジャー <b>${p.mlbYears}年目</b></span><span>契約残り <b>${p.contract.left}年</b></span>
+        <span>リーグ <b>${mt.lg||"—"}</b></span><span>本塁打の出やすさ <b>${(mt.parkHR||1)>=1.06?"出る":(mt.parkHR||1)>=0.98?"標準":"出にくい"}</b></span>
+        <span>換算レート <b>1ドル${CONFIG.usdJpy}円</b></span></div></div></div>`;
+      if(p.manager) h+=`<div class="card"><h3>監督</h3><div class="statline"><b>${p.manager.name}</b>
+        <div class="kv"><span>方針 <b>${p.manager.style}</b></span><span>信頼 <b>${(p.manager.trust||50)>=75?"厚い":(p.manager.trust||50)>=55?"ある":(p.manager.trust||50)>=40?"普通":"薄い"}</b></span></div></div></div>`;
+      if(p.mlbRivals&&p.mlbRivals.length) h+=`<div class="card"><h3>同じ枠を争う選手</h3>`+
+        p.mlbRivals.slice().sort((a,b)=>b.ab-a.ab).map(r=>`<div class="abil"><span>${r.name}　<span class="muted small">${r.age}歳</span></span><span class="v num">${r.ab}</span><span class="bar"><i style="width:${r.ab}%"></i></span></div>`).join("")+
+        `<p class="cap" style="margin-top:8px">自分の総合 ${rating(p)}。この比較で起用が決まる。</p></div>`;
+      if(p.mlbTable) h+=`<div class="card"><h3>メジャー順位（前年・上位8球団）</h3><table>`+
+        p.mlbTable.slice(0,8).map(r=>`<tr class="${r.id===p.mlbTeam?"now":""}"><td>${r.rank}</td><td>${r.id}</td><td>${r.lg}</td><td class="num">${r.w}勝${r.l!==undefined?r.l+"敗":""}</td></tr>`).join("")+
+        `</table></div>`;
+    }
+    else if(t){
+      h=`<div class="card"><h3>${t.name}</h3><p class="cap">${t.lg}リーグ／${t.park}／親会社 ${t.owner}</p>
+        <p style="font-size:14px;margin-top:6px">${t.note}</p>
+        <div class="kv"><span>資金力 <b>${grade(t.money)}</b></span><span>育成志向 <b>${grade(t.dev)}</b></span>
+        <span>本塁打の出やすさ <b>${t.parkHR>=1.1?"非常に出る":t.parkHR>=1.0?"やや出る":t.parkHR>=0.92?"やや出にくい":"出にくい"}</b></span></div></div>`;
+      if(p.manager){
+        h+=`<div class="card"><h3>監督</h3><div class="statline"><b>${p.manager.name}</b>
+          <div class="kv"><span>方針 <b>${p.manager.style}</b></span><span>就任 <b>${p.manager.since}年</b></span>
+          <span>信頼 <b>${(p.manager.trust||50)>=75?"厚い":(p.manager.trust||50)>=55?"ある":(p.manager.trust||50)>=40?"普通":"薄い"}</b></span></div></div>
+          <p class="cap" style="margin-top:8px">${p.manager.style==="若手重視"?"若手を我慢して使う。ベテランには厳しい。":p.manager.style==="実績重視"?"実績のある選手を優先する。若手は結果を出すまで使われにくい。":"能力どおりに起用する。"}</p></div>`;
+      }
+      if(p.rivals&&p.rivals.length){
+        h+=`<div class="card"><h3>同じ枠を争う選手</h3>`+
+          p.rivals.sort((a,b)=>b.ab-a.ab).map(r=>`<div class="abil"><span>${r.name}　<span class="muted small">${r.age}歳</span></span><span class="v num">${r.ab} <span class="muted small">${grade(r.ab)}</span></span><span class="bar"><i style="width:${r.ab}%"></i></span></div>`).join("")+
+          `<p class="cap" style="margin-top:8px">自分の総合 ${rating(p)}。この比較で起用が決まる。</p></div>`;
+      }
+      if(p.lastStandings){
+        h+=`<div class="card"><h3>${t.lg}リーグ順位（前年）</h3><table>`+
+          p.lastStandings.map(r=>`<tr class="${r.id===p.team?"now":""}"><td>${r.rank}</td><td>${esc(r.name)}</td><td class="num">${r.w}勝${r.l!==undefined?r.l+"敗":""}</td></tr>`).join("")+
+          `</table></div>`;
+      }
+      if(p.lgRivals){
+        h+=`<div class="card"><h3>リーグを代表する選手</h3>`+
+          ["avg","hr","era","w"].map(k=>{const r=p.lgRivals[k];return r?`<div class="ev">${esc(r.name)}　<span class="muted small">${{avg:"高打率",hr:"長距離砲",era:"防御率の柱",w:"勝ち星を稼ぐ投手"}[k]}・${r.age}歳</span></div>`:"";}).join("")+
+          `</div>`;
+      }
+      const posYears={};
+      p.history.forEach(x=>{const st2=x.st; if(!st2||st2.type!=="b")return;
+        (st2.posLog||(st2.pos?[{pos:st2.pos,g:st2.g}]:[])).forEach(z=>{posYears[z.pos]=(posYears[z.pos]||0)+z.g;});});
+      const posKeys=Object.keys(posYears).sort((a,b)=>posYears[b]-posYears[a]);
+      if(posKeys.length){
+        h+=`<div class="card"><h3>守ってきたポジション</h3><div class="kv">`+
+          posKeys.map(k=>`<span>${k} <b>${posYears[k]}試合</b></span>`).join("")+`</div></div>`;
+      }
+      if(p.milestoneNear) h+=`<div class="card" style="border-color:var(--acc)"><h3>目前の記録</h3>
+        <div class="statline"><b>${esc(p.milestoneNear.name)}まであと${p.milestoneNear.rest}</b>
+        <div class="kv"><span>人気 <b>${p.popularity}</b></span></div></div>
+        <p class="cap" style="margin-top:8px">記録が目前の選手と人気の高い選手は、多少衰えても球団に残される。</p></div>`;
+      const need=faYears(p)*CONFIG.faDaysPerYear;
+      h+=`<div class="card"><h3>FA権</h3><div class="statline"><b>${p.serviceDays}日 / ${need}日</b>
+        <div class="kv"><span>国内FAまで <b>${Math.max(0,need-p.serviceDays)}日</b></span>
+        <span>海外FAまで <b>${Math.max(0,CONFIG.faOverseas*CONFIG.faDaysPerYear-p.serviceDays)}日</b></span></div></div>
+        <p class="cap">一軍に定着した年は145日、出場が少ない年はそれ以下しか加算されない。メジャー在籍年はNPBの登録日数に加算されない。</p></div>`;
+    } else if(p.league==="独立"){
+      h=`<div class="card"><h3>独立リーグ</h3><div class="statline"><b>年俸 ${yen(p.salary)}</b>
+        <div class="kv"><span>総合 <b>${rating(p)}</b></span><span>年齢 <b>${p.age}歳</b></span></div></div>
+        <div class="kv" style="margin-top:6px"><span>昨季の評価 <b>${(p.indyBoost||0)>=0.25?"圧倒的":(p.indyBoost||0)>0?"まずまず":"平凡"}</b></span>
+        <span>独立在籍 <b>${p.indyYears||0}年目</b></span></div>
+        <p class="cap" style="margin-top:8px">復帰の可能性は総合値と独立での成績で決まる。圧倒的な成績なら確率が25ポイント、好成績なら12ポイント上乗せされる。通算5年で独立の球団からも契約を切られる。</p></div>`;
+    } else h=`<div class="card"><p class="cap">まだ所属球団はない。</p></div>`;
+    main.innerHTML=h;
+  }
+  else if(tab==="sys"){
+    main.innerHTML=(S.confirm==="retire"? confirmBox("引退します。取り消せません。","引退する","manualRetire()"):"")
+      +(S.confirm==="reset"? confirmBox("最初からやり直します。今の記録は消えます。","やり直す","resetAll()"):"")
+      +`<div class="card"><h3>この人生について</h3>
+      <div class="kv"><span>シード <b>${S.seedText||"（自動）"}</b></span><span>経過 <b>${p.year-CONFIG.startYear}年目</b></span>
+      <span>保存先 <b>${STORE.kind==="app"?"アプリ内":STORE.kind==="local"?"ブラウザ":"メモリのみ"}</b></span>
+      <span>バージョン <b>${CONFIG.version}</b></span></div>
+      <p class="cap" style="margin-top:8px">シードは乱数の種。作成時に同じ文字列を入れて同じ選択をすれば、能力の伸びも故障も指名球団も同じ人生が再現される。空欄なら毎回変わる。</p></div>
+      <div class="card"><h3>セーブスロット</h3><div class="row">
+      ${SLOTS.map(n=>{const si=(S.slotInfo||{})[n];
+        return `<button class="btn ${S.slot===n?"primary":""}" style="flex:1;text-align:left" onclick="switchSlot(${n})">
+          <b>${n}</b>　${si?`${esc(si.name)}<br><span class="cap">${si.year}年・${si.age}歳・${esc(si.place)}${si.retired?"（引退）":""}</span>`:'<span class="cap">空き</span>'}</button>`;}).join("")}</div>
+      <p class="cap" style="margin-top:8px">3つの人生を並行して進められる。切り替えても今の進行は保存される。</p></div>
+      <div class="card"><h3>記録</h3><p class="cap">歴代ランキングと歩んだ人生は「記録」タブにまとめてある。</p></div>
+      <div class="card"><h3>文字サイズ</h3><div class="row">
+        ${[["s","小"],["m","標準"],["l","大"]].map(([k,l])=>`<button class="btn ${((S.fs||"m")===k)?"primary":""}" style="flex:1" onclick="setFontSize('${k}')">${l}</button>`).join("")}
+      </div></div>
+      <div class="card"><h3>データの持ち出し</h3>
+        <p class="cap">端末を変えるときは、書き出したテキストを控えて新しい端末で読み込む。</p>
+        <div class="row" style="margin-top:8px"><button class="btn" onclick="exportData()">書き出す</button>
+        <button class="btn" onclick="copyExport()">コピー</button></div>
+        <textarea id="exBox" readonly style="margin-top:8px" placeholder="「書き出す」を押すとここに出ます"></textarea>
+        <textarea id="imBox" style="margin-top:10px" placeholder="読み込むデータを貼り付け"></textarea>
+        <div class="row" style="margin-top:8px"><button class="btn" onclick="importData()">このスロットに読み込む</button></div>
+      </div>
+      <div class="card"><h3>操作</h3><div class="row">
+      ${S.undo?`<button class="btn" onclick="undoYear()">1年分を取り消す（${S.undo.year}年に戻る）</button>`:""}
+      <button class="btn" onclick="restoreBackup()">直前の保存に戻す</button>
+      ${p.stage==="pro"?`<button class="btn" onclick="askConfirm('retire')">引退する</button>`:""}
+      <button class="btn" onclick="askConfirm('reset')">最初からやり直す</button></div>
+      <p class="cap" style="margin-top:8px">進行は自動保存されます。やり直すと今の記録は消えます。</p></div>`;
+  }
+}
+function livesCard(){
+  const L=S.lives||[];
+  if(!L.length) return `<div class="card"><h3>歩んだ人生</h3><p class="cap">まだ記録がない。引退まで到達すると、ここに残る。</p></div>`;
+  return `<div class="card"><h3>歩んだ人生（${L.length}人）</h3>`+
+    L.slice().reverse().map(x=>`<div class="abil" style="grid-template-columns:1fr auto">
+      <span>${esc(x.name)}　<span class="muted small">${x.kind}・${x.seasons}年・${x.to}年引退</span><br>
+      <span class="muted small">${x.line}</span></span>
+      <span class="v">${x.npbHof?'<span class="title-badge">殿堂</span>':""}${x.mlbHof?'<span class="title-badge">米殿堂</span>':""}${x.meikyukai?'<span class="title-badge">名球会</span>':""}${x.titles?`<span class="muted small">冠${x.titles}</span>`:""}</span>
+    </div>
+    ${x.rows?`<details><summary class="cap">年度別を見る</summary><table class="lives">
+      ${x.rows.map(r=>{
+        let t=String(r.s||"").replace(/undefined[^\s]*/g,"").replace(/\s+/g," ").trim();
+        if(t.length>26)t=t.slice(0,26)+"…";
+        return `<tr><td>${r.y}</td><td>${esc(String(r.l||"").slice(0,8))}</td><td style="text-align:right">${esc(t)}</td></tr>`;
+      }).join("")}
+    </table>${x.titleList&&x.titleList.length?`<p class="cap">${x.titleList.map(esc).join("／")}</p>`:""}</details>`:""}`).join("")+`</div>`;
+}
+const RANK_CATS=[
+  {id:"totalMan",label:"総年俸",fmt:v=>v>=10000?`${(v/10000).toFixed(1)}億`:`${v}万`},
+  {id:"peakMan",label:"最高年俸",fmt:v=>v>=10000?`${(v/10000).toFixed(2)}億`:`${v}万`},
+  {id:"seasons",label:"現役年数",fmt:v=>`${v}年`,top:true},
+  {id:"titles",label:"タイトル数",fmt:v=>`${v}個`,top:true},
+  {id:"mvp",label:"MVP",fmt:v=>`${v}回`},
+  {id:"h",label:"安打",fmt:v=>`${v}本`},
+  {id:"hr",label:"本塁打",fmt:v=>`${v}本`},
+  {id:"rbi",label:"打点",fmt:v=>`${v}`},
+  {id:"sb",label:"盗塁",fmt:v=>`${v}`},
+  {id:"avg",label:"打率",fmt:v=>fmtAvg(v),min:{k:"ab",v:2000,note:"通算2000打数以上"}},
+  {id:"w",label:"勝利",fmt:v=>`${v}勝`},
+  {id:"sv",label:"セーブ",fmt:v=>`${v}`},
+  {id:"so",label:"奪三振",fmt:v=>`${v}`},
+  {id:"era",label:"防御率",fmt:v=>v.toFixed(2),asc:true,min:{k:"ip",v:1000,note:"通算1000投球回以上"}}
+];
+/* ランキング導入前の記録は、残っている一行表記から数値を復元する */
+function legacyStats(x){
+  if(x._legacy!==undefined) return x._legacy;
+  const t=String(x.line||"");
+  const num=(re)=>{const m=t.match(re);return m?Number(m[1]):undefined;};
+  const o={};
+  o.h=num(/(\d+)安打/); o.hr=num(/安打\s*(\d+)本/);
+  const a=t.match(/打率\s*(\.\d{3}|\d\.\d{3})/); if(a) o.avg=Number(a[1].startsWith(".")?"0"+a[1]:a[1]);
+  o.w=num(/(\d+)勝/); o.sv=num(/(\d+)S/);
+  const e=t.match(/防\s*(\d+\.\d+)/); if(e) o.era=Number(e[1]);
+  if(o.h&&o.avg) o.ab=Math.round(o.h/o.avg);                 // 打数は安打と打率から逆算
+  if(o.era!==undefined) o.ip=(x.seasons||0)>=8? 1000 : 0;    // 投球回は不明のため在籍8年以上を規定到達とみなす
+  Object.keys(o).forEach(k=>o[k]===undefined&&delete o[k]);
+  x._legacy = Object.keys(o).length? o : null;
+  return x._legacy;
+}
+function statsOf(x){ return x.stats || legacyStats(x) || {}; }
+function rankValue(x,id){
+  if(id==="seasons") return x.seasons||0;
+  if(id==="titles") return x.titles||0;
+  const v=statsOf(x)[id];
+  return typeof v==="number"? v : undefined;
+}
+function rankRows(cat){
+  let rows=(S.lives||[]).map((x,i)=>({x,i,v:rankValue(x,cat.id)})).filter(r=>typeof r.v==="number"&&!isNaN(r.v));
+  if(cat.min) rows=rows.filter(r=>(statsOf(r.x)[cat.min.k]||0)>=cat.min.v);
+  if(!cat.asc) rows=rows.filter(r=>r.v>0);
+  rows.sort((a,b)=>cat.asc? a.v-b.v : b.v-a.v);
+  return rows;
+}
+function rankingPage(){
+  const L=S.lives||[];
+  let h=`<div class="card"><h3>歴代ランキング</h3>
+    <p class="cap">歩んだ${L.length}人の人生から集計。成績は一軍（NPB・メジャー）のみ。</p></div>`;
+  if(!L.length){
+    return h+`<div class="card"><p class="cap">まだ引退した人生がない。1人目が引退すると、ここに14部門の順位が付く。</p></div>`;
+  }
+  const kings=RANK_CATS.map(c=>{const r=rankRows(c)[0];return r?{c,r}:null;}).filter(Boolean);
+  if(kings.length){
+    h+=`<div class="card"><h3>各部門の1位</h3><div class="kings">`+
+      kings.map(({c,r})=>`<button class="king" aria-pressed="${S.rankCat===c.id}" onclick="S.rankCat='${c.id}';render();setTimeout(()=>{const e=document.getElementById('rankCard');e&&e.scrollIntoView({behavior:'smooth'});},30)">
+        <div class="k1">${c.label}</div><div class="k2">${c.fmt(r.v)}</div><div class="k3">${esc(r.x.name)}</div></button>`).join("")+
+      `</div><p class="cap" style="margin-top:8px">タップするとその部門の順位表に移る。</p></div>`;
+  }
+  h+=rankingCard(20);
+  h+=livesCard();
+  return h;
+}
+function openRanking(){ S.page="rank"; render(); window.scrollTo&&window.scrollTo(0,0); }
+function closeRanking(){ S.page=null; render(); window.scrollTo&&window.scrollTo(0,0); }
+function rankingCard(limit){
+  const L=(S.lives||[]);
+  const empty=(msg)=>`<div class="card" id="rankCard"><h3>歴代ランキング</h3><p class="cap">${msg}</p></div>`;
+  if(!L.length) return empty("まだ引退した人生がない。1人目が引退すると、総年俸・安打・本塁打・勝利など14部門でここに順位が付く。");
+  // 該当者がいる部門だけをタブに出す
+  const cats=RANK_CATS.filter(c=>rankRows(c).length>0);
+  if(!cats.length) return empty(`記録は${L.length}人分あるが、順位を付けられる成績がまだない。`);
+  const cat=cats.find(c=>c.id===S.rankCat)||cats[0];
+  const top=rankRows(cat).slice(0,limit||10);
+  const legacyN=L.filter(x=>!x.stats).length;
+  return `<div class="card" id="rankCard"><h3>歴代ランキング　<span class="cap">${cat.label}</span></h3>
+    <div style="display:flex;flex-wrap:wrap;gap:6px;margin:4px 0 8px">
+      ${cats.map(c=>`<button class="btn ${c.id===cat.id?"primary":""}" style="padding:6px 10px;font-size:12.5px" onclick="S.rankCat='${c.id}';render()">${c.label}</button>`).join("")}
+    </div>
+    <table class="lives">`+top.map((r,n)=>{
+      const x=r.x;
+      return `<tr class="${n===0?"now":""}"><td>${n+1}位</td><td>${esc(x.name)}</td><td style="text-align:right"><b>${cat.fmt(r.v)}</b>　<span class="muted">${esc(x.kind||"")}・${x.seasons||"?"}年</span></td></tr>`;
+    }).join("")+`</table>
+    ${cat.min?`<p class="cap" style="margin-top:6px">対象：${cat.min.note}</p>`:""}
+    ${legacyN?`<p class="cap" style="margin-top:6px">以前に記録された${legacyN}人は、残っている成績から安打・本塁打・打率・勝利・セーブ・防御率だけを復元している。年俸や打点などは対象外。</p>`:""}
+  </div>`;
+}
+function esc(s){return String(s==null?"":s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));}
+function renderEnd(p){
+  const e=epilogue(p);
+  let h=`<div class="card" style="border-color:var(--acc)"><h3>${p.name}の野球人生</h3>`+
+    e.lines.map(l=>`<div class="ev">${l}</div>`).join("")+`</div>`;
+  h+=`<div class="card"><h3>通算</h3>`;
+  if(e.b.g>0) h+=`<div class="statline"><b>打者　${e.b.g}試合 ${e.b.h}安打 ${e.b.hr}本塁打 ${e.b.rbi}打点</b>
+    <div class="kv"><span>打率 <b>${fmtAvg(e.b.avg)}</b></span><span>盗塁 <b>${e.b.sb}</b></span></div></div>`;
+  if(e.q.g>0) h+=`<div class="statline"><b>投手　${e.q.g}登板 ${e.q.w}勝${e.q.l}敗 ${e.q.sv}セーブ ${e.q.hld}ホールド</b>
+    <div class="kv"><span>投球回 <b>${e.q.ip}</b></span><span>防御率 <b>${e.q.era.toFixed(2)}</b></span><span>奪三振 <b>${e.q.so}</b></span></div></div>`;
+  h+=`</div>`;
+  const badges=[];
+  if(e.npbHof)badges.push("日本 野球殿堂");
+  if(e.mlbHof)badges.push("アメリカ野球殿堂");
+  if(e.meikyukai)badges.push("名球会");
+  if(e.eien)badges.push("永久欠番 #"+p.uniform);
+  h+=`<div class="card"><h3>称号</h3>${badges.length? badges.map(x=>`<span class="title-badge">${x}</span>`).join("")
+      :'<p class="cap">殿堂入りには届かなかった。</p>'}
+    <div class="kv" style="margin-top:8px"><span>日本での年数 <b>${e.npb.years}年</b></span>
+    ${e.mlb.years?`<span>メジャー <b>${e.mlb.years}年</b></span>`:""}
+    <span>殿堂ポイント（日本） <b>${Math.round(e.npbScore)}/145</b></span>
+    ${e.mlb.years?`<span>殿堂ポイント（米） <b>${Math.round(e.mlbScore)}/130</b></span>`:""}</div></div>`;
+  h+=bestSeasonCard(p);
+  h+=`<div class="card"><h3>タイトル・表彰</h3>${(p.titles.concat(p.awards)).length?
+      p.titles.map(t=>`<span class="title-badge">${t.year} ${t.name}</span>`).join("")+p.awards.map(t=>`<span class="title-badge">${t.year} ${t.name}</span>`).join("")
+      :'<p class="cap">無冠のまま終えた。</p>'}</div>`;
+  const salShort=(x)=>{ if(!x.salary)return "—";
+    if(x.league==="MLB")return `$${(x.salary/1000000).toFixed(1)}M`;
+    return x.salary>=10000? `${(x.salary/10000).toFixed(2)}億` : `${x.salary}万`; };
+  let totalMan=0;
+  p.history.forEach(x=>{ if(!x.salary)return; totalMan += x.league==="MLB"? x.salary*CONFIG.usdJpy/10000 : x.salary; });
+  h+=`<div class="card"><h3>年度別と年俸</h3><div class="scroll"><table>
+    <tr><th>年</th><th>齢</th><th>所属</th><th>成績</th><th>年俸</th></tr>`+
+    p.history.map(x=>`<tr><td>${x.year}</td><td class="num">${x.age}</td><td>${(x.league==="MLB"?"米 ":"")+esc(x.label.slice(0,8))}</td><td style="text-align:right">${esc(oneLineStat(x))}</td><td class="num">${salShort(x)}</td></tr>`).join("")+
+    `<tr class="tot"><td>通算</td><td></td><td>${p.seasonsPro}年</td><td></td><td class="num">${totalMan>=10000?`${(totalMan/10000).toFixed(1)}億`:`${Math.round(totalMan)}万`}</td></tr>`+
+    `</table></div><p class="cap" style="margin-top:8px">年俸の通算はメジャー分を1ドル${CONFIG.usdJpy}円で換算して加算。上のタブから能力・成績も引き続き見られる。</p></div>`;
+  h+= S.confirm==="reset"
+    ? confirmBox("この人生の記録は消えます。新しい選手で始めますか。","新しい人生を始める","resetAll()")
+    : `<div class="card"><div class="row"><button class="btn primary" onclick="askConfirm('reset')">もう一度、別の人生を歩む</button></div></div>`;
+  return h;
+}
+/* 確認はブラウザのダイアログを使わず画面内で行う（埋め込み環境では confirm が動かないため） */
+function askConfirm(kind){ S.confirm=kind; render(); }
+function cancelConfirm(){ S.confirm=null; render(); }
+function confirmBox(text,yesLabel,fnName){
+  return `<div class="choice"><h3>確認</h3><p>${text}</p>
+    <button class="opt" onclick="${fnName}"><b>${yesLabel}</b></button>
+    <button class="opt" onclick="cancelConfirm()"><b>やめる</b></button></div>`;
+}
+function manualRetire(){ S.confirm=null; S.p.pendEv=[]; doRetire(S.p,"自らの決断"); save(); render(); }
+function resetAll(){ S.confirm=null; S.p=null; S.decisions=[]; S.post=null; save(); renderCreate(); }
+
+/* ============ 作成画面 ============ */
+function renderCreate(){
+  document.getElementById("nav").hidden=true;
+  document.getElementById("foot").hidden=true;
+  document.getElementById("hYear").textContent=CONFIG.startYear+"年";
+  document.getElementById("hName").textContent="一球の生涯";
+  document.getElementById("hSub").textContent="15歳。野球部の門を叩く。";
+  document.documentElement.style.setProperty("--acc","#FFD66B");
+  document.documentElement.style.setProperty("--accInk","#1A1405");
+  document.getElementById("main").innerHTML=`
+  <div class="card"><h3>選手をつくる</h3>
+    <div style="margin-top:8px"><label class="cap">名前</label><input id="cName" placeholder="例：佐久間 諒" value=""></div>
+    <div class="row" style="margin-top:10px">
+      <div style="flex:1"><label class="cap">投げ</label><select id="cThrow"><option>右</option><option>左</option></select></div>
+      <div style="flex:1"><label class="cap">打ち</label><select id="cBat"><option>右</option><option>左</option><option>両</option></select></div>
+    </div>
+    <div style="margin-top:10px"><label class="cap">区分</label>
+      <select id="cKind" onchange="createKindChange()"><option>投手</option><option>野手</option><option>二刀流</option></select></div>
+    <div id="cSub" style="margin-top:10px"></div>
+    <div style="margin-top:10px"><label class="cap">アピールポイント</label>
+      <select id="cAppeal" onchange="appealNote()"></select>
+      <p class="cap" id="appealNote" style="margin-top:4px"></p></div>
+    <div style="margin-top:10px"><label class="cap">進学先</label>
+      <select id="cSchool"><option>強豪私立</option><option>中堅私立</option><option>公立</option></select>
+      <p class="cap" id="schoolNote" style="margin-top:4px"></p></div>
+    <div style="margin-top:10px"><label class="cap">出身</label>
+      <select id="cHome">${["北海道","東北","北関東","南関東","東京","北信越","東海","近畿","中国","四国","九州・沖縄"].map(x=>`<option>${x}</option>`).join("")}</select></div>
+    <div style="margin-top:10px"><label class="cap">シード（空欄で自動）</label><input id="cSeed" placeholder="例：2026"></div>
+    <div class="row" style="margin-top:14px"><button class="btn primary" style="flex:1" onclick="startGame()">この選手で始める</button></div>
+  </div>
+  <div class="card"><div class="row"><button class="btn" style="flex:1" onclick="openRanking()">歴代ランキングを見る（${(S.lives||[]).length}人）</button></div></div>
+  <p class="cap" style="text-align:center;margin:10px 0 0">バージョン ${CONFIG.version}</p>
+  <div class="card"><h3>このゲームについて</h3>
+    <p class="cap">高校1年からプロ引退までを1年ずつ進める。能力はアピールポイントを軸に自動で伸びる。上限（潜在能力）と成長型は伏せられていて、途中までわからない。試合に出られないまま指名されずに終わる人生も普通に起きる。</p></div>`;
+  createKindChange(); appealNote();
+  document.getElementById("cSchool").onchange=schoolNote; schoolNote();
+}
+function schoolNote(){
+  const v=document.getElementById("cSchool").value;
+  document.getElementById("schoolNote").textContent =
+    v==="強豪私立"?"成長が速く注目も集まるが、試合に出るまでの競争は厳しい。":
+    v==="中堅私立"?"出場機会と成長のバランスが取れている。":"出場機会は得やすいが、成長は遅く、注目もされにくい。";
+}
+function appealNote(){
+  const k=document.getElementById("cKind").value;
+  const id=document.getElementById("cAppeal").value;
+  const a=(APPEALS[k]||APPEALS["投手"]).find(x=>x.id===id);
+  document.getElementById("appealNote").textContent=a?a.desc:"";
+}
+function createKindChange(){
+  const k=document.getElementById("cKind").value;
+  const sel=document.getElementById("cAppeal");
+  const list=APPEALS[k]||APPEALS["投手"];
+  if(sel){ sel.innerHTML=list.map(a=>`<option value="${a.id}">${a.label}</option>`).join(""); }
+  document.getElementById("cSub").innerHTML = k==="二刀流"
+    ? `<label class="cap">守備位置（投手兼任）</label><select id="cPos">${FIELD_POS.map(x=>`<option${x==="右"?" selected":""}>${x}</option>`).join("")}</select>
+       <p class="cap" style="margin-top:4px">先発投手として投げながら、野手としても出場する。両方の能力を伸ばす必要があり、登板数は専任より少なくなる。</p>`
+    : k==="投手"
+    ? `<label class="cap">役割</label><select id="cRole"><option>先発</option><option>中継ぎ</option></select>
+       <p class="cap" style="margin-top:4px">抑えは選べない。中継ぎで結果を出すか、チームの守護神が空席になったときに抜擢される。</p>`
+    : `<label class="cap">ポジション</label><select id="cPos">${FIELD_POS.map(x=>`<option>${x}</option>`).join("")}</select>
+       <p class="cap" style="margin-top:4px">捕手は打てなくても起用されやすく選手寿命が長い。遊撃・二塁は守備と走力、一塁・三塁・両翼は打撃が問われる。</p>`;
+  if(document.getElementById("cAppeal")) appealNote();
+}
+function startGame(){
+  const name=(document.getElementById("cName").value||"").trim()||jname();
+  const seedTxt=(document.getElementById("cSeed").value||"").trim();
+  S.seedText=seedTxt;
+  setSeed(seedTxt? hashSeed(seedTxt) : (Date.now()>>>0));
+  const kind=document.getElementById("cKind").value;
+  S.p=newPlayer({name,throws:document.getElementById("cThrow").value,bats:document.getElementById("cBat").value,
+    kind, role: kind==="投手"? document.getElementById("cRole").value : (kind==="二刀流"?"先発":null),
+    pos: kind!=="投手"? document.getElementById("cPos").value : "投",
+    school:document.getElementById("cSchool").value, home:document.getElementById("cHome").value,
+    appeal:document.getElementById("cAppeal").value});
+  S.decisions=[];S.post=null;S.tab="log";
+  document.querySelectorAll("nav button").forEach(b=>b.setAttribute("aria-current",b.dataset.t==="log"));
+  save(); render();
+}
+
+let toastTimer=null;
+function toast(t){
+  const el=document.getElementById("toast"); if(!el)return;
+  el.textContent=t; el.classList&&el.classList.add("on");
+  clearTimeout(toastTimer);
+  toastTimer=setTimeout(()=>{ el.classList&&el.classList.remove("on"); },1900);
+}
+async function restoreBackup(){
+  try{
+    const r=await STORE.get(SKEY+":bak");
+    if(!r||!r.value){ toast("バックアップがありません"); return; }
+    const d=JSON.parse(r.value);
+    if(!d.p){ toast("バックアップが壊れています"); return; }
+    S.p=d.p; S.seedText=d.seedText||""; if(typeof d.rng==="number") setSeed(d.rng);
+    S.decisions=[];S.post=null;S.confirm=null;S.undo=null;
+    save(); S.tab="log"; render(); toast("直前の保存に戻しました");
+  }catch(e){ toast("戻せませんでした"); }
+}
+function setFontSize(k){
+  S.fs=k;
+  document.body.className = k==="m"? "" : "fs-"+k;
+  try{ STORE.set("bblife:fs:v1",k); }catch(e){}
+  render();
+}
+function exportData(){
+  const payload={v:1,slot:S.slot,p:S.p,seedText:S.seedText,rng:RNG_STATE,lives:S.lives||[],fs:S.fs||"m"};
+  const box=document.getElementById("exBox");
+  if(box) box.value=JSON.stringify(payload);
+  toast("書き出しました");
+}
+function copyExport(){
+  const box=document.getElementById("exBox");
+  if(!box||!box.value){ toast("先に書き出してください"); return; }
+  try{ navigator.clipboard.writeText(box.value); toast("コピーしました"); }
+  catch(e){ box.focus(); box.select(); toast("全選択しました。長押しでコピー"); }
+}
+function importData(){
+  const box=document.getElementById("imBox");
+  const t=box? box.value.trim():"";
+  if(!t){ toast("貼り付けてから押してください"); return; }
+  let d; try{ d=JSON.parse(t); }catch(e){ toast("読み込めない形式です"); return; }
+  if(!d||!d.p){ toast("選手データが入っていません"); return; }
+  S.p=d.p; S.seedText=d.seedText||""; S.decisions=[]; S.post=null; S.confirm=null;
+  if(typeof d.rng==="number") setSeed(d.rng);
+  if(Array.isArray(d.lives)&&d.lives.length>=(S.lives||[]).length) S.lives=d.lives;
+  save();
+  try{ STORE.set(HOFKEY, JSON.stringify(S.lives||[])); }catch(e){}
+  S.tab="log"; render(); toast("読み込みました");
+}
+
+/* ============ 保存 ============ */
+const SLOTS=[1,2,3];
+const SLOTKEY="bblife:slot:v1";
+const HOFKEY="bblife:lives:v1";
+let SKEY="bblife:save:v1:s1";
+/* 保存先：この環境の保存APIがあればそれを使い、無ければブラウザのlocalStorageを使う。
+   どちらも無い場合はメモリ上だけの保持になる（自前サーバーやGitHub Pagesでもそのまま動く）。 */
+const STORE = (function(){
+  if(typeof window!=="undefined" && window.storage) return {
+    kind:"app",
+    get:(k)=>window.storage.get(k),
+    set:(k,v)=>window.storage.set(k,v)
+  };
+  try{
+    if(typeof localStorage!=="undefined"){
+      localStorage.setItem("__t","1"); localStorage.removeItem("__t");
+      return {kind:"local",
+        get:async(k)=>{const v=localStorage.getItem(k);return v?{value:v}:null;},
+        set:async(k,v)=>{localStorage.setItem(k,v);return{value:v};}};
+    }
+  }catch(e){}
+  const mem={};
+  return {kind:"memory",get:async(k)=>mem[k]?{value:mem[k]}:null,set:async(k,v)=>{mem[k]=v;return{value:v};}};
+})();
+let saveT=null, storageOK=true;
+function save(){
+  if(!storageOK)return;
+  clearTimeout(saveT);
+  saveT=setTimeout(async()=>{
+    try{
+      const prev=await STORE.get(SKEY).catch(()=>null);
+      if(prev&&prev.value) await STORE.set(SKEY+":bak", prev.value);
+      await STORE.set(SKEY, JSON.stringify({p:S.p,seedText:S.seedText,rng:RNG_STATE}));
+      S.slotInfo=S.slotInfo||{};
+      S.slotInfo[S.slot]= S.p? {name:S.p.name,year:S.p.year,age:S.p.age,
+        place: S.p.stage==="hs"?S.p.school:S.p.stage==="ama"?S.p.amaType:
+               S.p.league==="MLB"?(S.p.mlbTeam||"MLB"):S.p.league==="独立"?"独立リーグ":
+               (S.p.team?teamById(S.p.team).name:"—"),
+        retired:!!S.p.retired} : null;
+      await STORE.set("bblife:slotinfo:v1", JSON.stringify(S.slotInfo));
+    }catch(e){}
+  },300);
+}
+async function loadLives(){
+  try{ const r=await STORE.get(HOFKEY); S.lives = r&&r.value? JSON.parse(r.value):[]; }
+  catch(e){ S.lives=[]; }
+}
+async function recordLife(p){
+  const e=epilogue(p);
+  const t=careerTotals(p,false);
+  S.lives=(S.lives||[]).concat([{
+    name:p.name, kind:p.kind, from:CONFIG.startYear, to:p.year, seasons:p.seasonsPro,
+    age:p.age, titles:p.titles.length, npbHof:e.npbHof, mlbHof:e.mlbHof, meikyukai:e.meikyukai,
+    line: (t.b.g>0&&t.q.g>0)? `${t.b.h}安打 ${t.b.hr}本 ／ ${t.q.w}勝 防${t.q.era.toFixed(2)}`
+        : p.kind==="投手"? `${t.q.w}勝${t.q.l}敗 ${t.q.sv}S 防${t.q.era.toFixed(2)}`
+                        : `${t.b.h}安打 ${t.b.hr}本 打率${fmtAvg(t.b.avg)}`,
+    reason:p.retireReason,
+    rows:p.history.map(h=>({y:h.year,l:h.label.slice(0,8),s:oneLineStat(h)})),
+    stats:(()=>{
+      let totalMan=0, peakMan=0;
+      p.history.forEach(x=>{ if(!x.salary)return;
+        const man = x.league==="MLB"? x.salary*CONFIG.usdJpy/10000 : x.salary;
+        totalMan+=man; peakMan=Math.max(peakMan,man); });
+      return {
+        g:t.b.g, h:t.b.h, hr:t.b.hr, rbi:t.b.rbi, sb:t.b.sb, ab:t.b.ab, avg:t.b.avg,
+        pg:t.q.g, w:t.q.w, sv:t.q.sv, hld:t.q.hld, so:t.q.so, ip:t.q.ip, era:t.q.era,
+        totalMan:Math.round(totalMan), peakMan:Math.round(peakMan),
+        mvp:p.awards.filter(a=>/MVP/.test(a.name)).length,
+        awards:p.awards.length
+      };
+    })(),
+    titleList:p.titles.map(t=>`${t.year} ${t.name}`)
+  }]).slice(-30);
+  try{ await STORE.set(HOFKEY, JSON.stringify(S.lives)); }catch(err){}
+}
+async function switchSlot(n){
+  S.slot=n; SKEY="bblife:save:v1:s"+n;
+  try{ await STORE.set(SLOTKEY,String(n)); }catch(e){}
+  S.p=null;S.decisions=[];S.post=null;S.confirm=null;
+  try{
+    const r=await STORE.get(SKEY);
+    if(r&&r.value){ const d=JSON.parse(r.value);
+      if(d.p){ S.p=d.p; S.seedText=d.seedText||""; setSeed(typeof d.rng==="number"? d.rng:(Date.now()>>>0)); } }
+  }catch(e){}
+  S.tab="log"; render();
+}
+async function boot(){
+  if(storageOK){
+    try{ const sl=await STORE.get(SLOTKEY); if(sl&&sl.value) S.slot=Number(sl.value)||1; }catch(e){ S.slot=1; }
+    if(!S.slot)S.slot=1;
+    SKEY="bblife:save:v1:s"+S.slot;
+    await loadLives();
+    try{ const si=await STORE.get("bblife:slotinfo:v1"); S.slotInfo = si&&si.value? JSON.parse(si.value):{}; }catch(e){ S.slotInfo={}; }
+    try{
+      const r=await STORE.get(SKEY);
+      if(r&&r.value){ const d=JSON.parse(r.value);
+        if(d.p){ S.p=d.p; S.seedText=d.seedText||"";
+          setSeed(typeof d.rng==="number"? d.rng : (Date.now()^(S.p.year*7919))>>>0); } }
+    }catch(e){}
+  }
+  try{ const f=await STORE.get("bblife:fs:v1"); if(f&&f.value){ S.fs=f.value; document.body.className=f.value==="m"?"":"fs-"+f.value; } }catch(e){}
+  render();
+  if(S.p) toast(`スロット${S.slot}で再開しました`);
+}
+document.querySelectorAll("nav button").forEach(b=>{
+  b.onclick=()=>{ S.tab=b.dataset.t; S.confirm=null;
+    document.querySelectorAll("nav button").forEach(x=>x.setAttribute("aria-current",x===b));
+    render(); window.scrollTo(0,0); };
+});
+document.getElementById("go").onclick=advance;
+/* Webアプリとして配信されている場合だけ Service Worker を登録する（オフライン対応） */
+if("serviceWorker" in navigator && location.protocol.startsWith("http")){
+  window.addEventListener("load",()=>{ navigator.serviceWorker.register("sw.js").catch(()=>{}); });
+}
+boot();
+</script>
+</body>
+</html>
